@@ -1,0 +1,213 @@
+/* applies to anything of class "example-class-selector" */
+.example-class-selector {
+     margin-top: 2em;
+}
+
+/* applies to any <p> descendants of an element of class "example-class-selector" */
+.example-class-selector p {
+     /* Colors are in hexadecimal: http://www.colorpicker.com/ */     
+     color: #CC00AA;
+}
+
+/* this style exists to make it obvious that you've successfully linked
+   the CSS to the page. feel free to remove it once the link is working. */
+body {
+     border: 1px dotted gray;
+ /*    padding: 10px;*/
+}
+
+.jumbotron {
+     width: 1140px;
+     height: 700px;
+     position: relative;
+     background: url("../images/green1.jpg");
+     background-size: 1200px 800px;
+     text-align: center;
+}
+
+.jumbotron:after {
+     content:"";
+     opacity: 0.3;
+     top: 0;
+     left: 0;
+     bottom: 0;
+     right: 0;
+     position: absolute;
+     z-index: -1;   
+}
+
+.jumbotron p {
+     color: #6e6e6e;
+     margin-top: 20px;
+}
+
+.jumbotron a {
+     margin-top: 10px;
+     font-size: 20px;
+}
+
+.project a {
+     text-align: center;
+}
+
+.jumbotron p.active {
+     color: #1f6ddd;
+}
+
+#testjs {
+     height: 45px;
+     text-align: right;
+}
+
+.homeImages {
+     margin-top: 40px;
+}
+
+.imgContainer img{
+     
+     width: 300px;
+     height: 200px;
+     background-position: center;
+     background-size: cover; 
+     border-style: solid; 
+     border-color: #33cc33 #33cc33;
+}
+
+#startButton {
+     margin-top: 50px;
+     text-align: center;
+}
+
+.aboutSection {
+     text-align: center;
+     margin-left: 100px;
+     margin-right: 100px;
+     height: 200px;
+}
+
+.aboutSection p{
+     padding-top: 14px;
+     font-size: 16px;
+}
+
+h2{
+     color: #1f6ddd;
+}
+
+
+.imageDesc1{
+     height: 80px;
+     width: 300px;
+     font-size:16px;
+     float: left;
+     font-style:    #333333
+     /*position: relative;*/
+     /*margin-top: 160px;*/
+}
+
+.imageDesc2{
+     height: 80px;
+     width: 300px;
+     font-size:16px;
+     margin-left: 350px;
+     padding-top: 210px;
+}
+
+.imageDesc3{
+     height: 80px;
+     width: 300px;
+     font-size:16px;
+     position:relative;
+     margin-left: 700px;
+  
+}
+
+#imgDsc p {
+     color: #000000;
+}
+
+.myButton1 {
+     -moz-box-shadow:inset 0px -3px 7px 0px #29bbff;
+     -webkit-box-shadow:inset 0px -3px 7px 0px #29bbff;
+     box-shadow:inset 0px -3px 7px 0px #29bbff;
+     background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #2dabf9), color-stop(1, #0688fa));
+     background:-moz-linear-gradient(top, #2dabf9 5%, #0688fa 100%);
+     background:-webkit-linear-gradient(top, #2dabf9 5%, #0688fa 100%);
+     background:-o-linear-gradient(top, #2dabf9 5%, #0688fa 100%);
+     background:-ms-linear-gradient(top, #2dabf9 5%, #0688fa 100%);
+     background:linear-gradient(to bottom, #2dabf9 5%, #0688fa 100%);
+     filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#2dabf9', endColorstr='#0688fa',GradientType=0);
+     background-color:#2dabf9;
+     -moz-border-radius:3px;
+     -webkit-border-radius:3px;
+     border-radius:3px;
+     border:1px solid #0b0e07;
+     display:inline-block;
+     cursor:pointer;
+     color:#ffffff;
+     font-family:Arial;
+     font-size:15px;
+     padding:7px 23px;
+     text-decoration:none;
+     text-shadow:0px 1px 0px #263666;
+     position:relative;
+     margin-top: 20px;
+}
+
+.myButton1:hover {
+     background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #0688fa), color-stop(1, #2dabf9));
+     background:-moz-linear-gradient(top, #0688fa 5%, #2dabf9 100%);
+     background:-webkit-linear-gradient(top, #0688fa 5%, #2dabf9 100%);
+     background:-o-linear-gradient(top, #0688fa 5%, #2dabf9 100%);
+     background:-ms-linear-gradient(top, #0688fa 5%, #2dabf9 100%);
+     background:linear-gradient(to bottom, #0688fa 5%, #2dabf9 100%);
+     filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#0688fa', endColorstr='#2dabf9',GradientType=0);
+     background-color:#0688fa;
+}
+
+.myButton1:active {
+     position:relative;
+     top:1px;
+}
+
+.myButton2 {
+     -moz-box-shadow:inset 0px -3px 7px 0px #29bbff;
+     -webkit-box-shadow:inset 0px -3px 7px 0px #29bbff;
+     box-shadow:inset 0px -3px 7px 0px #29bbff;
+     background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #2dabf9), color-stop(1, #0688fa));
+     background:-moz-linear-gradient(top, #2dabf9 5%, #0688fa 100%);
+     background:-webkit-linear-gradient(top, #2dabf9 5%, #0688fa 100%);
+     background:-o-linear-gradient(top, #2dabf9 5%, #0688fa 100%);
+     background:-ms-linear-gradient(top, #2dabf9 5%, #0688fa 100%);
+     background:linear-gradient(to bottom, #2dabf9 5%, #0688fa 100%);
+     filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#2dabf9', endColorstr='#0688fa',GradientType=0);
+     background-color:#2dabf9;
+     -moz-border-radius:3px;
+     -webkit-border-radius:3px;
+     border-radius:3px;
+     border:1px solid #0b0e07;
+     display:inline-block;
+     cursor:pointer;
+     color:#ffffff;
+     font-family:Arial;
+     font-size:15px;
+     padding:9px 23px;
+     text-decoration:none;
+     text-shadow:0px 1px 0px #263666;
+}
+
+.myButton2:hover {
+     background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #0688fa), color-stop(1, #2dabf9));
+     background:-moz-linear-gradient(top, #0688fa 5%, #2dabf9 100%);
+     background:-webkit-linear-gradient(top, #0688fa 5%, #2dabf9 100%);
+     background:-o-linear-gradient(top, #0688fa 5%, #2dabf9 100%);
+     background:-ms-linear-gradient(top, #0688fa 5%, #2dabf9 100%);
+     background:linear-gradient(to bottom, #0688fa 5%, #2dabf9 100%);
+     filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#0688fa', endColorstr='#2dabf9',GradientType=0);
+     background-color:#0688fa;
+}
+
+.myButton2:active {
+     position:relative;
+     top:1px;
+}
