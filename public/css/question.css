@@ -1,0 +1,96 @@
+/* applies to anything of class "example-class-selector" */
+.example-class-selector {
+	margin-top: 2em;
+}
+
+/* applies to any <p> descendants of an element of class "example-class-selector" */
+.example-class-selector p {
+	/* Colors are in hexadecimal: http://www.colorpicker.com/ */	
+	color: #CC00AA;
+}
+
+/*questionpage*/
+
+body{
+    background-color: #ECEDED;
+}
+
+.navBar ul{
+     list-style-type: none;
+     background-color: #0D0221;
+     background-size: 40px 100px;
+     margin: 0;
+     padding: 0;
+     overflow: hidden;
+}
+
+#barText1{
+     padding-left: 50px;
+}
+
+#barText2{
+     padding-right: 50px;
+}
+
+li a{
+     float:left;
+     background-color: #0D0221;
+     display:block;
+     text-align: center;
+     color: #A5B2C9;
+     padding: 14px 16px;
+}
+
+.container p{
+     color: #FF7E4C;
+     background-color: #FF7E4C;
+}
+
+.questionBox ul{
+     list-style-type: decimal;
+     margin: 100px;
+     width: 1080px;
+     height: 500px;
+}
+
+.availableQuestion{
+     /*padding: 14px;*/
+     margin: 12px;
+     font-size: 22px;
+     background-color: #FFFFFF;
+}
+
+.availableQuestion button{
+     border:1px solid #FFFFFF;
+     cursor:pointer;
+     background-color:#ffffff;
+     font-size: 22px;
+     text-decoration:none;
+     margin: 12px;
+}
+
+.lockedQuestion button{
+     border:1px solid #A5A6A6;
+     cursor:pointer;
+     background-color:#A5A6A6;
+     font-size: 22px;
+     text-decoration:none;
+     margin: 12px;
+}
+
+.lockedQuestion{
+     margin: 12px;
+     opacity: .55;
+     font-size: 22px;
+     background-color: #A5A6A6;
+}
+
+.lockedMessageBox p{
+     width: 200px;
+     height: 200px;
+     position: absolute;
+     margin: 300px;
+}
+
+
+
