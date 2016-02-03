@@ -92,5 +92,10 @@ li a{
      margin: 300px;
 }
 
+.lockMessage p{
+     padding-left: 18px;
+     color: #FF0000;
+}
+
 
 

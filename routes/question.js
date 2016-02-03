@@ -7,5 +7,3 @@ exports.viewQuestion = function(req, res) {
 	// 	'projectName': name
 
 }
-
-
