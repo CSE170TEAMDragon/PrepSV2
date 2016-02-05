@@ -66,6 +66,7 @@ html {
 	line-height:125%;
      padding: 30px;
      text-align: center;
+     margin-bottom: auto;
 }
 
 .header{
@@ -79,6 +80,11 @@ h1{
 
 .button{
      margin-top: 40px;
+}
+
+#paragraph{
+     color: #cc33ff;
+     font-size: 170%;
 }
 
 
