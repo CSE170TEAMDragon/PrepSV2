@@ -1,0 +1,80 @@
+html {
+	font-size: 10pt;
+     background: ;
+}
+
+
+.jumbotron {
+     position: relative;
+     text-align: center;
+}
+
+
+.body{
+	margin-right: 20px;
+	margin-left: 20px;
+}
+
+.body p{
+	font-size: 20px;
+	line-height:125%;
+     padding: 30px;
+     text-align: center;
+     margin-bottom: auto;
+}
+
+
+h1{
+	text-align: center;
+}
+
+div {
+    text-align: justify;
+}
+
+div img {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+}
+
+div:after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+}
+
+.container p{
+     color: #FF7E4C;
+     background-color: #FF7E4C;
+}
+
+.questionBox ul{
+     list-style-type: decimal;
+     margin: 50px;
+     width: 1080px;
+     height: 500px;
+}
+
+.availableQuestion{
+     margin: 12px;
+     font-size: 13px;
+     background-color: #ECEDED;
+;
+}
+
+.availableQuestion button{
+     border:1px solid #ECEDED;
+;
+     cursor:pointer;
+     background-color: #ECEDED;
+     font-size: 22px;
+     text-decoration:none;
+     margin: 12px;
+}
+
+#questionHeader{
+     margin-top: 60px;
+}
+
+

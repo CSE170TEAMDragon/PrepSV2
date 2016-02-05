@@ -32,6 +32,10 @@ body{
      padding-right: 50px;
 }
 
+#barText3{
+     padding-left: 50px;
+}
+
 li a{
      float:left;
      background-color: #0D0221;
