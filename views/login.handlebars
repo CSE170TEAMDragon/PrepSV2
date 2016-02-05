@@ -10,21 +10,21 @@
 
 	<h3 class = "header"> Login </h3>
   <section class="loginform cf">
-    <form name="login" action="index_submit" method="get" accept-charset="utf-8">
+    <form method="get" accept-charset="utf-8" action="/question">
       <ul>
 
         <li>
-          <label for="usermail">Username</label>
-          <input type="username" name="usermail1" placeholder="username">
+          <label>Username</label>
+          <input type="text" placeholder="username">
         </li>
 
         <li>
-          <label for="password1">Password</label>
-          <input type="password" name="password1" placeholder="password">
+          <label >Password</label>
+          <input type="password" placeholder="password">
         </li>
         
         <li>
-          <input type="submit" value="Login">
+          <input id="loginButton" type="submit" value="Login">
         </li>
 
       </ul>
@@ -35,36 +35,38 @@
   <h3 class = "header"> Registration </h3>
 
   <section class="loginform cf">
-    <form name="register" action="index_submit" method="get" accept-charset="utf-8">
+    <form method="get" accept-charset="utf-8" action= "/question">
       <ul>
 
         <li>
-          <label for="usermail">Username</label>
-          <input type="username" name="usermail2" placeholder="username">
+          <label>Username</label>
+          <input type="text" placeholder="username">
         </li>
 
         <li>
-          <label for="password2">Password</label>
-          <input type="password" name="password2" placeholder="password">
+          <label >Password</label>
+          <input type="password" placeholder="password">
         </li>
         
         <li>
-          <input type="submit" value="Register">
+          <input id= "regButton" type="submit" value="Register">
         </li>
 
       </ul>
     </form>
-
   </section>
 
 	<h1 class = "header"><b>OR</b></h1> 
 
 	<div class = "anomBox">
-		<h4>--> click Guest Mode to stay Anonymous <-- </h4>
+		<h4>--> click Guest Mode to stay Anonymous -- </h4>
     <a href= "/question">
 		<button id="guestMode" class="myButton3"> Guest Mode </button>
     </a>
 	</div>
+
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="/js/introHCI.js"></script>
 
 </body>
 

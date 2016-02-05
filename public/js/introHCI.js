@@ -10,6 +10,7 @@ $(document).ready(function() {
  */
 function initializePage() {
 	$(".lockedQuestion").click(questionClicked);
+  $("#loginButton").click(loginClicked);
 }
 
 function questionClicked(e){
@@ -22,4 +23,8 @@ function questionClicked(e){
   else {
        description.toggle();
   }
+}
+
+function loginClicked(e){
+  window.location.replace("http://preps2.herokuapp.com/question");
 }
