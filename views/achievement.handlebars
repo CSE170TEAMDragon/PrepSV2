@@ -14,8 +14,18 @@
 
 
 <body>
-	<div class="container">
+	<div class="navBar">
+			<ul>
+				<li><a href="/" id="barText1">Home</a></li>
+				<li><a href="/achievement" id="barText2">Achievement</a></li>
+				<li><a href="/question" id="barText3">Questions</a></li>
+				<li><a href="/" id="barText4">Log Out</a></li>
+			</ul>
+		
+	</div>
+	
 
+	<div class="container">
 		<div class="jumbotron">
 			<h1>Achievement</h1>
 		</div>
@@ -31,7 +41,7 @@
 		<h3 id="questionHeader">Answered Questions:</h3>
 
 		<div class="questionBox">
-		<ul>
+		<ul><a href="/evalsHistory">
 			<div class="availableQuestion">
 				<li><button>Tell me about yourself and your interests</button></li>
 			</div>
@@ -41,11 +51,13 @@
 			<div class="availableQuestion">
 				<li><button>Name three words/phrases that describe you and for each word, justify why you chose it.</button></li>
 			</div>
+			</a>
 		</ul>
 
 	</div>
 	</div>
 
+	<script src="/js/introHCI.js"></script>
   
 </body>
 

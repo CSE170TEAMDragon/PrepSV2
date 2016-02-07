@@ -13,6 +13,7 @@ var login = require('./routes/login');
 var learnmore = require('./routes/learnmore');
 var question = require('./routes/question');
 var achievement = require('./routes/achievement');
+var evalsHistory = require('./routes/evalsHistory');
 
 // Example route
 // var user = require('./routes/user');
@@ -45,6 +46,8 @@ app.get('/login', login.viewProject);
 app.get('/learnmore', learnmore.view);
 app.get('/question', question.viewQuestion);
 app.get('/achievement', achievement.viewAchievement);
+app.get('/evalsHistory', evalsHistory.viewHistory);
+
 
 // Example route
 // app.get('/users', user.list);

@@ -10,6 +10,9 @@ $(document).ready(function() {
  */
 function initializePage() {
 	$(".lockedQuestion").click(questionClicked);
+  $('.message a').click(function(){
+   $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+});
 }
 
 function questionClicked(e){
@@ -23,3 +26,6 @@ function questionClicked(e){
        description.toggle();
   }
 }
+
+
+

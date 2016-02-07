@@ -24,18 +24,6 @@ body{
      overflow: hidden;
 }
 
-/*#barText1{
-     padding-left: 50px;
-}
-
-#barText2{
-     padding-right: 50px;
-}
-
-#barText3{
-     padding-left: 50px;
-}*/
-
 li a{
      float:left;
      background-color: #0D0221;
@@ -44,6 +32,14 @@ li a{
      color: #A5B2C9;
      padding: 14px 16px;
 }
+
+#barText4 {
+     float: right;
+     display:block;
+     margin-right: 3%;
+
+}
+
 
 .container p{
      color: #FF7E4C;
