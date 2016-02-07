@@ -17,14 +17,14 @@ body{
 
 .navBar ul{
      list-style-type: none;
+     width: 100%;
      background-color: #0D0221;
-     background-size: 40px 100px;
-     margin: 0;
-     padding: 0;
+     background-size: 10% 100%;
+     margin: 0%;
      overflow: hidden;
 }
 
-#barText1{
+/*#barText1{
      padding-left: 50px;
 }
 
@@ -34,7 +34,7 @@ body{
 
 #barText3{
      padding-left: 50px;
-}
+}*/
 
 li a{
      float:left;
@@ -52,13 +52,12 @@ li a{
 
 .questionBox ul{
      list-style-type: decimal;
-     margin: 100px;
-     width: 1080px;
-     height: 500px;
+     margin: 5%;
+     width: 90%;
+     height: 50%;
 }
 
 .availableQuestion{
-     /*padding: 14px;*/
      margin: 12px;
      font-size: 22px;
      background-color: #FFFFFF;
