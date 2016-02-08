@@ -34,12 +34,12 @@
 		<!-- h1 through h6 are headers. The higher the number, the smaller the header -->
 		<!-- p means paragraph -->
 		<div class="jumbotron">
-			<h1 style="color:shadow;">Self-Evals History</h1>
+			<h1 style="color:shadow;"><b>Self-Evals History</b></h1>
 		</div>	
 
 		{{#each history}}
-		<div class= "History" >
-      		<h3>{{position}}</h3>
+		<div class= {{id}}>
+      		<h2>{{position}}</h2>
         	<h4>Checked Items:</h4>
         	<ul>
         		<li> {{cItem1}} </li>

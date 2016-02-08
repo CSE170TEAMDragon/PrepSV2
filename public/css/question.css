@@ -9,10 +9,23 @@
 	color: #CC00AA;
 }
 
-/*questionpage*/
+h1{
+    text-align: center;
+    width: 100%;
+}
 
-body{
-    background-color: #ECEDED;
+.container {
+    background: url('http://images.freepicturesweb.com/img1/15/10/5.jpg');
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.jumbotron {
+     position: relative;
+     text-align: center;
+     background-color: #FFFFFF;
+    
 }
 
 .navBar ul{

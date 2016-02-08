@@ -1,13 +1,17 @@
-html {
-     font-size: 10pt;
+.container {
+    font-size: 10pt;
+    background: url('http://images.freepicturesweb.com/img1/15/10/5.jpg');
+    background-size: cover;
+    height: 100%;
+    width: 100%;
 }
-
 
 .jumbotron {
      position: relative;
      text-align: center;
      padding: auto;
-     background-image: "http://www.psdgraphics.com/file/green-layout-background.jpg";
+     background: url('http://images.freepicturesweb.com/img1/15/10/5.jpg');
+     background-size: cover;
 }
 
 
@@ -65,4 +69,25 @@ li a{
      display:block;
      margin-right: 3%;
 
+}
+
+.One {
+    display: inline-block;
+    margin-left: 20%;
+    margin-right: 15%;
+}
+
+.Two {
+    display: inline-block;
+    margin-right: 18%;
+}
+
+.Three {
+    display: inline-block;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.Four {
+    display: inline-block;
 }

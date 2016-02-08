@@ -1,6 +1,8 @@
 html {
-	background: url('http://www.publicdomainpictures.net/download-picture.php?adresar=70000&soubor=natural-green-background-1389459704YWX.jpg');
-	font-size: 10pt;
+	/*background: url('http://www.publicdomainpictures.net/download-picture.php?adresar=70000&soubor=natural-green-background-1389459704YWX.jpg');*/
+	background: url('http://images.freepicturesweb.com/img1/15/10/5.jpg');
+     background-size: cover;
+     font-size: 10pt;
 }
 
 .myButton2 {
@@ -70,8 +72,8 @@ html {
 }
 
 .header{
-     margin-bottom: 40px;
-     color: #0000ff;
+     margin-bottom: 20px;
+     color: #000080;
 }
 
 h1{
@@ -83,8 +85,11 @@ h1{
 }
 
 #paragraph{
-     color: #cc33ff;
+     color: #0000ff;
      font-size: 170%;
 }
 
+.aboutP {
+     background: #000080;
+}
 

@@ -1,13 +1,16 @@
-html {
-	font-size: 10pt;
+.container {
+    background: url('http://images.freepicturesweb.com/img1/15/10/5.jpg');
+    background-size: cover;
+    height: 100%;
+    width: 100%;
 }
-
 
 .jumbotron {
      position: relative;
      text-align: center;
+     background-color: #FFFFFF;
+    
 }
-
 
 .body{
 	margin-right: 20px;
@@ -58,15 +61,14 @@ div:after {
 .availableQuestion{
      margin: 12px;
      font-size: 13px;
-     background-color: #ECEDED;
-;
+     background-color: #f2f2f2;
 }
 
 .availableQuestion button{
-     border:1px solid #ECEDED;
+     border:1px solid #f2f2f2;
 ;
      cursor:pointer;
-     background-color: #ECEDED;
+     background-color: #f2f2f2;
      font-size: 22px;
      text-decoration:none;
      margin: 12px;

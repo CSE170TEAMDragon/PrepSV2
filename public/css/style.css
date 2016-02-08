@@ -4,6 +4,7 @@ html {
 	font-size: 10pt;
     height: 100%;
     width: 100%;
+    background-size: cover;
 }
 label {
 	display: block;
