@@ -25,7 +25,7 @@ label {
 	outline: 0;
 }
 .loginform {
-	width: 40%;
+	width: 25%;
 	margin: auto;
 	padding: 2%;
 	background-color: rgba(250,250,250,0.5);
@@ -36,12 +36,14 @@ label {
 }
 
 .loginform ul {
-	padding: 5px;
-	margin: 0;
+
 }
+
 .loginform li {
 	display: inline;
 	float: left;
+	margin-left: 15%;
+	margin-bottom: 3%;
 }
 .loginform input:not([type=submit]) {
 	padding: 5px;
@@ -71,5 +73,5 @@ label {
 
 .header {
 	text-align: center;
-    margin-top: 5%;
+    margin-top: 3%;
 }
