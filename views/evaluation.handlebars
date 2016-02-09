@@ -1,0 +1,129 @@
+<!doctype html>
+
+<html>
+<head>
+	<title>Question Evaluation</title>	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+	<link href="css/bootstrapTest.css" rel="stylesheet">
+	<link href="css/evaluation.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+		<div class="navBar">
+
+			<ul>
+				<li><a href="/" id="barText1">Home</a></li>
+				<li><a href="/achievement" id="barText2">Achievement</a></li>
+				<li><a href="/question" id="barText3">Questions</a></li>
+				<li><a href="/" id="barText4">Log Out</a></li>
+
+			</ul>
+		
+		</div>
+
+	</h3>{{questionSelected}}</h3>
+
+<div class="pageTitle">
+	<h2 > Self-Evaluation</h2>
+	<h4> Evaluate the quality of your response. How well did you convey the following: </4>
+	</div>
+
+<div class="evaluationBox" >
+	<div class="columnHeadings">
+	<div class="row" >
+		<div class="col-xs-5"> </div>
+		<div class="col-xs-2">
+			<p style="margin-top:50px" align="center"> Poor</p>
+		</div>
+		<div class="col-xs-2">
+			<p style="margin-top:50px" align="center"> Decent</p>
+		</div>
+		<div class="col-xs-2">
+			<p style="margin-top:50px" align="center"> Great</p>
+		</div>
+		<div class="col-xs-1"> </div>
+	</div> <!-- end row -->
+	</div> <!-- end column headings -->
+
+
+	<div class="evalList">
+		<div class="row">
+
+		<div class="col-xs-5">
+			<p> Your name and major </p>
+		</div>
+
+		<div class="col-xs-2" align="center">
+		<label class="radio-inline">
+		  <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> </label>
+		 </div>
+
+		<div class="col-xs-2" align="center">
+		<label class="radio-inline">
+		  <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> </label>
+		  </div>
+
+		<div class="col-xs-2" align="center">
+		<label class="radio-inline">
+		  <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> </label>
+		</div>
+
+		<div class="col-xs-1"> </div>
+
+		</div>	<!-- end row -->
+	</div>
+
+<!-- this will be the second row. Need to implement "each" at some point -->
+
+<div class="secondRow">
+
+<div class="row">
+
+		<div class="col-xs-5">
+			<p> Your interest in the field </p>
+		</div>
+
+		<div class="col-xs-2" align="center">
+		<label class="radio-inline">
+		  <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> </label>
+		  </div>
+
+		<div class="col-xs-2" align="center">
+		<label class="radio-inline">
+		  <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> </label>
+		  </div>
+
+		<div class="col-xs-2" align="center">
+		<label class="radio-inline">
+		  <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> </label>
+		</div>
+
+		<div class="col-xs-1"> </div>
+
+	</div>
+
+  </div>  <!-- end secondRow-->
+
+
+  
+
+
+     <button type="button" class="btn btn-primary" id="donebutton"style=" float:right">
+    	<a href="/feedback">
+    	Done
+	    </a>
+    </button>
+
+   </div>
+
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/introHCI.js"></script>
+</body>
+
+</html>

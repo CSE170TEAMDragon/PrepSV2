@@ -14,6 +14,8 @@ var learnmore = require('./routes/learnmore');
 var question = require('./routes/question');
 var achievement = require('./routes/achievement');
 var evalsHistory = require('./routes/evalsHistory');
+var evaluation = require('./routes/evaluation');
+var feedback = require('./routes/feedback');
 
 // Example route
 // var user = require('./routes/user');
@@ -47,6 +49,8 @@ app.get('/learnmore', learnmore.view);
 app.get('/question', question.viewQuestion);
 app.get('/achievement', achievement.viewAchievement);
 app.get('/evalsHistory', evalsHistory.viewHistory);
+app.get('/evaluation', evaluation.viewEvaluation);
+app.get('/feedback', feedback.viewFeedback);
 
 
 // Example route
