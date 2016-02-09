@@ -7,7 +7,6 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
-<!-- 	<link href="css/bootstrapTest.css" rel="stylesheet"> -->
 	<link href="css/question.css" rel="stylesheet">
 
 </head>
@@ -31,55 +30,31 @@
 	</div>
 	<h2> Choose a question to begin. </h2>
 
-	
-
-	{{#each questionText}}
-	<div class="questionBox">
+	<div class="unlockedquestionBox">
 		<ul>
-
-			<div class="row">	
-				<div class="col-md-1">
-				</div>
-
-				<div id="availableQuestion" class="col-md-11" id="{{id}}">
-					<a href="/evaluation">
-					<li><button>{{question}}</button></li>
-				</a>
-				</div>
-
+			<div class="availableQuestion">
+				<a href="/evaluation"><li><button>Tell me about yourself and your interests</button></li></a>
 			</div>
-	
+			<div class="availableQuestion">
+				<a href="/evaluation"><li><button>What are your experiences in your field?</button></li></a>
+			</div>
+			<div class="availableQuestion">
+				<a href="/evaluation"><li><button>What is one project you worked on?</button></li></a>
+			</div>	
 		</ul>
 	</div>
-	{{/each}}
 
 
-	{{#each lockedQuestionText}}
-	<div class="lockedQuestionBox">
+	<div class="lockedquestionBox">
 		<ul>
-
-			<div class="row">	
-				<div class="col-md-1">
-				</div>
-
-				<div class="lockedQuestion" class="col-md-11" id="{{id}}">
-					<li><button>{{question}}</button></li>
-				</div>
-
-			</div>
-	
+			<div class="lockedQuestion">
+				<li><button>What is one setback in a past project and how did you overcome it?</button></li>
+			</div>	
+			<div class="lockedQuestion">
+				<li><button>How many golfballs can fit in a schoolbus?</button></li>
+			</div>	
 		</ul>
 	</div>
-	{{/each}}
-
-
-  
-   <!--  <button type="button" class="btn btn-primary" style="margin-left: 40px" >
-    	<a href="/evaluation">
-    	To Evaluation Page
-    </a>
-    </button>
- -->
 
 
 	</div>

@@ -8,22 +8,16 @@ exports.viewQuestion = function(req, res) {
 		},
 		{ 	'question': 'What are your experiences in your field?',
 			'id': 'question2'
-		},
-
-		],
-
-		'lockedQuestionText':[
+		},	
 		{ 	'question': 'Describe one project you played a significant role in',
 			'id': 'question3'
 		},
 		{ 	'question': 'What is one setback in your past project? How did you overcome it?',
-			'id': 'question4'
+			'id': 'question1'
 		},
 		{ 	'question': 'How many golfballs can fit in a school bus?',
-			'id': 'question5'
-		},
+			'id': 'question2'
+		}
 		]
-
-		
 	});
 };

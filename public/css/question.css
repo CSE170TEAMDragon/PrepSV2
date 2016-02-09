@@ -14,15 +14,6 @@ h1{
     width: 100%;
 }
 
-h2{
-     margin-left: 3%;
-     margin-top: 0%;
-}
-
-body{
-    background-color: #ECEDED;
-}
-
 .container {
     background: url('http://images.freepicturesweb.com/img1/15/10/5.jpg');
     background-size: cover;
@@ -34,8 +25,6 @@ body{
      position: relative;
      text-align: center;
      background-color: #FFFFFF;
-     padding: 1%;
-     margin-bottom: 3%
     
 }
 
@@ -48,7 +37,7 @@ body{
      overflow: hidden;
 }
 
-li a{
+.navBar a{
      float:left;
      background-color: #0D0221;
      display:block;
@@ -70,33 +59,33 @@ li a{
      background-color: #FF7E4C;
 }
 
-.questionBox ul{
-     list-style-type: none;
-     margin: 0%;
+.unlockedquestionBox ul{
+     list-style-type: decimal;
+     margin: 5%;
      width: 90%;
      height: 50%;
 }
 
-.lockedQuestionBox ul{
-     list-style-type: none;
-     margin: 0%;
+.lockedquestionBox ul{
+     list-style-type: decimal;
+     margin: 5%;
      width: 90%;
      height: 50%;
 }
 
-#availableQuestion{
-     margin: 0.5%;
+.availableQuestion{
+     margin: 12px;
      font-size: 22px;
      background-color: #FFFFFF;
 }
 
-#availableQuestion button{
+.availableQuestion button{
      border: 1px solid #FFFFFF;
      cursor:pointer;
      background-color:#ffffff;
      font-size: 22px;
      text-decoration:none;
-     margin: 0.5%;
+     margin: 12px;
 }
 
 .lockedQuestion button{
@@ -105,11 +94,11 @@ li a{
      background-color:#A5A6A6;
      font-size: 22px;
      text-decoration:none;
-     margin: 0.5%;
+     margin: 12px;
 }
 
 .lockedQuestion{
-     margin: 0.5%;
+     margin: 12px;
      opacity: .55;
      font-size: 22px;
      background-color: #A5A6A6;
@@ -127,7 +116,10 @@ li a{
      color: #FF0000;
 }
 
-
+h2{
+     margin-left: 40px;
+     margin-top: 50px;
+}
 
 
 
