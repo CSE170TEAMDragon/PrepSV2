@@ -16,6 +16,7 @@ var achievement = require('./routes/achievement');
 var evalsHistory = require('./routes/evalsHistory');
 var evaluation = require('./routes/evaluation');
 var feedback = require('./routes/feedback');
+var recording = require('./routes/recording');
 
 // Example route
 // var user = require('./routes/user');
@@ -51,6 +52,8 @@ app.get('/achievement', achievement.viewAchievement);
 app.get('/evalsHistory', evalsHistory.viewHistory);
 app.get('/evaluation', evaluation.viewEvaluation);
 app.get('/feedback', feedback.viewFeedback);
+app.get('/recording', recording.viewRecording);
+
 
 
 // Example route

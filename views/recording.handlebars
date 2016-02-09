@@ -2,7 +2,7 @@
 
 <html>
 <head>
-	<title>PrepS Questions</title>	
+	<title>Recording</title>	
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="css/bootstrap.min.css" rel="stylesheet">
@@ -30,54 +30,31 @@
 	</div> 
 
 	<div class= "container">
-	<div class="jumbotron">
-			<h1>Start Question {{id}}</h1>
-	</div>
-	<!-- <h2> Choose a question to begin. </h2> -->
-
-	<!-- {{#each questionText}} -->
-	<div class="questionBox">
-		<ul>
-
-			<div class="row">	
-				<div class="col-md-1">
-				</div>
-
-				<div id="availableQuestion" class="col-md-11" id="{{id}}">
-					<a href="/recording">
-					<li><button>{{question}}</button></li>
-				</a>
-				</div>
-
-			</div>
+		<div class="jumbotron">
+			<h1>Start Question</h1>
+		</div>
 	
-		</ul>
-	</div>
-	<!-- {{/each}} -->
-
-	<!-- <div class="questionBox">
-		
+		<div class="unlockedquestionBox">
 		<ul>
 			<div class="availableQuestion">
 				<li><button>Tell me about yourself and your interests</button></li>
 			</div>
 		</ul>
+		</div>
 
-	</div> -->
-	</div>
+		<iframe src="http://vocaroo.com/?minimal" width="500" height="200" frameborder="0"></iframe><br>
 
-	<iframe src="http://vocaroo.com/?minimal" width="525" height="450" frameborder="0"></iframe><br>
-
-	<div class="button">
-      <a href = "/evaluation" >
-          <button id="startButton" class="myButton2">Done</button> 
-      </a>
-      </div>
+		<div class="button">
+      	<a href = "/evaluation" >
+          <button id="doneButton" class="myButton2">Done</button> 
+      	</a>
+      	</div>
   
-
+      </div>
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/introHCI.js"></script>
+
 </body>
 
 </html>
