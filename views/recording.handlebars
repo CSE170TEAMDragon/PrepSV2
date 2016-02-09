@@ -8,15 +8,17 @@
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
 	<link href="css/question.css" rel="stylesheet">
+	<link rel="stylesheet" href="/css/learnmore.css">
 	<link rel="stylesheet" href="/css/hamburgerbar.css">
 
 </head>
 
 <body>
-<header>
+
+		<header>
   			<button class="hamburger">&#9776;</button>
   			<button class="cross">&#735;</button>
-	</header>
+		</header>
 
 	<div class="menu">
  	 <ul>
@@ -26,40 +28,51 @@
     	<a href="/login"><li>Log out</li></a>
   	</ul>
 	</div> 
-		<div class= "container">
+
+	<div class= "container">
 	<div class="jumbotron">
-			<h1>Questions</h1>
+			<h1>Start Question {{id}}</h1>
 	</div>
-	<h2> Choose a question to begin. </h2>
+	<!-- <h2> Choose a question to begin. </h2> -->
 
-	<div class="unlockedquestionBox">
+	<!-- {{#each questionText}} -->
+	<div class="questionBox">
 		<ul>
-			<div class="availableQuestion">
-				<a href="/evaluation"><li><button>Tell me about yourself and your interests</button></li></a>
+
+			<div class="row">	
+				<div class="col-md-1">
+				</div>
+
+				<div id="availableQuestion" class="col-md-11" id="{{id}}">
+					<a href="/recording">
+					<li><button>{{question}}</button></li>
+				</a>
+				</div>
+
 			</div>
-			<div class="availableQuestion">
-				<a href="/evaluation"><li><button>What are your experiences in your field?</button></li></a>
-			</div>
-			<div class="availableQuestion">
-				<a href="/evaluation"><li><button>What is one project you worked on?</button></li></a>
-			</div>	
+	
 		</ul>
 	</div>
+	<!-- {{/each}} -->
 
-
-	<div class="lockedquestionBox">
+	<!-- <div class="questionBox">
+		
 		<ul>
-			<div class="lockedQuestion">
-				<li><button>What is one setback in a past project and how did you overcome it?</button></li>
-			</div>	
-			<div class="lockedQuestion">
-				<li><button>How many golfballs can fit in a schoolbus?</button></li>
-			</div>	
+			<div class="availableQuestion">
+				<li><button>Tell me about yourself and your interests</button></li>
+			</div>
 		</ul>
+
+	</div> -->
 	</div>
 
+	<iframe src="http://vocaroo.com/?minimal" width="525" height="450" frameborder="0"></iframe><br>
 
-	</div>
+	<div class="button">
+      <a href = "/evaluation" >
+          <button id="startButton" class="myButton2">Done</button> 
+      </a>
+      </div>
   
 
 	<script src="https://code.jquery.com/jquery.js"></script>
