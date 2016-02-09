@@ -1,0 +1,82 @@
+<!doctype html>
+
+<html>
+<head>
+	<title>Question Evaluation</title>	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+	<link href="css/bootstrapTest.css" rel="stylesheet">
+	<link href="css/feedback.css" rel="stylesheet">
+	<link href="css/font-awesome-4.5.0/css/font-awesome.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+		<div class="navBar">
+
+			<ul>
+				<li><a href="/" id="barText1">Home</a></li>
+				<li><a href="/achievement" id="barText2">Achievement</a></li>
+				<li><a href="/question" id="barText3">Questions</a></li>
+				<li><a href="/" id="barText4">Log Out</a></li>
+
+			</ul>
+		
+		</div>
+
+
+<h2> {{originalQuestion}} </h2>
+
+<div class="feedbackBox">
+
+
+	<h3 class = "feedbackTitle"> Great work on the following: </h3>
+
+	<div class="row" >
+	<div class="col-xs-1"> </div>
+
+	<div class="feedbackAdd" >
+	<button style="border-style:none; background-color:transparent"> <i class="fa fa-check-circle" class="col-xs-10" id="listItems"></i> Your name and major  </button>
+	</div> <!-- end of feedbackAdd -->
+
+	<div class="col-xs-1"> </div>
+	</div> <!-- end of row -->
+	
+
+
+
+	<h3 class = "feedbackTitle"> These have room for improvement: </h3>
+	
+
+
+	
+	<div class="row" >
+	<div class="col-xs-1"> </div>
+
+	<div class="feedbackAdd" >
+	<button style="border-style:none; background-color:transparent"> <i class="fa fa-caret-right" class="col-xs-10" id="listItems"></i> Your interest in the field  </button>
+	</div> <!-- end of feedbackAdd -->
+
+	<div class="col-xs-1"> </div>
+	</div> <!-- end of row -->
+
+
+
+    <button type="button" class="btn btn-primary" style="float:right" id="continue">
+    	<a href="/feedback">
+    	Continue 
+	    </a>
+    </button>
+</div>
+
+
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/introHCI.js"></script>
+</body>
+
+</html>

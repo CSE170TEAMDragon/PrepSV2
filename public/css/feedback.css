@@ -1,0 +1,48 @@
+.feedbackAdd button{
+     background-color: white;
+     border-radius: 15px;
+
+}
+
+.navBar ul{
+     list-style-type: none;
+     width: 100%;
+     background-color: #0D0221;
+     background-size: 10% 100%;
+     margin: 0%;
+     overflow: hidden;
+}
+
+li a{
+     float:left;
+     background-color: #0D0221;
+     display:block;
+     text-align: center;
+     color: #A5B2C9;
+     padding: 14px 16px;
+}
+
+#barText4 {
+     float: right;
+     display:block;
+     margin-right: 3%;
+
+}
+
+/*.feedbackTitle{
+	margin-left: 2%;
+}*/
+
+
+#listItems{
+/*	margin-left: 2%;*/
+}
+
+.feedbackBox{
+	margin:4% 8% 10% 8%;
+}
+
+#continue{
+	margin: 10% 4%;
+}
+
