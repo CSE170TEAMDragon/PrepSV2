@@ -7,8 +7,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
-	<link href="css/recording.css" rel="stylesheet">
+	<link href="css/question.css" rel="stylesheet">
 	<link rel="stylesheet" href="/css/hamburgerbar.css">
+	<link href="css/font-awesome-4.5.0/css/font-awesome.css" rel="stylesheet">
 
 </head>
 
@@ -32,35 +33,47 @@
 			<h1>Questions</h1>
 	</div>
 	<h2> Choose a question to begin. </h2>
-
 	<div class="unlockedquestionBox">
 		<ul>
-			<div class="availableQuestion">
-				<a href="/recording"><li><button>Tell me about yourself and your interests</button></li></a>
+			{{#each questionText}}
+
+			<div class="row">	
+				<div class="col-md-1">
+				</div>
+
+				<div class="availableQuestion" class="col-md-11" id="{{id}}">
+			
+		<!-- 		<a href="#"> -->
+					<a href="/recording">
+						<li><button class = "questionButton" id="button1">{{question}}</button></li>
+			<!-- 		<li><input class="questionButton" type="button" value="{{question}}"</li> -->
+					</a>
+				</div>
+
 			</div>
-			<div class="availableQuestion">
-				<a href="/recording"><li><button>What are your experiences in your field?</button></li></a>
-			</div>
-			<div class="availableQuestion">
-				<a href="/recording"><li><button>What is one project you worked on?</button></li></a>
-			</div>	
+
+			{{/each}}
 		</ul>
 	</div>
 
 
 	<div class="lockedquestionBox">
 		<ul>
-			<div class="lockedQuestion">
-				<li><button>What is one setback in a past project and how did you overcome it?</button></li>
-			</div>	
-			<div class="lockedQuestion">
-				<li><button>How many golfballs can fit in a schoolbus?</button></li>
-			</div>	
+
+			{{#each lockedQuestionText}}
+			
+			<div class="row">	
+				<div class="col-md-1">
+				</div>
+
+				<div class="lockedQuestion" class="col-md-11" id="{{id}}">
+					<li><i class="fa fa-lock fa-2x" style="padding-left:2%" ><button><p class = "lockedMsg">Answer previous questions to unlock</p></button></i></li>
+				</div>
+			</div>
+			{{/each}}
 		</ul>
 	</div>
-
-
-	</div>
+</div>
   
 
 	<script src="https://code.jquery.com/jquery.js"></script>

@@ -41,6 +41,18 @@ li a{
      margin:2% 8% 0% 8%;
 }
 
+.row{
+     padding:0%;
+     margin: 0%;  
+}
+
+#eachRow{
+     background-color: #CBDBF7;
+     border-radius: 15px;
+     padding:1% 0% 1% 0%;
+     margin: 1% 0% 1% 0%;
+}
+
 /*.secondRow{
      margin:4% 8% 10% 8%;
 }*/

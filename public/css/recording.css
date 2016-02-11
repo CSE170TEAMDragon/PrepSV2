@@ -79,6 +79,10 @@ h1{
      background-color: #FFFFFF;
 }
 
+.availableQuestion li{
+     list-style-type: n
+}
+
 .availableQuestion button{
      border: 1px solid #FFFFFF;
      cursor:pointer;

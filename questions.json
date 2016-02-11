@@ -1,11 +1,14 @@
 {
 	"questionText": [
-		{ 	"question": "Tell me about yourself and your interests",
+		{ 	"question": "Tell me about yourself",
 			"id": "question1"
 		},
 
-		{ 	"question": "What are your experiences in your field?",
+		{ 	"question": "What are your strengths?",
 			"id": "question2"
+		},
+		{ 	"question": "Why do you want this job? ",
+			"id": "question3"
 		}
 		],
 
@@ -13,15 +16,15 @@
 	"lockedQuestionText": [
 
 		{ 	"question": "Describe one project you played a significant role in",
-			"id": "question3"
+			"id": "lockedQuestion4"
 		},
 
 		{ 	"question": "What is one setback in your past project? How did you overcome it?",
-			"id": "question4"
+			"id": "lockedQuestion5"
 		},
 
 		{ 	"question": "How many golfballs can fit in a school bus?",
-			"id": "question5"
+			"id": "lockedQuestion6"
 		}
 		]
 }
