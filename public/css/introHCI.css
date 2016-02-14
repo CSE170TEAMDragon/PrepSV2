@@ -19,7 +19,6 @@ body {
      width: 100%;
      height: 100%;
      position: relative;
-     /*background: url("../images/green1.jpg");*/
      background: url('http://images.freepicturesweb.com/img1/15/10/5.jpg');
      background-size: cover;
      text-align: center;
@@ -44,10 +43,6 @@ body {
 .jumbotron a {
      margin-top: 10px;
      font-size: 20px;
-}
-
-.project a {
-     text-align: center;
 }
 
 .jumbotron p.active {
@@ -76,16 +71,15 @@ body {
 .imageDesc p{
      
      width: 300px;
-     height: 200px;
+     height: 114px;
      background-position: center;
      background-size: cover;
      color: #000000;
 }
 
 #startButton {
-     margin-top: 2%;
+     margin-top: 0%;
      text-align: center;
-     color: ;
 }
 
 
@@ -93,12 +87,15 @@ h2{
      color: #1f6ddd;
 }
 
-
-#imgDsc p {
-     color: #000000;
+.imageDesc p{
+     font-size: 80px;
 }
 
-.myButton2 {
+/*#imgDsc p {
+     color: #000000;
+}*/
+
+/*.myButton2 {
      -moz-box-shadow:inset 0px -3px 7px 0px #29bbff;
      -webkit-box-shadow:inset 0px -3px 7px 0px #29bbff;
      box-shadow:inset 0px -3px 7px 0px #29bbff;
@@ -138,4 +135,4 @@ h2{
 .myButton2:active {
      position:relative;
      top:1px;
-}
+}*/

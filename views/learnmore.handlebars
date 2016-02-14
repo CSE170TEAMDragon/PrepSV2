@@ -6,6 +6,7 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="/css/learnmore.css">
     <link rel="stylesheet" href="/css/hamburgerbar.css">
+  <link href="css/bootstrapTest.css" rel="stylesheet">
 
 
 </head>
@@ -24,50 +25,81 @@
   </div>
   <!-- this is a comment in HTML -->
     <div class="main">
-      <div class="title">
-          <h2>Learn More</h2>
-          <p>The Road to Success Begins Here...</p>
+      <div class="title"><!-- 
+          <p>Learn More</p> -->
+          <h1>The Road to Success Begins Here </h1>
+                <h4 id="paragraph"> Engage to unlock  questions &middot; Gain confidence &middot; Prepare to Succeed</h4>
       </div>
 
      
       <div class="body">
       
-        <h1 class="header"><i><u>About</u></i></h1>
+  <!--       <h1 class="header"><i><u>About</u></i></h1>
         <div class= "aboutP" style="color:black">
-        <p><b>The saying goes "Practice makes perfect" but have you ever practiced your interview?
+        <p>The saying goes "Practice makes perfect" but have you ever practiced your interview?
         Don't worry, Prep-s has you covered. We will provide a simulation of the interview 
         process by offering questions you may potentially encounter. You will then have a chance
         to deliver a verbal response as you would in an interview. With guided feedbacks based on
         what interviewers anticipate in each question, you can improve your future response to 
-        the question.</b></p>
+        the question.</p>
         </div>
+ -->
+  
 
-        <p id="paragraph" style="color:green"><b>* Engage to unlock more questions &middot; Gain confidence for your interview &middot; Maximize your chance
-        for receiving an offer *<b></p>
+<div class="panel panel-info" style="margin:4% 8% 3% 8%">
+  <div class="panel-heading" >
+    <h2 class="panel-title" style="text-align:center; font-size: 26px" >About </h2>
+  </div>
+  <div class="panel-body" id="aboutPar">
+     <p>The saying goes "Practice makes perfect" but how often to you practice your interview?
+        Don't worry, Prep-S has you covered. Using Prep-S, you can practice delivering a verbal response to interview questions and receive feedback on ways to improve. </p>
+  </div>
+</div>
 
+
+
+<div class="panel panel-info" style="margin:4% 8% 3% 8%">
+  <div class="panel-heading" >
+    <h2 class="panel-title" style="text-align:center; font-size: 26px" > How It Works</h2>
+  </div>
+  <div class="panel-body" id="instrPar">
+    <ol>
+          <li><p>Log in or register.</p></li>
+          <li><p>Select an interview question to challenge yourself.</p> <h10>  Note: Answer available questions to unlock more questions.<h10></li><!-- 
+          <li><p>After reading the question, take some time to think about it</p></li> -->
+          <li><p>Think about your response and click record.</p></li>
+          <li><p>Verbally deliver your response.</p></li>
+          <li><p>Fill out the self-evaluation form to assess your performance.</p> <h10>  Besure to rate yourself honestly, as it will reflect areas that have room for improvement. <h10></li>
+          <li><p>If you are a registered user, you may view your achievements. Otherwise, please register to utilize this feature.</p></li>
+
+        </ol>
+  </div>
+</div>
+
+<!-- 
         <h1 class="header"><i><u>How It Works?</u></i></h1>
 
         <div class= "aboutP" style="color:black">
         <ol>
-          <li><h2><b>Login to your account,register for a new account, or enter guest mode.</b></h2></li>
-          <li><h2><b>Select a question on Questions page and begin to challenge yourself.</b></h2> <h4> (Note: Some questions may be locked and will require you to answer all unlocked questions first before they become accessible.)<h4></li>
-          <li><h2><b>After reading the question, take some time to think about it</b></h2></li>
-          <li><h2><b>Are you ready? Click 'Start' to record your response to the question.</b></h2></li>
-          <li><h2><b>Once finished, you may plackback or download the recording.</b></h2></li>
-          <li><h2><b>Next, fill out the self-evaluation to assess your performance</b></h2></li>
-          <li><h2><b>Be sure to HONESTLY rate yourself because you can always improve yourself.</b></h2></li>
-          <li><h2><b>If you are a registered user, you may view your achievements. Otherwise, please register to utilize this feature.</b></h2></li>
+          <li><p>Login to your account,register for a new account, or enter guest mode.</p></li>
+          <li><p>Select a question on Questions page and begin to challenge yourself.</p> <h4> (Note: Some questions may be locked and will require you to answer all unlocked questions first before they become accessible.)<h4></li>
+          <li><p>After reading the question, take some time to think about it</p></li>
+          <li><p>Are you ready? Click 'Start' to record your response to the question.</p></li>
+          <li><p>Once finished, you may plackback or download the recording.</p></li>
+          <li><p>Next, fill out the self-evaluation to assess your performance</p></li>
+          <li><p>Be sure to HONESTLY rate yourself because you can always improve yourself.</p></li>
+          <li><p>If you are a registered user, you may view your achievements. Otherwise, please register to utilize this feature.</p></li>
 
         </ol>
-        </div>
+        </div> -->
 
       </div>
 
-      <div class="button">
-      <a href = "/login" >
-          <button id="startButton" class="myButton2">Let's Get Started</button> 
-      </a>
-      </div>
+       <button type="button" class="btn btn-primary" id="startButton" >
+          <a href="/login">
+          Let's Get Started
+          </a>
+     </button>
 
       <script src="https://code.jquery.com/jquery.js"></script>
       <script src="js/bootstrap.min.js"></script>
