@@ -18,6 +18,13 @@ h2{
      margin: 1% 5% 0% 5%;
 }
 
+div .levels{
+     text-align: center;
+     background-color: #FFFFFF;
+     margin-left: 40%;
+     margin-right: 40%;
+}
+
 .container {
     background: url('http://images.freepicturesweb.com/img1/15/10/5.jpg');
     background-size: cover;
