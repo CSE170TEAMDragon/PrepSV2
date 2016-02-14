@@ -16,6 +16,8 @@ function initializePage() {
 
 }
 
+
+// JavaScript for Hamburger Bar
 $( ".cross" ).hide();
 $( ".menu" ).hide();
 $( ".hamburger" ).click(function() {
@@ -32,5 +34,17 @@ $( ".hamburger" ).show();
 });
 });
 
+// JavaScript for Level popup window
+$('.myButton').click(function () {
+	$('#overlay').fadeIn('slow');
+	$('#popupBox').fadeIn('slow');
+	$('#popupContent').fadeIn('slow');    
+});
+
+$('#overlay, .cancel').click(function () {
+	$('#overlay').fadeOut('slow');
+	$('#popupBox').fadeOut('slow');
+	$('#popupContent').fadeOut('slow');    
+});
 
 
