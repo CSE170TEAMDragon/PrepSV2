@@ -2,8 +2,7 @@
 
 <head>
   <title>Login/Registration</title>
-  <link rel="stylesheet" href="/css/normalize.css">
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/css/login.css">
   <link rel="stylesheet" href="/css/hamburgerbar.css">
 </head>
 
@@ -21,54 +20,37 @@
     </ul>
   </div> 
 
-	<h2 class = "header"> Login </h2>
-  <section class="loginform cf">
-    <form method="get" accept-charset="utf-8" action="/question">
-      <ul>
+  <form class="form" method="get" accept-charset="utf-8" action="/question">
+    <h1 class = "header"> Login </h1>
+    <div class = "loginform">
+      <label for="username">Username</label>
+      <input required type="text" class="inputBox" placeholder="username">
+    </div>
+    <div class = "loginform">
+      <label for="password">Password</label>
+      <input required type="password" class="inputBox" placeholder="password">
+    </div>
+    <input type="submit" id="button" class="btn btn-default" value="Login"></input>
 
-        <li>
-          <label>Username</label>
-          <input required type="text" placeholder="username">
-        </li>
-
-        <li>
-          <label >Password</label>
-          <input required type="password" placeholder="password">
-        </li>
-        
-        <li>
-          <input id="loginButton" type="submit" value="Login">
-        </li>
-
-      </ul>
-    </form>
-  </section>
+  </form>
 
   <h1 class = "header"><b>~~~~~ OR ~~~~~</b></h1> 
-  <h2 class = "header"> Registration </h2>
 
-  <section class="loginform cf">
-    <form method="get" accept-charset="utf-8" action= "/question">
-      <ul>
+    <form class="form" method="get" accept-charset="utf-8" action="/question">
+    <h1 class = "header"> Register </h1>
+    <div class = "regform">
+      <label for="username">Username</label>
+      <input required type="text" class="inputBox" placeholder="username">
+    </div>
+    <div class = "regform">
+      <label for="password">Password</label>
+      <input required type="password" class="inputBox" placeholder="password">
+    </div>
+    <input type="submit" id="button" class="btn btn-default" value="Register"></input>
 
-        <li>
-          <label>Username</label>
-          <input required type="text" placeholder="username">
-        </li>
+  </form>
 
-        <li>
-          <label >Password</label>
-          <input required type="password" placeholder="password">
-        </li>
-        
-        <li>
-          <input id= "regButton" type="submit" value="Register">
-        </li>
-
-      </ul>
-    </form>
-  </section>
-
+  </div>
 
   <script src="https://code.jquery.com/jquery.js"></script>
   <script src="js/bootstrap.min.js"></script>
