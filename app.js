@@ -52,7 +52,7 @@ app.get('/achievement', achievement.viewAchievement);
 app.get('/evalsHistory', evalsHistory.viewHistory);
 app.get('/evaluation', evaluation.viewEvaluation);
 app.get('/feedback', feedback.viewFeedback);
-app.get('/recording', recording.viewRecording);
+app.get('/recording/:name', recording.viewRecording);
 
 
 
