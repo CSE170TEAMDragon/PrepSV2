@@ -7,6 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+	 <link href="css/bootstrapTest.css" rel="stylesheet">
 	<link href="css/question.css" rel="stylesheet">
 	<link rel="stylesheet" href="/css/hamburgerbar.css">
 	<link href="css/font-awesome-4.5.0/css/font-awesome.css" rel="stylesheet">
@@ -33,7 +34,7 @@
 
 	<div class= "container">
 	<div class="jumbotron">
-			<h1>Questions</h1>
+			<h1 class="headingText">Questions</h1>
 	</div>
 
 
@@ -51,25 +52,22 @@
 	    </div>
     </div>
 
-
-	<h2> Choose a question to begin. </h2>
+<div class="bodyContainer">
+	<h3> Choose a question to begin. </h3>
 	<div class="unlockedquestionBox">
 		<ul>
 			{{#each questionText}}
 
-			<div class="row">	
-				<div class="col-md-1">
-				</div>
+		
 
-				<div class="availableQuestion" class="col-md-11" id="{{id}}">
+				<div class="availableQuestion" id="{{id}}">
 			
 					<a href="/recording/{{question}}">
-						<li><button class = "questionButton" id={{id}}>{{question}}</button></li>
+						<li><button class = "questionButton" id="{{id}}">{{question}}</button></li>
 					</a>
 				</div>
 
-			</div>
-
+			
 			{{/each}}
 		</ul>
 	</div>
@@ -79,22 +77,17 @@
 		<ul>
 
 			{{#each lockedQuestionText}}
-			
-			<div class="row">	
-				<div class="col-md-1">
-				</div>
 
-				<div class="lockedQuestion" class="col-md-11" id="{{id}}">
+				<div class="lockedQuestion" id="{{id}}">
 					<li><i class="fa fa-lock fa-2x" style="padding-left:2%" ><button><p class = "lockedMsg">Answer previous questions to unlock</p></button></i></li>
 				</div>
-			</div>
 			{{/each}}
 		</ul>
 	</div>
 
 </div>
   
-
+</div>
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/introHCI.js"></script>

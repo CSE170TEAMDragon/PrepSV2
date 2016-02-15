@@ -1,5 +1,5 @@
 html{
- 	background: url('http://images.freepicturesweb.com/img1/15/10/5.jpg');
+     background: url('../images/Table1.jpg');
     background-size: cover;
 }
 
@@ -7,33 +7,59 @@ html{
 	text-align: center;
 }
 
-.loginform{
+/*.loginform{
 	padding: 2%;
 }
 
 .regform{
 	padding: 2%;
-}
+}*/
 
 
 h1{
 	text-align: center;
-	margin-top: 6%;
-	margin-bottom: 5%;
+	margin-top: 2%;
+	margin-bottom: 2%;
 }
 
 form{
 	background-color: rgba(255, 255, 255, 0.5);
-	margin-left: 30%;
-	margin-right: 30%;
+     margin-top: 50px;
+     padding-top: 5px;
+     padding-bottom: 20px;
+/*	margin-left: 30%;
+	margin-right: 30%;*/
 }
 
 body{
 	max-height: 100%;
 	max-width: 100%;
+     line-height: 1.5;
+     background-color: transparent;
+
+}
+
+#logInBox{
+     margin: 10% 15% 10% 15%;
+     margin-top: 10px;
+     width: 250px;
+}
+
+.form{
+     width: 340px;
+     margin:auto;
+     text-align:center;
+}
+
+.inputBox{
+     /*margin: 5px 0px 5px;*/
+     margin-top: 10px;
 }
 
 #button{
+     margin-top: 10px;
+}
+/*#button{
 	margin-top: 3%;
 	-moz-box-shadow:inset 0px -3px 7px 0px #29bbff;
      -webkit-box-shadow:inset 0px -3px 7px 0px #29bbff;
@@ -80,4 +106,5 @@ body {
 #button:active {
      position:relative;
      top:1px;
-}
+}*/
+

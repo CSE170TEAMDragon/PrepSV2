@@ -12,9 +12,18 @@
 h1{
     text-align: center;
     width: 100%;
+/*    font-size: 46px;*/
 }
 
-h2{
+.headingText{
+    text-align: center;
+    font-size: 40px;
+     padding: 10px 0px 10px 0px;
+     margin-top: 0px;
+     margin-bottom: 0px;
+}
+
+h3{
      margin: 1% 5% 0% 5%;
 }
 
@@ -25,18 +34,24 @@ div .levels{
      margin-right: 40%;
 }
 
+p{
+    margin:0px;
+}
+
 .container {
-    background: url('http://images.freepicturesweb.com/img1/15/10/5.jpg');
+    background: url('../images/Table1.jpg');
     background-size: cover;
     height: 100%;
     width: 100%;
+        background-color: rgba(255, 255, 255, 0.5);
 }
 
 .jumbotron {
      position: relative;
      text-align: center;
      background-color: #FFFFFF;
-     margin-bottom: 2%;
+     margin:2% 0% 2%;
+     padding: 10px 0px 10px;
      /*padding-bottom: 0%;*/
     
 }
@@ -68,21 +83,17 @@ div .levels{
 
 .unlockedquestionBox ul{
      list-style-type: decimal;
-     margin: 2% 5% 2% 5%;
-     width: 90%;
-     height: 50%;
+             font-size: 18px;
 }
 
 .lockedquestionBox ul{
      list-style-type: none;
-     margin: 2% 5% 2% 5%;
-     width: 90%;
-     height: 50%;
+        font-size: 18px;
 }
 
 .availableQuestion{
-     margin: 12px;
-     font-size: 22px;
+     margin: 16px; 
+     margin-top: 30px;
      background-color: #FFFFFF;
 }
 
@@ -93,6 +104,7 @@ div .levels{
      font-size: 22px;
      text-decoration:none;
      margin: 12px;
+     padding:10px;
 }
 
 .lockedQuestion button{
@@ -102,12 +114,12 @@ div .levels{
      font-size: 22px;
      text-decoration:none;
      margin: 12px;
+     padding:10px;
 }
 
 .lockedQuestion{
-     margin: 12px;
+     margin: 30px;
      opacity: .7;
-     font-size: 22px;
      background-color: #A5A6A6;
 }
 

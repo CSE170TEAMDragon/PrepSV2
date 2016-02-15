@@ -43,8 +43,13 @@ h1{
 	text-align: center;
 }
 
+h4{
+     margin-bottom: 6%;
+}
+
 .button{
-     margin-top: 40px;
+     margin-top: 18%;
+     margin: auto;
 }
 
 #paragraph{
@@ -54,6 +59,12 @@ h1{
 
 .aboutP {
      background-color: rgba(255, 255, 255, 0.7);
+}
+
+.buttonClass{
+     text-align: center;
+     margin-top: 7%;
+     margin-bottom: 4%
 }
 
 

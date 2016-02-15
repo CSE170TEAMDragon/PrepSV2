@@ -2,8 +2,10 @@
 
 <head>
   <title>Login/Registration</title>
-  <link rel="stylesheet" href="/css/login.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/css/hamburgerbar.css">
+    <link href="css/bootstrapTest.css" rel="stylesheet">
+      <link rel="stylesheet" href="/css/login.css">
 
 </head>
 
@@ -19,35 +21,36 @@
       <a href="/"><li>Home</li></a>
       <a href="/learnmore"><li>Learn More</li></a>
     </ul>
-  </div> 
+  </div>
 
-  <form class="form" method="get" accept-charset="utf-8" action="/question">
+
+  <form class="form" method="get" accept-charset="utf-8" action="/question" style="margin-top:50px">
     <h1 class = "header"> Login </h1>
     <div class = "loginform">
       <label for="username">Username</label>
-      <input required type="text" class="inputBox" placeholder="username">
+      <input required type="text" class="inputBox" >
     </div>
     <div class = "loginform">
       <label for="password">Password</label>
-      <input required type="password" class="inputBox" placeholder="password">
+      <input required type="password" class="inputBox">
     </div>
-    <input type="submit" id="button" class="btn btn-default" value="Login"></input>
+    <input type="submit" id="button" class="btn btn-primary" value="Login"></input>
 
   </form>
 
-  <h1 class = "header"><b>~~~~~ OR ~~~~~</b></h1> 
 
-  <form class="form" method="get" accept-charset="utf-8" action="/question">
+
+  <form class="form" method="get" accept-charset="utf-8" action="/question" style="margin-top:50px">
     <h1 class = "header"> Register </h1>
     <div class = "regform">
       <label for="username">Username</label>
-      <input required type="text" class="inputBox" placeholder="username">
+      <input required type="text" class="inputBox">
     </div>
     <div class = "regform">
       <label for="password">Password</label>
-      <input required type="password" class="inputBox" placeholder="password">
+      <input required type="password" class="inputBox">
     </div>
-    <input type="submit" id="button" class="btn btn-default" value="Register"></input>
+    <input type="submit" id="button" class="btn btn-primary" value="Register"></input>
 
   </form>
 
