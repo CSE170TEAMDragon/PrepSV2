@@ -6,25 +6,37 @@
 
 		{ 	"question": "What are your strengths? ",
 			"id": "question2"
-		},
-		{ 	"question": "Why do you want this job? ",
-			"id": "question3"
 		}
 		],
 
 
 	"lockedQuestionText": [
 
+		{ 	"question": "Why do you want this job? ",
+			"id": "question3"
+		},
 		{ 	"question": "Describe one project you played a significant role in",
-			"id": "lockedQuestion4"
+			"id": "question4"
 		},
 
 		{ 	"question": "What is one setback in your past project? How did you overcome it?",
-			"id": "lockedQuestion5"
+			"id": "question5"
 		},
 
 		{ 	"question": "How many golfballs can fit in a school bus?",
-			"id": "lockedQuestion6"
+			"id": "question6"
+		},
+		{ 	"question": "How do you resolve conflicts in a team?",
+			"id": "question7"
+		},
+		{ 	"question": "What makes you a great candicate for the position and for our company?",
+			"id": "question8"
+		},
+		{ 	"question": "Describe yourself with three words and for each word, explain why you chose it?",
+			"id": "question9"
+		},
+		{ 	"question": "Explain your time management ability and how you approach difficult problems?",
+			"id": "question10"
 		}
 		]
 }

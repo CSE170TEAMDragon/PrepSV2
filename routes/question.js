@@ -2,6 +2,11 @@ var questionData = require('../questions.json');
 
 
 exports.viewQuestion = function(req, res) {
-	console.log("Navigating to questions page (added change)");
+
+	if( questionData['lockedQuestionText'].length != 0){
+		var json = questionData['lockedQuestionText'].pop();
+		questionData["questionText"].push(json);
+	}
+
 	res.render('question', questionData);
 };

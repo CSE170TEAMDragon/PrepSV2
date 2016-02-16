@@ -7,8 +7,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+	<link href="css/question.css" rel="stylesheet">
 	<link href="css/recording.css" rel="stylesheet">
-	<link rel="stylesheet" href="/css/learnmore.css">
+	<link href="css/learnmore.css" rel="stylesheet">
+
 	<link rel="stylesheet" href="/css/hamburgerbar.css">
 
 </head>
@@ -29,7 +31,7 @@
     	<a href="/question"><li>Questions</li></a>
     	<a href="/login"><li>Log out</li></a>
   	</ul>
-	</div> 
+	</div>
 
 	<div class= "container">
 		<div class="jumbotron">
@@ -39,7 +41,7 @@
 		<div class="unlockedquestionBox">
 		<ul>
 			<div class="availableQuestion">
-				<button>Tell me about yourself and your interests</button>
+				<button>{{questionChosen}}?</button>
 			</div>
 		</ul>
 		</div>
@@ -48,11 +50,9 @@
 
 		<div class="button">
       	<a href = "/evaluation" >
-          <button id="doneButton" class="myButton2">Done Recording</button> 
+          <button id="doneButton" class="myButton">Done Recording</button> 
       	</a>
       	</div>
-
-      	<h3> Here is the question: {{questionChosen}} </h3>
   
       </div>
 	<script src="https://code.jquery.com/jquery.js"></script>

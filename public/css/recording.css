@@ -1,11 +1,8 @@
-/* applies to anything of class "example-class-selector" */
 .example-class-selector {
 	margin-top: 2em;
 }
 
-/* applies to any <p> descendants of an element of class "example-class-selector" */
 .example-class-selector p {
-	/* Colors are in hexadecimal: http://www.colorpicker.com/ */	
 	color: #CC00AA;
 }
 
@@ -15,10 +12,11 @@ h1{
 }
 
 .container {
-    background: url('http://images.freepicturesweb.com/img1/15/10/5.jpg');
+    background: url('../images/Table1.jpg');
     background-size: cover;
     height: 100%;
     width: 100%;
+        background-color: rgba(255, 255, 255, 0.5);
 }
 
 .jumbotron {
@@ -170,6 +168,5 @@ h2{
      position:relative;
      top:1px;
 }
-
 
 
