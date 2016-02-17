@@ -1,6 +1,6 @@
 {
 	"questionText": [
-		{ 	"question": "Tell me about yourself and your interests",
+		{ 	"question": "Tell me about yourself and your interests.",
 			"id": "question1"
 		},
 
@@ -32,10 +32,10 @@
 		{ 	"question": "What makes you a great candicate for the position and for our company?",
 			"id": "question8"
 		},
-		{ 	"question": "Describe yourself with three words and for each word, explain why you chose it?",
+		{ 	"question": "Describe yourself with three words and for each word, explain why you chose it.",
 			"id": "question9"
 		},
-		{ 	"question": "Explain your time management ability and how you approach difficult problems?",
+		{ 	"question": "Explain your time management ability and how you approach difficult problems.",
 			"id": "question10"
 		}
 		]
