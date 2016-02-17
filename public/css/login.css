@@ -1,5 +1,6 @@
 html{
-     background: url('../images/Table1.jpg');
+     /*background: url('../images/Table1.jpg');*/
+     background: url("https://blog.getkisi.com/wp-content/uploads/2015/03/interesting-office-designs-white.jpg");
      background-size: cover;
 }
 
