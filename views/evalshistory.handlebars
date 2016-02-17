@@ -25,7 +25,7 @@
 	<header>
   			<button class="hamburger">&#9776;</button>
   			<button class="cross">&#735;</button>
-  			<p class="myButton2">Level 1: Stiffy</p>
+  			<p class="myButton">{{levelName}}</p>
 	</header>
 
 	<div class="menu">
@@ -44,7 +44,7 @@
 			<h1>Self-Evals History</h1>
 		</div>	
 
-		{{#each history}}
+		{{#each data}}
 		<div id= "eachDiv" class= {{id}}>
       		<h2>{{position}}</h2>
         	<h4>Checked Items:</h4>

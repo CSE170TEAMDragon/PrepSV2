@@ -1,42 +1,93 @@
 {
 	"questionText": [
 		{ 	"question": "Tell me about yourself and your interests.",
-			"id": "question1"
+			"id": "0",
+			"answered": "0"
 		},
-
 		{ 	"question": "What are your strengths? ",
-			"id": "question2"
+			"id": "1",
+			"answered": "0"
 		}
-		],
+	],
 
 
 	"lockedQuestionText": [
 
 		{ 	"question": "Why do you want this job? ",
-			"id": "question3"
+			"id": "9",
+			"answered": "0"
 		},
 		{ 	"question": "Describe one project you played a significant role in",
-			"id": "question4"
+			"id": "8",
+			"answered": "0"
 		},
 
 		{ 	"question": "What is one setback in your past project? How did you overcome it?",
-			"id": "question5"
+			"id": "7",
+			"answered": "0"
 		},
 
 		{ 	"question": "How many golfballs can fit in a school bus?",
-			"id": "question6"
+			"id": "6",
+			"answered": "0"
 		},
 		{ 	"question": "How do you resolve conflicts in a team?",
-			"id": "question7"
+			"id": "5",
+			"answered": "0"
 		},
 		{ 	"question": "What makes you a great candicate for the position and for our company?",
-			"id": "question8"
+			"id": "4",
+			"answered": "0"
 		},
 		{ 	"question": "Describe yourself with three words and for each word, explain why you chose it.",
-			"id": "question9"
+			"id": "3",
+			"answered": "0"
 		},
 		{ 	"question": "Explain your time management ability and how you approach difficult problems.",
-			"id": "question10"
+			"id": "2",
+			"answered": "0"
 		}
-		]
+	],
+
+	"unlockedPoses": [
+		{ 	
+			"imgsrc": "http://cdn.gamesaints.com/c/ga/cover/4f/iron-man-star-war/iron-man-star-war.jpg?v=1426131631"
+		}
+	],
+
+	"lockedPoses": [
+		{ 	
+			"imgsrc": "http://cdn.gameomg.me/c/gom/cover/06/spider-man-future-adventure/spider-man-future-adventure.jpg?v=1419822840"
+		},
+		{
+			"imgsrc": "http://www.comicplanetcultureforlife.com/wp-content/uploads/2016/01/superman-mjolnir-200x200.jpg"
+		},
+		{
+			"imgsrc": "http://rs281.pbsrc.com/albums/kk202/mafranklin_2008/Captain_America.jpg~c200"
+		},
+		{ 	
+			"imgsrc": "http://www.hdwallpapersnew.net/wp-content/uploads/2015/05/black-widow-in-the-avengers-wide-hd-new-wallpaper-free-beautiful-desktop-images-200x200.jpg"
+		}
+	],
+
+
+	"level" : "0",
+	
+	"levelNames" : [
+		{
+			"name" : "Level 1: Stiffy"
+		},
+		{
+			"name" : "Level 2: Novice"
+		},
+		{
+			"name" : "Level 3: Achiever"
+		},
+		{
+			"name" : "Level 4: Master"
+		},
+		{
+			"name" : "Level 5: Legendary"
+		}
+	]
 }

@@ -18,7 +18,7 @@
 	<header>
   			<button class="hamburger">&#9776;</button>
   			<button class="cross">&#735;</button>
-  			<p class="myButton">Level 1: Stiffy</p>
+  			<p class="myButton">{{levelName}}</p>
 
 	</header>
 
@@ -31,7 +31,7 @@
   	</ul>
 	</div>
 
-	</h3>{{questionSelected}}</h3>
+	<h4 class= "questionBox"><b>Current Question:</b> {{questionSelected}}</h4>
 
 
 <div class="pageTitle">
@@ -157,7 +157,7 @@
       	</a>
  -->
      <button type="button" class="btn btn-primary" id="donebutton"style=" float:right">
-    	<a href="/feedback">
+    	<a href="/feedback?q={{questionSelected}}&id={{id}}">
     	Continue
 	    </a>
     </button>

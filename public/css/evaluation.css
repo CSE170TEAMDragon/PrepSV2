@@ -33,6 +33,10 @@ li a{
      margin:2% 8% 10% 8%;
 }
 
+.questionBox{
+     margin:2% 8% 5% 8%;
+}
+
 #donebutton{
      margin: 10% 4%;
 }
@@ -97,4 +101,20 @@ li a{
 }
 /*.secondRow{
      margin:4% 8% 10% 8%;
+}*/
+
+/*.availableQuestion{
+     margin: 16px; 
+     margin-top: 30px;
+     background-color: #FFFFFF;
+}
+
+.availableQuestion button{
+     border: 1px solid #FFFFFF;
+     cursor:pointer;
+     background-color:#ffffff;
+     font-size: 22px;
+     text-decoration:none;
+     margin: 12px;
+     padding:10px;
 }*/

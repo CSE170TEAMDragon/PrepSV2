@@ -18,7 +18,7 @@
 	<header>
   		<button id="top" class="hamburger">&#9776;</button>
   		<button class="cross">&#735;</button>
-  		<a class="myButton">Level 1: Stiffy</a>
+  		<a class="myButton">{{levelName}}</a>
 	</header>
 
 
@@ -60,7 +60,7 @@
 
 				<div class="availableQuestion" id="{{id}}">
 			
-					<a href="/recording?q={{question}}">
+					<a href="/recording?q={{question}}&id={{id}}">
 						<li><button class = "questionButton" id="{{id}}">{{question}}</button></li>
 					</a>
 				</div>

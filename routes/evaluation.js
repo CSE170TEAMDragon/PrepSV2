@@ -1,6 +1,15 @@
+var questionData = require('../questions.json');
 
 exports.viewEvaluation = function(req, res) {
-	// var question = req.params.question;
-	// console.log(" ' " + question + " ' was the question selected");
-	res.render('evaluation');
+	var question = req.query.q;
+	var name2 = req.query.id;
+
+	var lvl = parseInt(questionData['level']);
+	var lvlName = questionData['levelNames'][lvl]['name'];
+
+	res.render('evaluation', {
+		"questionSelected" : question,
+		"id" : name2,
+		"levelName" : lvlName
+	});
 }

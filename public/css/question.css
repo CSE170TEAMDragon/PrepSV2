@@ -83,7 +83,7 @@ p{
 
 .unlockedquestionBox ul{
      list-style-type: decimal;
-             font-size: 18px;
+     font-size: 18px;
 }
 
 .lockedquestionBox ul{
@@ -121,21 +121,6 @@ p{
      margin: 30px;
      opacity: .7;
      background-color: #A5A6A6;
-}
-
-.lockedMsg{
-     color:white;
-}
-
-.lockedMessageBox p{
-     width: 200px;
-     height: 200px;
-     position: absolute;
-     margin: 300px;
-}
-
-.lockMessage p{
-     padding-left: 18px;
 }
 
 .myButton {

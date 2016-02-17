@@ -21,7 +21,7 @@
 	<header>
   			<button class="hamburger">&#9776;</button>
   			<button class="cross">&#735;</button>
-  	  		<p class="myButton">Level 1: Stiffy</p>
+  	  		<p class="myButton">{{levelName}}</p>
 
 	</header>
 
@@ -35,10 +35,9 @@
 	</div>
 
 
-<h2> {{originalQuestion}} </h2>
+<h4 class= "questionBox"><b>Current Question:</b> {{originalQuestion}} </h4>
 
 <div class="feedbackBox">
-
 
 	<h3 class = "feedbackTitle"> Great work on the following: </h3>
 
@@ -53,12 +52,7 @@
 	</div> <!-- end of row -->
 	
 
-
-
 	<h3 class = "feedbackTitle"> These have room for improvement: </h3>
-	
-
-
 	
 	<div class="row" >
 	<div class="col-xs-1"> </div>
@@ -78,7 +72,7 @@
 	<a href="https://www.youtube.com/watch?v=Ks-_Mh1QhMc" > Why Power Poses? Click here to learn more.</a>
 
     <button type="button" class="btn btn-primary" style="float:right" id="backToQuestion">
-    	<a href="/question">
+    	<a href="/question?q={{originalQuestion}}&id={{id}}">
     	Back to Questions 
 	    </a>
     </button>

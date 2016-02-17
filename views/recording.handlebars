@@ -19,7 +19,7 @@
 	<header>
   		<button class="hamburger">&#9776;</button>
   		<button class="cross">&#735;</button>
-  		<p class="myButton">Level 1: Stiffy</p>
+  		<p class="myButton">{{levelName}}</p>
 	</header>
 
 	<div class="menu">
@@ -48,7 +48,7 @@
 		<iframe src="http://vocaroo.com/?minimal" width="500" height="200" frameborder="0"></iframe><br>
 
 		<div class="button">
-      	<a href = "/evaluation" >
+      	<a href = "/evaluation?q={{questionChosen}}&id={{id}}" >
           <button class="btn btn-primary">Done Recording</button> 
       	</a>
       	</div>

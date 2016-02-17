@@ -19,7 +19,7 @@
 	<header>
   			<button class="hamburger">&#9776;</button>
   			<button class="cross">&#735;</button>
-  			<p class="myButton">Level 1: Stiffy</p>
+  			<p class="myButton">{{levelName}}</p>
 	</header>
 
 	<div class="menu">
@@ -39,11 +39,10 @@
 
 
 		<h3>Badges Earned: <h5 style="color:green">[one per level]</h5></h3>
-		<div>
-			<img src="http://cdn.gamesaints.com/c/ga/cover/4f/iron-man-star-war/iron-man-star-war.jpg?v=1426131631" alt=""  /> 
-			<!--<img src="http://cdn.gameomg.me/c/gom/cover/06/spider-man-future-adventure/spider-man-future-adventure.jpg?v=1419822840" alt=""  />
-			<img src="http://cdn.puzzlegames.la/c/pg/cover/1c/batman-jigsaw-puzzle/batman-jigsaw-puzzle.jpg?v=1419820644" alt="" />
-			<img src="http://www.comicplanetcultureforlife.com/wp-content/uploads/2016/01/superman-mjolnir-200x200.jpg" alt=""  /> -->
+	<div>
+		{{#each unlockedPoses}}
+			<img src="{{imgsrc}}" alt=""> 
+		{{/each}}
 		</div>
 
 		<h3 id="questionHeader">Answered Questions:</h3>
@@ -51,15 +50,11 @@
 
 		<div class="questionBox">
 		<ul><a href="/evalsHistory">
+			{{#each answeredQuestion}}
 			<div class="availableQuestion">
-				<li><button>Tell me about yourself and your interests</button></li>
+				<li><button>{{question}}</button></li>
 			</div>
-			<div class="availableQuestion">
-				<li><button>What is one project you worked on?</button></li>
-			</div>	
-			<div class="availableQuestion">
-				<li><button>Name three words/phrases that describe you and for each word, justify why you chose it.</button></li>
-			</div>
+			{{/each}}
 			</a>
 		</ul>
 
