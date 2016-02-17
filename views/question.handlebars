@@ -7,7 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
-	 <link href="css/bootstrapTest.css" rel="stylesheet">
+	<link href="css/bootstrapTest.css" rel="stylesheet">
 	<link href="css/question.css" rel="stylesheet">
 	<link rel="stylesheet" href="/css/hamburgerbar.css">
 	<link href="css/font-awesome-4.5.0/css/font-awesome.css" rel="stylesheet">
@@ -31,7 +31,6 @@
   	</ul>
 	</div>
 
-
 	<div class= "container">
 	<div class="jumbotron">
 			<h1 class="headingText">Questions</h1>
@@ -40,13 +39,14 @@
 
 	<div id="overlay"></div>
 	<div id="popupBox">
-		<div id="popupContent"><i>Level Names:</i><br/>
+		<div id="popupContent"><i><b>Level Names:</b></i><br/>
 	        <span style="text-align:center;color:black;font-size:10px;">
 	        <p><font size="3">Level 1: Stiffy</font></p>
 			<p><font size="3">Level 2: Novice</font><p>
 			<p><font size="3">Level 3: Achiever</font></p>
 			<p><font size="3">Level 4: Master</font></p>
-			<p><font size="3">Level 5: Legendary</font></p>
+			<p><font size="3">Level 5: Legendary</font></p><br/>
+			<p id= "lvlP"><i><font size="3">*Each level represents your current ability stage to succeed in interviews.</font></i></p>
 	        </span><br/>
 	    <button class="cancel">Close</button>
 	    </div>
@@ -58,11 +58,9 @@
 		<ul>
 			{{#each questionText}}
 
-		
-
 				<div class="availableQuestion" id="{{id}}">
 			
-					<a href="/recording/{{question}}">
+					<a href="/recording?q={{question}}">
 						<li><button class = "questionButton" id="{{id}}">{{question}}</button></li>
 					</a>
 				</div>

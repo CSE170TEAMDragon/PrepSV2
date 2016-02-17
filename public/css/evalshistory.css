@@ -9,9 +9,9 @@
 .jumbotron {
      position: relative;
      text-align: center;
-     padding: auto;
-     background: #FFFFFF;
-     background-size: cover;
+     background-color: #FFFFFF;
+     margin:2% 0% 2%;
+     padding: 10px 0px 10px;
 }
 
 .body{
