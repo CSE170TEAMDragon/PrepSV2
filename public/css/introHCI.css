@@ -1,28 +1,19 @@
-/* applies to anything of class "example-class-selector" */
 .example-class-selector {
      margin-top: 2em;
 }
 
-/* applies to any <p> descendants of an element of class "example-class-selector" */
 .example-class-selector p {
      /* Colors are in hexadecimal: http://www.colorpicker.com/ */     
      color: #CC00AA;
 }
 
-/* this style exists to make it obvious that you've successfully linked
-   the CSS to the page. feel free to remove it once the link is working. */
-/*body {
-     border: 1px dotted gray;
-}*/
 
 h1 {
      padding-top: 10%;
 }
 
 .jumbotron {
-     /*width: 100%;*/
      height: 50%;
-/*     margin-top: 5%;*/
      position: relative;
      background: url('../images/Office9_resize.jpg');
      background-size: cover;
@@ -44,7 +35,6 @@ h1 {
 
 .jumbotron p {
      color: #6e6e6e;
-/*     margin-top: 20px;*/
 }
 
 .jumbotron a {
@@ -60,6 +50,7 @@ h1 {
 .homeImages {
      margin-top: 5%;
 }
+
 
 .desContainer {
      margin-top: 5%;
@@ -93,6 +84,7 @@ h1 {
 h2{
      color: #1f6ddd;
 }
+
 
 .imageDesc p{
      font-size: 80px;
