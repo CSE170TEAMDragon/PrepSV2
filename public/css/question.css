@@ -112,6 +112,7 @@ p{
      text-align: left;
      background-color: rgba(255, 255, 255, 0.5);
      color: black;
+     width: 100%;
 }
 
 .lockedQuestion button{
@@ -121,11 +122,11 @@ p{
      font-size: 22px;
      text-decoration:none;
      padding:20px;
-     padding-top: 0px;
 }
 
 .lockedQuestion{
      margin: 12px;
+     margin-top: 30px;
      opacity: .7;
      background-color: #A5A6A6;
 }
