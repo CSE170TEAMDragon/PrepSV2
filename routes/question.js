@@ -13,13 +13,8 @@ exports.viewQuestion = function(req, res) {
 		questionData['questionText'][name2]['answered'] = "1";;
 	}
 
-	for( x = 0; x < hisData['answeredQuestion'].length; x++ )
-		hisData['answeredQuestion'].pop();
-
 	for( i = 0; i < questionData['questionText'].length; i++) {
 		if( questionData['questionText'][i]['answered'] === "1"){
-			var json = questionData['questionText'][i];
-			hisData['answeredQuestion'].push( json );
 			numAns= numAns + 1;
 		}
 	}
