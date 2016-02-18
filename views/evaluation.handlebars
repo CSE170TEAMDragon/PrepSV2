@@ -39,123 +39,55 @@
 	<h4> Evaluate the quality of your response. How well did you convey the following: </h4>
 	</div>
 
-<div class="evaluationBox" >
-	<div class="columnHeadings">
-	<div class="row" >
-		<div class="col-xs-6"> </div>
-		<div class="col-xs-2">
-			<p style="margin-top:50px" align="center"> Poor</p>
-		</div>
-		<div class="col-xs-2">
-			<p style="margin-top:50px" align="center"> Decent</p>
-		</div>
-		<div class="col-xs-2">
-			<p style="margin-top:50px" align="center"> Great</p>
-		</div>
+
+
+	<div class="evaluationBox">
+
+		<div class="columnHeadings">
+			<div class="row" >
+				<div class="col-xs-6"> </div>
+				<div class="col-xs-2">
+					<p style="margin-top:50px" align="center"> Poor</p>
+				</div>
+				<div class="col-xs-2">
+					<p style="margin-top:50px" align="center"> Okay</p>
+				</div>
+				<div class="col-xs-2">
+					<p style="margin-top:50px" align="center"> Great</p>
+				</div>
 <!-- 		<div class="col-xs-1"> </div> -->
-	</div> <!-- end row -->
-	</div> <!-- end column headings -->
+			</div> <!-- end row -->
+		</div> <!-- end column headings -->
 
-
-	<div class="evalList">
+		{{#each evalBox}}
 		<div class="row" id="eachRow">
 
-		<div class="col-xs-6">
-			<p> Brief introduction of name, major, and field of interest  </p>
-		</div>
+			<div class="col-xs-6">
+				<p> {{text}} </p>
+			</div>
 
-		<div class="col-xs-2" align="center">
-		<label class="radio-inline">
-		  <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> </label>
-		 </div>
+			<div class="col-xs-2" align="center">
+				<label class="radio-inline">
+			  		<input type="radio" name="inlineRadioOptions{{evalID}}" id="inlineRadio1" value="option1"> </label>
+			 </div>
 
-		<div class="col-xs-2" align="center">
-		<label class="radio-inline">
-		  <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> </label>
-		  </div>
+			<div class="col-xs-2" align="center">
+				<label class="radio-inline">
+				  <input type="radio" name="inlineRadioOptions{{evalID}}" id="inlineRadio2" value="option2"> </label>
+		  	</div>
 
-		<div class="col-xs-2" align="center">
-		<label class="radio-inline">
-		  <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> </label>
-		</div>
-
-	<!-- 	<div class="col-xs-1"> </div> -->
+			<div class="col-xs-2" align="center">
+				<label class="radio-inline">
+				  <input type="radio" name="inlineRadioOptions{{evalID}}" id="inlineRadio3" value="option3"> </label>
+			</div>
 
 		</div>	<!-- end row -->
+		{{/each}}
 	</div>
 
-<!-- this will be the second row. Need to implement "each" at some point -->
-
-<div class="secondRow">
-
-<div class="row" id="eachRow">
-
-		<div class="col-xs-6">
-			<p> Briefly highlight specific experience or accomplishments in your field </p>
-		</div>
-
-		<div class="col-xs-2" align="center">
-		<label class="radio-inline">
-		  <input type="radio" name="inlineRadioOptions2" id="inlineRadio1" value="option1"> </label>
-		  </div>
-
-		<div class="col-xs-2" align="center">
-		<label class="radio-inline">
-		  <input type="radio" name="inlineRadioOptions2" id="inlineRadio2" value="option2"> </label>
-		  </div>
-
-		<div class="col-xs-2" align="center">
-		<label class="radio-inline">
-		  <input type="radio" name="inlineRadioOptions2" id="inlineRadio3" value="option3"> </label>
-		</div>
-
-<!-- 		<div class="col-xs-1"> </div> -->
-
-	</div>
-
-  </div>  <!-- end secondRow-->
 
 
 
-  <div class="thirdRow">
-
-<div class="row" id="eachRow">
-
-		<div class="col-xs-6">
-			<p> Briefly describe one strong characteristic that makes you stand out 
- </p>
-		</div>
-
-		<div class="col-xs-2" align="center">
-		<label class="radio-inline">
-		  <input type="radio" name="inlineRadioOptions3" id="inlineRadio1" value="option1"> </label>
-		  </div>
-
-		<div class="col-xs-2" align="center">
-		<label class="radio-inline">
-		  <input type="radio" name="inlineRadioOptions3" id="inlineRadio2" value="option2"> </label>
-		  </div>
-
-		<div class="col-xs-2" align="center">
-		<label class="radio-inline">
-		  <input type="radio" name="inlineRadioOptions3" id="inlineRadio3" value="option3"> </label>
-		</div>
-
-		<!-- <div class="col-xs-1"> </div> -->
-
-	</div>
-
-  </div>  <!-- end thirdRow-->
-
-
-
-
-
-  
-<!-- 	<a href = "/evaluation" >
-          <button id="doneButton" class="myButton2">Continue</button> 
-      	</a>
- -->
      <button type="button" class="btn btn-primary" id="donebutton"style=" float:right">
     	<a href="/feedback?q={{questionSelected}}&id={{id}}">
     	Continue

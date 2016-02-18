@@ -39,8 +39,8 @@
 	
 		<div class="unlockedquestionBox">
 		<ul>
-			<div class="availableQuestion">
-				<button>{{questionChosen}}</button>
+			<div class="availableQuestion" id="{{id}}">
+				<p>{{questionChosen}}</p>
 			</div>
 		</ul>
 		</div>
@@ -49,7 +49,7 @@
 
 		<div class="button">
       	<a href = "/evaluation?q={{questionChosen}}&id={{id}}" >
-          <button class="btn btn-primary">Done Recording</button> 
+          <button class="btn btn-primary" id="recDone">Done Recording</button> 
       	</a>
       	</div>
   

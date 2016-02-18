@@ -9,7 +9,6 @@ $(document).ready(function() {
  * Function that is called when the document is ready.
  */
 function initializePage() {
-	// $(".lockedQuestion").click(questionClicked);
   $('.message a').click(function(){
    $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
 });
@@ -46,5 +45,10 @@ $('#overlay, .cancel').click(function () {
 	$('#popupBox').fadeOut('slow');
 	$('#popupContent').fadeOut('slow');    
 });
+
+
+
+
+
 
 

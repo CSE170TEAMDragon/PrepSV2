@@ -58,9 +58,14 @@ h1{
 }
 
 
-.container p{
+/*.container p{
      color: #FF7E4C;
      background-color: #FF7E4C;
+}*/
+
+.availableQuestion p {
+     padding:16px;
+     margin-bottom: 0px;
 }
 
 .unlockedquestionBox ul{
@@ -68,6 +73,7 @@ h1{
      margin: 5%;
      width: 90%;
      height: 50%;
+     padding: 0px;
 }
 
 .lockedquestionBox ul{
@@ -84,7 +90,7 @@ h1{
 }
 
 .availableQuestion li{
-     list-style-type: n
+     list-style-type: none;
 }
 
 .availableQuestion button{
