@@ -18,8 +18,15 @@
 
   <div class="menu">
    <ul>
-      <a href="/"><li>Home</li></a>
+      {{#if login}}
+      <a href="/question"><li>Question</li></a>
+      <a href="/achievement"><li>Achievement</li></a>
       <a href="/"><li>Log out</li></a>
+      {{else}}
+      <a href="/"><li>Home</li></a>
+      <a href="/login"><li>Login</li></a>
+      {{/if}}
+      
     </ul>
   </div>
   <!-- this is a comment in HTML -->

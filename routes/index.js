@@ -1,9 +1,11 @@
-
+var data = require ("../questions.json");
 /*
  * GET home page.
  */
 
 exports.view = function(req, res){
+  data["login"] = false;
+  
 	res.render('index', {
     'projects': [
       { 'name': 'Waiting in Line',
