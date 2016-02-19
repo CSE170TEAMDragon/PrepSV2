@@ -43,6 +43,8 @@ exports.viewQuestion = function(req, res) {
 	var lvl = parseInt(questionData['level']);
 	var lvlName = questionData['levelNames'][lvl]['name'];
 
+	questionData["login"] = true;
+
 	res.render('question', {
     	"lockedQuestionText" : questionData['lockedQuestionText'],    	
     	"questionText" : questionData['questionText'],

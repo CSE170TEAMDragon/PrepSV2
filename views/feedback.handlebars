@@ -11,6 +11,7 @@
 	<link href="css/feedback.css" rel="stylesheet">
 	<link href="css/font-awesome-4.5.0/css/font-awesome.css" rel="stylesheet">
 	<link href="css/feedback.css" rel="stylesheet">
+	<link href="css/levelbtn.css" rel="stylesheet">
 	<link rel="stylesheet" href="/css/hamburgerbar.css">
 
 
@@ -27,9 +28,9 @@
 
 	<div class="menu">
  	 <ul>
-   		<a href="/"><li>Home</li></a>
     	<a href="/achievement"><li>Achievement</li></a>
     	<a href="/question"><li>Questions</li></a>
+      	<a href="/learnmore"><li>Learn More</li></a>
     	<a href="/"><li>Log out</li></a>
   	</ul>
 	</div>
@@ -41,10 +42,11 @@
 
 	<h2 class = "feedbackTitle"> Great work! Here are some notes to help improve your response. </h2>
 
+	{{> popup}}
+
 	<h3 style="margin-top:40px"> {{Notes}} </h3>
 
-
-	<h4 style="margin-top:12%"> To earn a Badge and LEVEL UP, answer all available questions.</h4>
+	<h4 style="margin-top:12%;color:gray"> *Important: To earn a Badge and LEVEL UP, answer all available questions.</h4>
 
     <button type="button" class="btn btn-primary" style="float:right" id="backToQuestion">
     	<a href="/question?q={{originalQuestion}}&id={{id}}">

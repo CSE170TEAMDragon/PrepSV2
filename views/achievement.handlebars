@@ -9,6 +9,7 @@
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
 	<link href="css/achievement.css" rel="stylesheet">
+	<link href="css/levelbtn.css" rel="stylesheet">
 	<link rel="stylesheet" href="/css/hamburgerbar.css">
 
 
@@ -19,14 +20,13 @@
 	<header>
   			<button class="hamburger">&#9776;</button>
   			<button class="cross">&#735;</button>
-  			<a class="myButton">{{levelName}}</a>
+  			<p class="myButton">{{levelName}}</p>
 	</header>
 
 	<div class="menu">
  	 <ul>
-   		<a href="/"><li>Home</li></a>
-    	<a href="/achievement"><li>Achievement</li></a>
     	<a href="/question"><li>Questions</li></a>
+    	<a href="/learnmore"><li>Learn More</li></a>
     	<a href="/"><li>Log out</li></a>
   	</ul>
 	</div>
@@ -36,6 +36,8 @@
 		<div class="jumbotron">
 			<h1>Achievement</h1>
 		</div>
+
+		{{> popup}}
 
 		<h3>Badges Earned: <h5 style="color:green">[one per level]</h5></h3>
 	<div>
@@ -48,13 +50,14 @@
 		<h5 style="color:green"> [click a question to view its past self-evaluations]</h5>
 
 		<div class="questionBox">
-		<ul><a href="/evalsHistory">
+		<ul>
 			{{#each answeredQuestion}}
 			<div class="availableQuestion">
+				<a href="/evalsHistory?id={{id}}">
 				<li><button>{{question}}</button></li>
+				</a>
 			</div>
 			{{/each}}
-			</a>
 		</ul>
 
 	</div>

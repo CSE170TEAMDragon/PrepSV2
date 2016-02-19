@@ -45,6 +45,7 @@ $('#overlay, .cancel').click(function () {
 	$('#popupContent').fadeOut('slow');    
 });
 
+
 function great(e){
 	// var eval = $(this).closest('.row').find("p").text();
 	console.log('eval');

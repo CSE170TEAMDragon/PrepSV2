@@ -1,4 +1,6 @@
+var data = require ("../questions.json");
+
 exports.view = function(req, res) { 
   // controller code goes here 
-    res.render('learnmore');
+    res.render('learnmore', data);
 };
