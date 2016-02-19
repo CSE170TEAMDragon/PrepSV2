@@ -19,8 +19,9 @@
   <div class="menu">
    <ul>
       {{#if login}}
-      <a href="/question"><li>Question</li></a>
-      <a href="/achievement"><li>Achievement</li></a>
+      <a href="/question"><li>Questions</li></a>
+      <a href="/question"><li>Achievement</li></a>
+      <a href="/learnmore"><li>Learn More</li></a>
       <a href="/"><li>Log out</li></a>
       {{else}}
       <a href="/"><li>Home</li></a>
@@ -102,13 +103,17 @@
         </div> -->
 
       </div>
-      <div class="buttonClass">
+
+    {{#if login}}
+    {{else}}
+    <div class="buttonClass">
        <button type="button" class="btn btn-primary" id="startButton" >
           <a href="/login">
           Let's Get Started
           </a>
      </button>
    </div>
+   {{/if}}
 
       <script src="https://code.jquery.com/jquery.js"></script>
       <script src="js/bootstrap.min.js"></script>

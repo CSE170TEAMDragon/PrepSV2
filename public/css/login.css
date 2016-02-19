@@ -18,8 +18,7 @@ form{
 	background-color: rgba(255, 255, 255, 0.5);
      margin-top: 50px;
      padding-top: 5px;
-     padding-bottom: 20px;
-
+     padding-bottom: 30px;
 }
 
 body{
@@ -43,7 +42,6 @@ body{
 }
 
 .inputBox{
-     /*margin: 5px 0px 5px;*/
      margin-top: 10px;
 }
 
