@@ -9,6 +9,12 @@
 	color: #CC00AA;
 }
 
+html{
+     background: url('../images/table1copy.jpg');
+     background-size: cover;
+}
+
+
 h1{
     text-align: center;
     width: 100%;
@@ -40,11 +46,19 @@ p{
 }
 
 .container {
-    background: url('../images/table1copy.jpg');
-    background-size: cover;
+/*    background: url('../images/table1copy.jpg');
+    background-size: cover;*/
     height: 100%;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.5);
+/*    background-color: rgba(255, 255, 255, 0.5);*/
+}
+
+
+body{
+    max-height: 100%;
+    max-width: 100%;
+     background-color: transparent;
+
 }
 
 .jumbotron {

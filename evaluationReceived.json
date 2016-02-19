@@ -1,0 +1,52 @@
+{
+	"great": [
+		{ 	"question": "Tell me about yourself and your interests.",
+			"id": "0",
+			"answered": "0"
+		},
+		{ 	"question": "What are your strengths? ",
+			"id": "1",
+			"answered": "0"
+		}
+	],
+
+
+	"notgreat": [
+
+		{ 	"question": "Why do you want this job? ",
+			"id": "9",
+			"answered": "0"
+		},
+		{ 	"question": "Describe one project you played a significant role in",
+			"id": "8",
+			"answered": "0"
+		},
+
+		{ 	"question": "What is one setback in your past project? How did you overcome it?",
+			"id": "7",
+			"answered": "0"
+		},
+
+		{ 	"question": "How many golfballs can fit in a school bus?",
+			"id": "6",
+			"answered": "0"
+		},
+		{ 	"question": "How do you resolve conflicts in a team?",
+			"id": "5",
+			"answered": "0"
+		},
+		{ 	"question": "What makes you a great candicate for the position and for our company?",
+			"id": "4",
+			"answered": "0"
+		},
+		{ 	"question": "Describe yourself with three words and for each word, explain why you chose it.",
+			"id": "3",
+			"answered": "0"
+		},
+		{ 	"question": "Explain your time management ability and how you approach difficult problems.",
+			"id": "2",
+			"answered": "0"
+		}
+	]
+
+}

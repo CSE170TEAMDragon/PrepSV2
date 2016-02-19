@@ -18,19 +18,19 @@
 			]	
 	},
 	{
-			"question": "2. What are your strengths?",
+			"question": "2. What are your greatest professional strengths?",
 			"id": "1",
 			"eval": [
 				{
-				 	"text": "Second. Brief introduction of name, major, and field of interest ",
+				 	"text": "Accurate identification of strength, not exaggerated or untrue ",
 				 	"evalID":"0"
 				 },
 				 {
-				 	"text": "Second. Briefly highlight specific experience or accomplishments in your field",
+				 	"text": "Strengths that align with the organization's needs",
 				 	"evalID":"1"
 				 },
 				 {
-				 	"text": "Second. Briefly describe one strong characteristic that makes you stand out " ,
+				 	"text": "Specific situation in which this strength helped you during your work " ,
 				 	"evalID":"2"
 				 }
 			]

@@ -33,43 +33,18 @@
     	<a href="/"><li>Log out</li></a>
   	</ul>
 	</div>
+<!-- 
 
-
-<h4 class= "questionBox"><b>Current Question:</b> {{originalQuestion}} </h4>
+<h4 class= "questionBox"><b>Current Question:</b> {{originalQuestion}} </h4> -->
 
 <div class="feedbackBox">
 
-	<h3 class = "feedbackTitle"> Great work on the following: </h3>
+	<h2 class = "feedbackTitle"> Great work! Here are some notes to help improve your response. </h2>
 
-	<div class="row" >
-	<div class="col-xs-1"> </div>
-
-	<div class="feedbackAdd" >
-	<button style="border-style:none; background-color:transparent"> <i class="fa fa-check-circle" class="col-xs-10" id="listItems"></i> Your name and major  </button>
-	</div> <!-- end of feedbackAdd -->
-
-	<div class="col-xs-1"> </div>
-	</div> <!-- end of row -->
-	
-
-	<h3 class = "feedbackTitle"> These have room for improvement: </h3>
-	
-	<div class="row" >
-	<div class="col-xs-1"> </div>
-
-	<div class="feedbackAdd" >
-	<button style="border-style:none; background-color:transparent"> <i class="fa fa-caret-right" class="col-xs-10" id="listItems"></i> Your interest in the field  </button>
-	</div> <!-- end of feedbackAdd -->
-
-	<div class="col-xs-1"> </div>
-	</div> <!-- end of row -->
+	<h3 style="margin-top:40px"> {{Notes}} </h3>
 
 
-
-
-	<h4 style="margin-top:8%"> To earn a new Badge and LEVEL UP, be sure to answer all the available questions.</h4>
-	<h4 style="margin-bottom:2%"> Remember to be honest and truthful.</h4>
-	<a href="https://www.youtube.com/watch?v=Ks-_Mh1QhMc" > Why Power Poses? Click here in a new tab to learn more.</a>
+	<h4 style="margin-top:12%"> To earn a Badge and LEVEL UP, answer all available questions.</h4>
 
     <button type="button" class="btn btn-primary" style="float:right" id="backToQuestion">
     	<a href="/question?q={{originalQuestion}}&id={{id}}">

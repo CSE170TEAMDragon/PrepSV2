@@ -6,10 +6,13 @@ exports.viewFeedback = function(req, res) {
 
 	var lvl = parseInt(questionData['level']);
 	var lvlName = questionData['levelNames'][lvl]['name'];
+	var feedback = questionData['questionText'][name2]['notes'];
+	console.log(feedback);
 
 	res.render('feedback', {
 		'originalQuestion': question,
 		'id' : name2,
-		'levelName' : lvlName
+		'levelName' : lvlName,
+		'Notes' : feedback
 	});
 }

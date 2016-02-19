@@ -9,12 +9,11 @@ $(document).ready(function() {
  * Function that is called when the document is ready.
  */
 function initializePage() {
+  $('#inlineRadio3').click(great);
   $('.message a').click(function(){
    $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
 });
-
 }
-
 
 // JavaScript for Hamburger Bar
 $( ".cross" ).hide();
@@ -46,6 +45,11 @@ $('#overlay, .cancel').click(function () {
 	$('#popupContent').fadeOut('slow');    
 });
 
+function great(e){
+	// var eval = $(this).closest('.row').find("p").text();
+	console.log('eval');
+	console.log($(this).find('p').text());
+}
 
 
 

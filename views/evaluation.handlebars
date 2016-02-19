@@ -30,13 +30,13 @@
     	<a href="/"><li>Log out</li></a>
   	</ul>
 	</div>
-
-	<h4 class= "questionBox"><b>Current Question:</b> {{questionSelected}}</h4>
+<!-- 
+	<h4 class= "questionBox"><b>Current Question:</b> {{questionSelected}}</h4> -->
 
 
 <div class="pageTitle">
 	<h2> Self-Evaluation</h2>
-	<h4> Evaluate the quality of your response. How well did you convey the following: </h4>
+	<h4> Evaluate your response to the question: "{{questionSelected}}"</h4>
 	</div>
 
 
@@ -68,17 +68,17 @@
 
 			<div class="col-xs-2" align="center">
 				<label class="radio-inline">
-			  		<input type="radio" name="inlineRadioOptions{{evalID}}" id="inlineRadio1" value="option1"> </label>
+			  		<input type="radio" name="inlineRadioOptions{{evalID}}" id="inlineRadio1" value="Poor"> </label>
 			 </div>
 
 			<div class="col-xs-2" align="center">
 				<label class="radio-inline">
-				  <input type="radio" name="inlineRadioOptions{{evalID}}" id="inlineRadio2" value="option2"> </label>
+				  <input type="radio" name="inlineRadioOptions{{evalID}}" id="inlineRadio2" value="Okay"> </label>
 		  	</div>
 
 			<div class="col-xs-2" align="center">
 				<label class="radio-inline">
-				  <input type="radio" name="inlineRadioOptions{{evalID}}" id="inlineRadio3" value="option3"> </label>
+				  <input type="radio" name="inlineRadioOptions{{evalID}}" id="inlineRadio3" value="Great"> </label>
 			</div>
 
 		</div>	<!-- end row -->

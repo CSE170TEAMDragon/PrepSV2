@@ -2,11 +2,13 @@
 	"questionText": [
 		{ 	"question": "Tell me about yourself and your interests.",
 			"id": "0",
-			"answered": "0"
+			"answered": "0",
+			"notes": "Through the question, the interviewer seeks to learn about you, your experiences, and your values. The goal here is to give a pitch that is concise, but convinces the interviewer that you are fit for the role."
 		},
-		{ 	"question": "What are your strengths? ",
+		{ 	"question": "What are your greatest professional strengths? ",
 			"id": "1",
-			"answered": "0"
+			"answered": "0",
+			"notes": "Research the organization and the position to help target strengths that are in need. Be sure to highlight qualities, skills, and/or experiences that set you apart from other candidates. "
 		}
 	],
 
@@ -22,7 +24,7 @@
 			"answered": "0"
 		},
 
-		{ 	"question": "What is one setback in your past project? How did you overcome it?",
+		{ 	"question": "Explain your time management ability and how you approach difficult problems.",
 			"id": "7",
 			"answered": "0"
 		},
@@ -43,7 +45,7 @@
 			"id": "3",
 			"answered": "0"
 		},
-		{ 	"question": "Explain your time management ability and how you approach difficult problems.",
+		{ 	"question": "What is one challenge in your past project? How did you overcome it? ",
 			"id": "2",
 			"answered": "0"
 		}
