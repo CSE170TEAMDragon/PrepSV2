@@ -29,6 +29,16 @@ h1{
     
 }
 
+.recordingPic{
+     background: url('../images/recording1.jpeg');
+     background-size: contain;
+     width: 100%;
+     height: 40%;
+     width:280px;
+     height:300px;
+
+}
+
 .button{
      text-align: center;
      height: 100%;
