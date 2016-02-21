@@ -2,8 +2,6 @@
     font-size: 10pt;
     background: url('../images/table1copy.jpg');
     background-size: cover;
-    height: 100%;
-    width: 100%;
 }
 
 .jumbotron {
@@ -11,20 +9,12 @@
      text-align: center;
      background-color: #FFFFFF;
      margin:2% 0% 2%;
-     padding: 10px 10px;
+     padding: 10px 0px 10px;
 }
 
-.body{
-     margin-right: 20px;
-     margin-left: 20px;
-}
 
-.body p{
-     font-size: 20px;
-     line-height:125%;
-     padding: 30px;
-     text-align: center;
-     margin-bottom: auto;
+#historyList {
+    text-align: left;
 }
 
 
@@ -49,7 +39,6 @@ div:after {
      width: 100%;
      background-color: #0D0221;
      background-size: 10% 100%;
-     margin: 0%;
      overflow: hidden;
 }
 
@@ -63,33 +52,6 @@ li a{
 }
 
 
-#barText4 {
-     float: right;
-     display:block;
-     margin-right: 3%;
-
-}
-
-/*.One {
-    display: inline-block;
-    margin-left: 20%;
-    margin-right: 15%;
-}
-
-.Two {
-    display: inline-block;
-    margin-right: 21%;
-}
-
-.Three {
-    display: inline-block;
-    margin-left: 20%;
-    margin-right: 20%;
-}
-
-.Four {
-    display: inline-block;
-}*/
 
 .myButton {
      float: right;
