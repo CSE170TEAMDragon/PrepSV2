@@ -24,39 +24,41 @@
   </div>
 
   <!--<div class = "jumbotron">-->
+  {{#if errorMsg}}
+    <h5 style="color:red; text-align: center">ERRORS:</br>{{errorStr}}</h5>
+  {{/if}}
 
-  <form class="form" method="get" accept-charset="utf-8" action="/question?q=empty&id=empty" style="margin-top:40px">
+  <form class="form" method="get" accept-charset="utf-8" action="/question" style="margin-top:25px">
     <h1 class = "header"> Login </h1>
     <div class = "loginform">
       <label for="username">Username</label>
-      <input required type="text" class="inputBox" >
+      <input required type="text" id="username1" name="username1" class="inputBox" >
     </div>
     <div class = "loginform">
       <label for="password">Password</label>
-      <input required type="password" class="inputBox">
+      <input required type="password" name="password1" id="password1" class="inputBox">
     </div>
-    <input type="hidden" name="q" value="empty" />
-
+    <input type="hidden" name="login" value="1">
     <input type="submit" id="button" class="btn btn-primary" value="Login">
   </input>
 
   </form></br>
 
-  <form class="form" method= "get" accept-charset="utf-8" action="/question?q=empty&id=empty" style="margin-top:30px">
+  <form class="form" method= "get" accept-charset="utf-8" action="/question" style="margin-top:30px">
     <h1 class = "header"> Register </h1>
     <div class = "regform">
       <label for="username">Username</label>
-      <input required type="text" class="inputBox">
+      <input required type="text" id= "username2" name="username2" class="inputBox">
     </div>
     <div class = "regform">
       <label for="password">Password</label>
-      <input required type="password" class="inputBox">
+      <input required type="password" id= "password2" name="password2" class="inputBox">
     </div>
     <div class = "regform">
       <label for="password">Confirm Password</label>
-      <input required type="password" class="inputBox">
+      <input required type="password" id="password3" name="password3" class="inputBox">
     </div>
-    <input type="hidden" name="q" value="empty" />
+    <input type="hidden" name="register" value="1">
     <input type="submit" id="button" class="btn btn-primary" value="Register"></input>
 
   </form>

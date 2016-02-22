@@ -1,10 +1,16 @@
 var data = require ("../logininfo");
 
 exports.viewProject = function(req, res) { 
-	/*var name = req.query.flag;
-	if( name === "1")
-    	res.render('login');
-    else
-    	res.json(data);*/
-    res.render ('login');
+	var error = req.query.error;
+	var errorStr = req.query.errorStr;
+
+	if( error == undefined)
+    	res.render ('login');
+    else{
+    	var flag = true;
+    	res.render ('login', {
+    		"errorMsg" : flag,
+    		"errorStr" : errorStr
+     	});
+    }
 };
