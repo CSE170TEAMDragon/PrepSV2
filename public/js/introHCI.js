@@ -9,7 +9,7 @@ $(document).ready(function() {
  * Function that is called when the document is ready.
  */
 function initializePage() {
-  $('#inlineRadio3').click(great);
+  $("#submitbutton").click(checkRadio);
   $('.message a').click(function(){
    $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
 });
@@ -46,14 +46,30 @@ $('#overlay, .cancel').click(function () {
 });
 
 
-function great(e){
-	// var eval = $(this).closest('.row').find("p").text();
-	console.log('eval');
-	console.log($(this).find('p').text());
+function checkRadio (e){
+	if( (document.getElementById("inlineRadio00").checked == true ||
+	   document.getElementById("inlineRadio01").checked == true ||
+	   document.getElementById("inlineRadio02").checked == true) && 
+	   (document.getElementById("inlineRadio10").checked == true ||
+		document.getElementById("inlineRadio11").checked == true ||
+		document.getElementById("inlineRadio12").checked == true) &&
+		(document.getElementById("inlineRadio20").checked == true ||
+		document.getElementById("inlineRadio21").checked == true ||
+		 document.getElementById("inlineRadio22").checked == true) ){
+			document.getElementById("donebutton").disabled = false;
+			var elem = document.getElementById("title");
+			var elem2 = $(elem).find(".error");
+			if( elem2.length != 0)
+				elem2.hide();
+		}
+	else {
+		var elem = document.getElementById("title");
+		var elem2 = $(elem).find(".error");
+		if( elem2.length == 0)
+			$(elem).append("<h6 class= \"error\" style=\"color:red\">Error: Please fill out the form completely by selecting a response per row.</h6>");
+	}
+
 }
-
-
-
 
 
 

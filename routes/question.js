@@ -10,11 +10,11 @@ exports.viewQuestion = function(req, res) {
 
 	if( name2 != undefined){
 		name2 = parseInt(name2);
-		questionData['questionText'][name2]['answered'] = "1";;
+		questionData['questionText'][name2]['answered'] = true;;
 	}
 
 	for( i = 0; i < questionData['questionText'].length; i++) {
-		if( questionData['questionText'][i]['answered'] === "1"){
+		if( questionData['questionText'][i]['answered'] === true){
 			numAns= numAns + 1;
 		}
 	}

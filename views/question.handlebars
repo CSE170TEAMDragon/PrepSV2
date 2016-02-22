@@ -48,7 +48,9 @@
 				<div class="availableQuestion" id="{{id}}">
 			
 					<a href="/recording?q={{question}}&id={{id}}">
-						<li><button class = "questionButton" id="{{id}}">{{question}}</button></li>
+						<li><button class = "questionButton" id="{{id}}">
+						{{#if answered}}<i class="fa fa-check" style="color:#269900">{{/if}}
+						{{question}}</i></button></li>
 					</a>
 				</div>
 

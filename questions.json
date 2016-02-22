@@ -2,12 +2,12 @@
 	"questionText": [
 		{ 	"question": "Tell me about yourself and your interests.",
 			"id": "0",
-			"answered": "0",
+			"answered": false,
 			"notes": "Through the question, the interviewer seeks to learn about you, your experiences, and your values. The goal here is to give a pitch that is concise, but convinces the interviewer that you are fit for the role."
 		},
 		{ 	"question": "What are your greatest professional strengths? ",
 			"id": "1",
-			"answered": "0",
+			"answered": false,
 			"notes": "Research the organization and the position to help target strengths that are in need. Be sure to highlight qualities, skills, and/or experiences that set you apart from other candidates. "
 		}
 	],
@@ -17,37 +17,37 @@
 
 		{ 	"question": "Why do you want this job? ",
 			"id": "9",
-			"answered": "0"
+			"answered": false
 		},
 		{ 	"question": "Describe one project you played a significant role in",
 			"id": "8",
-			"answered": "0"
+			"answered": false
 		},
 
 		{ 	"question": "Explain your time management ability and how you approach difficult problems.",
 			"id": "7",
-			"answered": "0"
+			"answered": false
 		},
 
 		{ 	"question": "How many golfballs can fit in a school bus?",
 			"id": "6",
-			"answered": "0"
+			"answered": false
 		},
 		{ 	"question": "How do you resolve conflicts in a team?",
 			"id": "5",
-			"answered": "0"
+			"answered": false
 		},
 		{ 	"question": "What makes you a great candicate for the position and for our company?",
 			"id": "4",
-			"answered": "0"
+			"answered": false
 		},
 		{ 	"question": "Describe yourself with three words and for each word, explain why you chose it.",
 			"id": "3",
-			"answered": "0"
+			"answered": false
 		},
 		{ 	"question": "What is one challenge in your past project? How did you overcome it? ",
 			"id": "2",
-			"answered": "0"
+			"answered": false
 		}
 	],
 

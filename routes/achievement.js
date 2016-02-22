@@ -12,7 +12,7 @@ exports.viewAchievement = function(req, res){
 
 
 	for( i = 0; i < questionData['questionText'].length; i++) {
-		if( questionData['questionText'][i]['answered'] === "1"){
+		if( questionData['questionText'][i]['answered'] === true){
 			var json = questionData['questionText'][i];
 			hisData['answeredQuestion'].push( json );
 		}

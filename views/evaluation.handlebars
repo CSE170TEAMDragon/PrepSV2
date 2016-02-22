@@ -36,10 +36,11 @@
 	<h4 class= "questionBox"><b>Current Question:</b> {{questionSelected}}</h4> -->
 
 
-<div class="pageTitle">
+<div class="pageTitle" id= "title">
 	<h2> Self-Evaluation</h2>
-	<h4> Evaluate your response to the question: "{{questionSelected}}"</h4>
-	</div>
+	<h4> Evaluate your response to the question: <b>"{{questionSelected}}"</b></h4>
+	<h6 style="color:green"> Click submit to validate your responses before continuing</h6>
+</div>
 
 	{{> popup}}
 
@@ -70,33 +71,34 @@
 
 			<div class="col-xs-2" align="center">
 				<label class="radio-inline">
-			  		<input type="radio" name="inlineRadioOptions{{evalID}}" id="inlineRadio1" value="Poor"> </label>
+			  		<input type="radio" name="inlineRadioOptions{{evalID}}" id="inlineRadio{{evalID}}0" value="Poor"> </label>
 			 </div>
 
 			<div class="col-xs-2" align="center">
 				<label class="radio-inline">
-				  <input type="radio" name="inlineRadioOptions{{evalID}}" id="inlineRadio2" value="Okay"> </label>
+				  <input type="radio" name="inlineRadioOptions{{evalID}}" id="inlineRadio{{evalID}}1" value="Okay"> </label>
 		  	</div>
 
 			<div class="col-xs-2" align="center">
 				<label class="radio-inline">
-				  <input type="radio" name="inlineRadioOptions{{evalID}}" id="inlineRadio3" value="Great"> </label>
+				  <input type="radio" name="inlineRadioOptions{{evalID}}" id="inlineRadio{{evalID}}2" value="Great"> </label>
 			</div>
 
 		</div>	<!-- end row -->
 		{{/each}}
+
 	</div>
 
+	<div id = "buttonDiv">
+		<button type="button" class="btn btn-primary" id="submitbutton" style=" float:left">Submit</button>
+		<button type="button" class="btn btn-primary" id="donebutton"style=" float:right" disabled>
+		   <a href="/feedback?q={{questionSelected}}&id={{id}}">
+    		Continue
+    		</a>
+    	</button>
+    </div>
+    
 
-
-
-     <button type="button" class="btn btn-primary" id="donebutton"style=" float:right">
-    	<a href="/feedback?q={{questionSelected}}&id={{id}}">
-    	Continue
-	    </a>
-    </button>
-
-   </div>
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/introHCI.js"></script>

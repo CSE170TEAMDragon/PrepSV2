@@ -9,7 +9,6 @@ exports.viewEvaluation = function(req, res) {
 	var lvlName = questionData['levelNames'][lvl]['name'];
 	var nEvals = evaluationCriteria[name2].eval.length;
 	var evalText = evaluationCriteria[name2].eval;
-	// console.log(evalText);
 
 	res.render('evaluation', {
 		"questionSelected" : question,

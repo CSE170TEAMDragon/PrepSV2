@@ -40,16 +40,20 @@
 
 		{{> popup}}
 
-		<h3>Badges Earned: <h5 style="color:green">[one per level]</h5></h3>
-	<div>
+	<div id="headingDiv">
+		<h3 >Badges Earned: <h5 style="color:green">[one per level]</h5></h3>
+	</div>
+
+	<div id="imgDiv">
 		{{#each unlockedPoses}}
 			<img src="{{imgsrc}}" alt=""> 
 		{{/each}}
-		</div>
+	</div>
 
+	<div id="headingDiv">
 		<h3 id="questionHeader">Answered Questions:</h3>
 		<h5 style="color:green"> [click a question to view its past self-evaluations]</h5>
-
+	</div>
 		<div class="questionBox">
 		<ul>
 			{{#each answeredQuestion}}

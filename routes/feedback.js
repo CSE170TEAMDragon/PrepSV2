@@ -1,6 +1,8 @@
 var questionData = require('../questions.json');
 
 exports.viewFeedback = function(req, res) {
+
+	console.log("SUp!");
 	var question = req.query.q;
 	var name2 = req.query.id;
 
