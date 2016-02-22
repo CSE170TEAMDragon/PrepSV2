@@ -2,8 +2,6 @@ var questionData = require('../questions.json');
 var hisData = require('../evals.json');
 var info = require('../logininfo.json');
 
-
-
 exports.viewQuestion = function(req, res) {
 	var name = req.query.q;
 	var name2 = req.query.id;
@@ -12,6 +10,9 @@ exports.viewQuestion = function(req, res) {
 	var loginFlag= false;
 	var registerFlag= false;
 	var normalFlag = false;
+
+	var loginErr = false;
+	var registerErr = false;
 
 	if( name != undefined && name2 != undefined){
 		var numAns = 0;
@@ -59,6 +60,7 @@ exports.viewQuestion = function(req, res) {
 			// what if login cannot be found?
 			if( loginFlag == false ){
 				errorStr = errorStr + "Login cannot be found";
+				loginErr= true;
 			}
 		}
 
@@ -73,6 +75,7 @@ exports.viewQuestion = function(req, res) {
 			for( j = 0; j < info['logintable'].length; j++){
 				if( info['logintable'][j]['username'] === username ){
 					errorStr = errorStr + "Username taken";
+					registerErr= true;
 					break;
 				}
 			}
@@ -80,6 +83,8 @@ exports.viewQuestion = function(req, res) {
 			if( password !== password2 ){
 				errorStr = errorStr + "; Passwords do not match";
 				pFlag = false;
+				registerErr= true;
+
 			}
 		
 			if( j == info['logintable'].length && pFlag) {
@@ -95,7 +100,10 @@ exports.viewQuestion = function(req, res) {
 	}
 
 
-	if( normalFlag || loginFlag || registerFlag ){
+	if( loginErr || registerErr){
+		res.redirect("/login?error=true&errorStr="+errorStr);
+	}
+	else {
 		var lvl = parseInt(questionData['level']);
 		var lvlName = questionData['levelNames'][lvl]['name'];
 
@@ -106,7 +114,5 @@ exports.viewQuestion = function(req, res) {
 	    	"questionText" : questionData['questionText'],
 	    	"levelName" : lvlName });
 	}
-	else{
-		res.redirect("/login?error=true&errorStr="+errorStr);
-	}
+	
 };
