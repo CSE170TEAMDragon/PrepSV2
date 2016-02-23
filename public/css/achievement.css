@@ -57,8 +57,11 @@ div img {
 #headingDiv {
     background-image: linear-gradient(to bottom,#d9edf7 0,#c4e3f3 100%);
     margin-bottom: 5%;
+    margin-top: 5%;
     height: 120%;
     width: 100%;
+    border-radius: 25px;
+    text-align: center;
 }
 
 #headingDiv h3{

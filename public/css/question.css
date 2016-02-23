@@ -12,6 +12,7 @@
 body{
      background: url('../images/table3.jpg');
      background-size: contain;
+     background-repeat: none;
 }
 
 
