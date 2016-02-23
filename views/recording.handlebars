@@ -33,8 +33,9 @@
 
 
 	<div class= "container">
-		<div class="jumbotron">
-			<h1>Current Question</h1>
+		<div class="jumbotron"  style="color:white">
+			<h2 style="margin-top:6px">Record your Response</h2>
+			<h4 style="margin-top:0px" > Answer as you would in an interview </h>
 		</div>
 	
 		{{> popup}}
@@ -47,12 +48,12 @@
 		</ul>
 		</div>
 
-		<div class="recordingPic"></div>
+		<div class="recordingPic"> </div>
 <!-- 
 		<iframe src="http://vocaroo.com/?minimal" width="500" height="200" frameborder="0"></iframe><br> -->
 
 		<div class="button">
-	          <button class="btn btn-primary" id="recDone" style="margin-top:20px">
+	          <button class="btn btn-primary" id="recDone" style="margin-top:20px; margin-bottom:20px">
 	          	<a href = "/evaluation?q={{questionChosen}}&id={{id}}" >
 	          		Done Recording
 	          	</a>

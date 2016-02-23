@@ -4,6 +4,11 @@
 
 }
 
+html{
+     background: url('../images/notepad3.jpg');
+     background-size: 100%;
+}
+
 .navBar ul{
      list-style-type: none;
      width: 100%;

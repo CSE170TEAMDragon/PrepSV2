@@ -15,39 +15,47 @@
 
 	"lockedQuestionText": [
 
-		{ 	"question": "Why do you want this job? ",
+		{ 	"question": "What do you think of your previous boss?",
 			"id": "9",
-			"answered": false
+			"answered": false,
+			"notes": "If you had a boss with good leadership, definitely express that. If not, find ways to be constructive in your response, ending on a positive note."
 		},
-		{ 	"question": "Describe one project you played a significant role in",
+		{ 	"question": "Why did you leave your previous job?",
 			"id": "8",
-			"answered": false
+			"answered": false,
+			"notes": "Don’t bad mouth your previous company. Also, don’t spend too much time on it, bring the conversation back to your results and reliability"
 		},
 
-		{ 	"question": "Explain your time management ability and how you approach difficult problems.",
+		{ 	"question": "What’s your ideal company?",
 			"id": "7",
-			"answered": false
+			"answered": false,
+			"notes": "It’s easy to focus on how you can benefit from an ideal company, but it’s more important to focus on how the ideal company enables your best work. "
 		},
 
-		{ 	"question": "How many golfballs can fit in a school bus?",
+		{ 	"question": "Describe your workstyle.",
 			"id": "6",
-			"answered": false
+			"answered": false,
+			"notes": "The interviewer wants to know how you can fit with the organization. Take this chance to portray yourself in a positive light (such as “I start at 7am, like to work collaboratively, plan my days, and prioritize my tasks”)."
 		},
-		{ 	"question": "How do you resolve conflicts in a team?",
+		{ 	"question": "Describe a difficult work situation and how you overcame it. ",
 			"id": "5",
-			"answered": false
+			"answered": false,
+			"notes": "The interviewer wants to know that you’re flexible and adaptable to situations. Be sure to show them your problem-solving skills when faced with challenges."
 		},
-		{ 	"question": "What makes you a great candicate for the position and for our company?",
+		{ 	"question": "What are your weaknesses?",
 			"id": "4",
-			"answered": false
+			"answered": false,
+			"notes": "The interviewer wants to ensure that your weakness isn’t an immediately needed skill and see your response under pressure of tough questions."
 		},
-		{ 	"question": "Describe yourself with three words and for each word, explain why you chose it.",
+		{ 	"question": "Why are you interested in working for this organization?",
 			"id": "3",
-			"answered": false
+			"answered": false,
+			"notes": "The interviewer wants to know that you’ve done research on the organization and thought about how you might add value. You can express this better if you understand the organization’s history, mission, and vision."
 		},
-		{ 	"question": "What is one challenge in your past project? How did you overcome it? ",
+		{ 	"question": "Why should we hire you?",
 			"id": "2",
-			"answered": false
+			"answered": false,
+			"notes": "Print the job description and highlight important elements. Detect key terms that indicate characteristics that are looked for, i.e. ‘team work’, ‘cross-functionality’, ‘problem-solving’"
 		}
 	],
 

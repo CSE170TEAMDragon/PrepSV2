@@ -1,6 +1,6 @@
 [
 	{
-			"question": "1. Tell me about yourself and your interests",
+			"question": "Tell me about yourself and your interests",
 			"id": "0",
 			"eval": [
 				 {
@@ -18,7 +18,7 @@
 			]	
 	},
 	{
-			"question": "2. What are your greatest professional strengths?",
+			"question": "What are your greatest professional strengths?",
 			"id": "1",
 			"eval": [
 				{
@@ -36,145 +36,141 @@
 			]
 	},
 	{
-			"question": "1. Tell me about yourself and your interests",
+			"question": "Why should we hire you?",
 			"id": "2",
 			"eval": [
 				 {
-				 	"text": "Brief introduction of name, major, and field of interest ",
+				 	"text": "Highlight the background/experience that makes you fit for the position",
 				 	"evalID":"0"
 				 },
 				 {
-				 	"text": "Briefly highlight specific experience or accomplishments in your field",
+				 	"text": "Be convincing that your skills and contribution will make their job easier and/or help solve problems",
 				 	"evalID":"1"
 				 },
 				 {
-				 	"text": "Briefly describe one strong characteristic that makes you stand out ",
+				 	"text": "Tell a “success story” demonstrating those skillsets",
 				 	"evalID":"2"
 				 }
 			]	
 	},
 	{
-			"question": "1. Tell me about yourself and your interests",
+			"question": "Why are you interested in working for this organization?",
 			"id": "3",
 			"eval": [
 				 {
-				 	"text": "Brief introduction of name, major, and field of interest ",
+				 	"text": "State the organization’s value, mission, culture, etc. that you identify with",
 				 	"evalID":"0"
 				 },
 				 {
-				 	"text": "Briefly highlight specific experience or accomplishments in your field",
+				 	"text": "Identify a skillset you have that fits well with the organization",
 				 	"evalID":"1"
 				 },
 				 {
-				 	"text": "Briefly describe one strong characteristic that makes you stand out ",
+				 	"text": "Focus on how the organization can benefit with your involvement and skillset",
 				 	"evalID":"2"
 				 }
 			]	
 	},
 	{
-			"question": "1. Tell me about yourself and your interests",
+			"question": "What are your weaknesses?",
 			"id": "4",
 			"eval": [
 				 {
-				 	"text": "Brief introduction of name, major, and field of interest ",
+				 	"text": "Be truthful. Describe weaknesses, not a strengths presented as weakness ('I work too hard') ",
 				 	"evalID":"0"
 				 },
 				 {
-				 	"text": "Briefly highlight specific experience or accomplishments in your field",
+				 	"text": "Be strategic. Select weakness(es) that you’ve been working to improve on",
 				 	"evalID":"1"
 				 },
 				 {
-				 	"text": "Briefly describe one strong characteristic that makes you stand out ",
+				 	"text": "Select concrete examples of attempts to overcome the weakness",
 				 	"evalID":"2"
 				 }
 			]	
 	},
 	{
-			"question": "1. Tell me about yourself and your interests",
+			"question": "Describe a difficult work situation and how you overcame it. ",
 			"id": "5",
 			"eval": [
 				 {
-				 	"text": "Brief introduction of name, major, and field of interest ",
+				 	"text": "Describe the context of the previous situation you had difficulty in ",
 				 	"evalID":"0"
 				 },
 				 {
-				 	"text": "Briefly highlight specific experience or accomplishments in your field",
+				 	"text": "Explain the actions to resolve the situation and highlight desirable traits that helped you do so",
 				 	"evalID":"1"
 				 },
 				 {
-				 	"text": "Briefly describe one strong characteristic that makes you stand out ",
+				 	"text": "Finish off with the result of your efforts, qualitatively and/or quantitatively",
 				 	"evalID":"2"
 				 }
 			]	
 	},
 	{
-			"question": "1. Tell me about yourself and your interests",
+			"question": "Describe your workstyle.",
 			"id": "6",
 			"eval": [
 				 {
-				 	"text": "Brief introduction of name, major, and field of interest ",
+				 	"text": "Identify yourself in the range between autonomous and collaborative. If you prefer autonomous, it’s best to show you are open to feedback",
 				 	"evalID":"0"
 				 },
 				 {
-				 	"text": "Briefly highlight specific experience or accomplishments in your field",
+				 	"text": "Express your preference between being given the goal and determining the steps to reach it, and being given all specific directions",
 				 	"evalID":"1"
 				 },
 				 {
-				 	"text": "Briefly describe one strong characteristic that makes you stand out ",
+				 	"text": "Describe how your best mode of communicate, whether through email, phone, and/or meetings",
 				 	"evalID":"2"
 				 }
 			]	
 	},
 	{
-			"question": "2. What are your greatest professional strengths?",
-			"id": "1",
+			"question": "What’s your ideal company?",
+			"id": "7",
 			"eval": [
 				{
-				 	"text": "Accurate identification of strength, not exaggerated or untrue ",
+				 	"text": "Recognize what the ideal workplace would look like for you (solo vs. collaborative; innovative vs. hierarchical, etc), focusing on realistic features, not extensive paid vacations and high salaries",
 				 	"evalID":"0"
 				 },
 				 {
-				 	"text": "Strengths that align with the organization's needs",
+				 	"text": "Demonstrate alignment in values with the ideal company",
 				 	"evalID":"1"
 				 },
 				 {
-				 	"text": "Specific situation in which this strength helped you during your work " ,
+				 	"text": "Express that the ideal environment enables you to work best and produce results" ,
 				 	"evalID":"2"
 				 }
 			]
 	},
 	{
-			"question": "2. What are your greatest professional strengths?",
-			"id": "1",
+			"question": "Why did you leave your previous job?",
+			"id": "8",
 			"eval": [
 				{
-				 	"text": "Accurate identification of strength, not exaggerated or untrue ",
+				 	"text": "Focus on results. List your accomplishments at the previous job and that you’re ready for another challenge",
 				 	"evalID":"0"
 				 },
 				 {
-				 	"text": "Strengths that align with the organization's needs",
+				 	"text": "Be polite, you can hint that the company you are applying for has qualities that make you perform at a higher level",
 				 	"evalID":"1"
-				 },
-				 {
-				 	"text": "Specific situation in which this strength helped you during your work " ,
-				 	"evalID":"2"
 				 }
 			]
 	},
 	{
-			"question": "2. What are your greatest professional strengths?",
-			"id": "1",
+			"question": "What do you think of your previous boss?",
+			"id": "9",
 			"eval": [
 				{
-				 	"text": "Accurate identification of strength, not exaggerated or untrue ",
+				 	"text": "Be positive, highlight good leadership qualities and what you learned from him/her",
 				 	"evalID":"0"
 				 },
 				 {
-				 	"text": "Strengths that align with the organization's needs",
+				 	"text": "Focus on your strengths and how the previous boss helped you develop it",
 				 	"evalID":"1"
 				 },
 				 {
-				 	"text": "Specific situation in which this strength helped you during your work " ,
+				 	"text": "Demonstrate professionalism and loyalty " ,
 				 	"evalID":"2"
 				 }
 			]

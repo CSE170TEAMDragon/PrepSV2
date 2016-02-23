@@ -7,102 +7,84 @@
     <link rel="stylesheet" href="/css/hamburgerbar.css">
   <link href="css/bootstrapTest.css" rel="stylesheet">
    <link rel="stylesheet" href="/css/learnmore.css">
+    <link href="css/introHCI.css" rel="stylesheet">
+  <link href="css/Slider.css" rel="stylesheet">
 
-</head>
+  </head>
+  
   <body>
 
     <header>
       <button class="hamburger">&#9776;</button>
       <button class="cross">&#735;</button>
-  </header>
+    </header>
 
-  <div class="menu">
-   <ul>
-      {{#if login}}
-      <a href="/question"><li>Questions</li></a>
-      <a href="/achievement"><li>Achievement</li></a>
-      <a href="/learnmore"><li>Learn More</li></a>
-      <a href="/"><li>Log out</li></a>
-      {{else}}
-      <a href="/"><li>Home</li></a>
-      <a href="/login"><li>Login</li></a>
-      {{/if}}
-      
-    </ul>
-  </div>
+    <div class="menu">
+      <ul>
+        {{#if login}}
+          <a href="/question"><li>Questions</li></a>
+          <a href="/achievement"><li>Achievement</li></a>
+          <a href="/learnmore"><li>Learn More</li></a>
+          <a href="/"><li>Log out</li></a>
+          {{else}}
+          <a href="/"><li>Home</li></a>
+          <a href="/login"><li>Login</li></a>
+          {{/if}}
+          
+        </ul>
+    </div>
   <!-- this is a comment in HTML -->
     <div class="main">
-      <div class="title"><!-- 
-          <p>Learn More</p> -->
-          <h1>The Road to Success Begins Here </h1>
-                <h4 id="paragraph"> Engage to unlock  questions &middot; Gain confidence &middot; Prepare to Succeed</h4>
+      <div class="title">
+            <img src="/images/PrepS.jpg" style="align:middle; width: 90%; margin-top:10px">
+                <h4 id="paragraph" style="margin-top:0px"> Engage to unlock  questions &middot; Gain confidence &middot; Prepare to Succeed</h4>
       </div>
 
      
       <div class="body">
-      
-  <!--       <h1 class="header"><i><u>About</u></i></h1>
-        <div class= "aboutP" style="color:black">
-        <p>The saying goes "Practice makes perfect" but have you ever practiced your interview?
-        Don't worry, Prep-s has you covered. We will provide a simulation of the interview 
-        process by offering questions you may potentially encounter. You will then have a chance
-        to deliver a verbal response as you would in an interview. With guided feedbacks based on
-        what interviewers anticipate in each question, you can improve your future response to 
-        the question.</p>
+
+        <div class="panel panel-info" style="margin:4% 8% 3% 8%">
+          <div class="panel-heading" >
+            <h2 class="panel-title" style="text-align:center; font-size: 26px" >About </h2>
+          </div>
+          <div class="panel-body" id="aboutPar">
+             <p>The saying goes "Practice makes perfect" but how often to you practice your interview?
+                Don't worry, Prep-S has you covered. Using Prep-S, you can practice delivering a verbal response to interview questions and receive feedback on ways to improve. </p>
+          </div>
         </div>
- -->
-  
 
-<div class="panel panel-info" style="margin:4% 8% 3% 8%">
-  <div class="panel-heading" >
-    <h2 class="panel-title" style="text-align:center; font-size: 26px" >About </h2>
+
+
+        <div class="panel panel-info" style="margin:4% 8% 3% 8%">
+          <div class="panel-heading" >
+            <h2 class="panel-title" style="text-align:center; font-size: 26px" > How It Works</h2>
+          </div>
+          <div class="panel-body" id="instrPar">
+            <ol>
+
+              <li><p>Select an interview question.</p> <h10>  Note: Answer available questions to unlock more questions.<h10></li>
+              <li style="padding-top:10px"><p>Click record and verbally deliver your response.</p></li>
+              <li style="padding-top:10px"><p>Fill out the self-evaluation form based on your response.</p> <h10>  Besure to rate yourself honestly, as it will reflect areas that have room for improvement. <h10></li>
+              <li style="padding-top:10px"><p>Receive feedback on ways to improve.</p></li>
+            </ol>
+
+              <p style="padding-top:10px; padding-bottom:10px; font-size:16px"> Level up by answering two available questions. In doing so, you will earn Power Pose Badges and acquire a new personal title.</p>
+
+              <a href="https://www.youtube.com/watch?v=Ks-_Mh1QhMc"> Why Power Poses? Click here to watch Amy Cuddy's TED talk on Power Poses.</a>
+          </div>
+        </div>
+
+    <div id="slider">
+        <a href="#" class="control_next">>></a>
+        <a href="#" class="control_prev"><<</a>
+          <ul>
+            <li><img src="images/img1.jpg"></li>
+            <li><img src="images/img2.jpg"></li>
+            <li><img src="images/img3.jpg"></li>
+          </ul> 
+    </div>
+
   </div>
-  <div class="panel-body" id="aboutPar">
-     <p>The saying goes "Practice makes perfect" but how often to you practice your interview?
-        Don't worry, Prep-S has you covered. Using Prep-S, you can practice delivering a verbal response to interview questions and receive feedback on ways to improve. </p>
-  </div>
-</div>
-
-
-
-<div class="panel panel-info" style="margin:4% 8% 3% 8%">
-  <div class="panel-heading" >
-    <h2 class="panel-title" style="text-align:center; font-size: 26px" > How It Works</h2>
-  </div>
-  <div class="panel-body" id="instrPar">
-    <ol>
-          <li><p>Log in or register.</p></li>
-          <li><p>Select an interview question to challenge yourself.</p> <h10>  Note: Answer available questions to unlock more questions.<h10></li><!-- 
-          <li><p>After reading the question, take some time to think about it</p></li> -->
-          <li><p>Think about your response and click record.</p></li>
-          <li><p>Verbally deliver your response.</p></li>
-          <li><p>Fill out the self-evaluation form to assess your performance.</p> <h10>  Besure to rate yourself honestly, as it will reflect areas that have room for improvement. <h10></li>
-          <li><p>Level up to earn Power Pose Badges, personal titles, and unlock more challenging interview questions.</p></li>
-
-        </ol>
-
-        <a href="https://www.youtube.com/watch?v=Ks-_Mh1QhMc" > Why Power Poses? Click here in a new tab to learn more.</a>
-  </div>
-</div>
-
-<!-- 
-        <h1 class="header"><i><u>How It Works?</u></i></h1>
-
-        <div class= "aboutP" style="color:black">
-        <ol>
-          <li><p>Login to your account,register for a new account, or enter guest mode.</p></li>
-          <li><p>Select a question on Questions page and begin to challenge yourself.</p> <h4> (Note: Some questions may be locked and will require you to answer all unlocked questions first before they become accessible.)<h4></li>
-          <li><p>After reading the question, take some time to think about it</p></li>
-          <li><p>Are you ready? Click 'Start' to record your response to the question.</p></li>
-          <li><p>Once finished, you may plackback or download the recording.</p></li>
-          <li><p>Next, fill out the self-evaluation to assess your performance</p></li>
-          <li><p>Be sure to HONESTLY rate yourself because you can always improve yourself.</p></li>
-          <li><p>If you are a registered user, you may view your achievements. Otherwise, please register to utilize this feature.</p></li>
-
-        </ol>
-        </div> -->
-
-      </div>
 
     {{#if login}}
     {{else}}
