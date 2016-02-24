@@ -84,7 +84,7 @@ li a{
 
 .myButton {
      float: right;
-     -moz-box-shadow:inset 4px 1px 15px 3px #23395e;
+     /*-moz-box-shadow:inset 4px 1px 15px 3px #23395e;
      -webkit-box-shadow:inset 4px 1px 15px 3px #23395e;
      box-shadow:inset 4px 1px 15px 3px #23395e;
      background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #2e466e), color-stop(1, #415989));
@@ -94,11 +94,12 @@ li a{
      background:-ms-linear-gradient(top, #2e466e 5%, #415989 100%);
      background:linear-gradient(to bottom, #2e466e 5%, #415989 100%);
      filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#2e466e', endColorstr='#415989',GradientType=0);
-     background-color:#2e466e;
+     background-color:#2e466e;*/
+     background-color: #647487;
      -moz-border-radius:29px;
      -webkit-border-radius:29px;
      border-radius:29px;
-     border:3px solid #1f2f47;
+    border:2px solid #3c4249;
      display:inline-block;
      cursor:pointer;
      color:#ffffff;
@@ -107,7 +108,8 @@ li a{
      padding:0px 13px;
      text-decoration:none;
      text-shadow:0px 0px 0px #263666;
-     height: 100%;
+     margin-top: 2px;
+     height: 90%;
 
 }
 .myButton:hover {

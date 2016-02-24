@@ -31,16 +31,19 @@
   	</ul>
 	</div>
 
+	{{> popup}}
+	
 	<div class= "container">
 	<div class="jumbotron" style="color:white">
 			<h2 class="headingText" >Questions</h2>
 			<h4 style="margin-top:0px" > Select a question to begin. </h>
 	</div>
-	{{> popup}}
 	
 	{{#if levelUp}}
 	{{> levelUp}}
 	{{/if}}
+
+
 <div class="bodyContainer">
 
 	<div class="unlockedquestionBox">
@@ -52,7 +55,9 @@
 					<a href="/recording?q={{question}}&id={{id}}">
 						<li><button class = "questionButton" id="{{id}}">
 						{{#if answered}}<i class="fa fa-check" style="color:#269900">{{/if}}
-						{{question}}</i></button></li>
+						{{question}}</i> </button></li>
+
+
 					</a>
 				</div>
 
