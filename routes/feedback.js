@@ -2,14 +2,13 @@ var questionData = require('../questions.json');
 
 exports.viewFeedback = function(req, res) {
 
-	console.log("SUp!");
 	var question = req.query.q;
 	var name2 = req.query.id;
 
 	var lvl = parseInt(questionData['level']);
 	var lvlName = questionData['levelNames'][lvl]['name'];
-	var feedback = questionData['questionText'][name2]['notes'];
-	console.log(feedback);
+	var id = parseInt (name2);
+	var feedback = questionData['questionText'][id]['notes'];
 
 	res.render('feedback', {
 		'originalQuestion': question,

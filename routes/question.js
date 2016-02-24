@@ -81,7 +81,10 @@ exports.viewQuestion = function(req, res) {
 			}
 
 			if( password !== password2 ){
-				errorStr = errorStr + "; Passwords do not match";
+				if( registerErr )
+					errorStr = errorStr + "; ";
+
+				errorStr = errorStr + "Passwords do not match";
 				pFlag = false;
 				registerErr= true;
 

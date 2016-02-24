@@ -9,7 +9,7 @@ $(document).ready(function() {
  * Function that is called when the document is ready.
  */
 function initializePage() {
-  $("#submitbutton").click(checkRadio);
+  $(".col-xs-2").click(checkRadio);
   $('.message a').click(function(){
    $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
 });
@@ -57,18 +57,8 @@ function checkRadio (e){
 		document.getElementById("inlineRadio21").checked == true ||
 		 document.getElementById("inlineRadio22").checked == true) ){
 			document.getElementById("donebutton").disabled = false;
-			var elem = document.getElementById("title");
-			var elem2 = $(elem).find(".error");
-			if( elem2.length != 0)
-				elem2.hide();
-		}
-	else {
-		var elem = document.getElementById("title");
-		var elem2 = $(elem).find(".error");
-		if( elem2.length == 0)
-			$(elem).append("<h6 class= \"error\" style=\"color:red\">Error: Please fill out the form completely by selecting a response per row.</h6>");
+			
 	}
-
 }
 
 
