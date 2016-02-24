@@ -1,16 +1,15 @@
 .container {
-    background: url('../images/table1copy.jpg');
+    background: url('../images/table3.jpg');
     background-size: cover;
-    height: 100%;
-    width: 100%;
+
 }
 
 .jumbotron {
      position: relative;
      text-align: center;
-     background-color: #FFFFFF;
-     margin:2% 0% 2%;
-     padding: 10px 0px 10px;
+     background-color: #2c97de;
+     margin:4% 0% 2%;
+     padding: 0.5px 0px 6px;
     
 }
 

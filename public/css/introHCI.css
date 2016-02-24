@@ -9,8 +9,9 @@
 
 
 h1 {
-     padding-top: 5%;
+     padding-top: 4%;
 }
+
 
 .jumbotron {
      height: 50%;
@@ -22,6 +23,11 @@ h1 {
      background-position: center top;
 }
 
+#qMark{
+     margin:10px;
+     background-color: black;
+
+}
 
 .jumbotron:after {
      content:"";
