@@ -84,13 +84,13 @@
 	
 	"levelNames" : [
 		{
-			"name" : "Level 1: Stiffy"
+			"name" : "Level 1: Novice"
 		},
 		{
-			"name" : "Level 2: Novice"
+			"name" : "Level 2: Achiever"
 		},
 		{
-			"name" : "Level 3: Achiever"
+			"name" : "Level 3: Expert"
 		},
 		{
 			"name" : "Level 4: Master"
