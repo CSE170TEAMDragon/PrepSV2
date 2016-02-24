@@ -14,6 +14,8 @@ exports.viewQuestion = function(req, res) {
 	var loginErr = false;
 	var registerErr = false;
 
+	var levelUp = false;
+
 	if( name != undefined && name2 != undefined){
 		var numAns = 0;
 		normalFlag= true;
@@ -27,8 +29,7 @@ exports.viewQuestion = function(req, res) {
 
 		if( questionData['lockedQuestionText'].length >= 2 && numAns == questionData['questionText'].length){
 
-			console.log( "Congrats! You have unlocked two additional interview questions. Keep it up!");
-			console.log( "Congrats! You have earned an additional BADGE and LEVELED UP. Keep it up!");
+			levelUp = true;
 
 			var json = questionData['lockedQuestionText'].pop();
 			questionData["questionText"].push(json);
@@ -115,7 +116,9 @@ exports.viewQuestion = function(req, res) {
 		res.render('question', {
 	    	"lockedQuestionText" : questionData['lockedQuestionText'],    	
 	    	"questionText" : questionData['questionText'],
-	    	"levelName" : lvlName });
+	    	"levelName" : lvlName,
+	    	"levelUp" : levelUp
+	    });
 	}
 	
 };
