@@ -55,6 +55,8 @@ app.get('/evaluation', evaluation.viewEvaluation);
 app.get('/feedback', feedback.viewFeedback);
 app.get('/recording', recording.viewRecording);
 
+app.get('/versionB', index.viewVersionB);
+
 
 // Example route
 // app.get('/users', user.list);
