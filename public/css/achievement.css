@@ -1,7 +1,13 @@
+
+
 .container {
-    background: url('../images/table3.jpg');
+ /*   background: url('../images/table3.jpg');*/
     background-size: cover;
 
+}
+
+html{
+    background-color: white;
 }
 
 .jumbotron {
@@ -52,7 +58,7 @@ div img {
      color: #FF7E4C;
      background-color: #FF7E4C;
 }*/
-
+/*
 #headingDiv {
     background-image: linear-gradient(to bottom,#d9edf7 0,#c4e3f3 100%);
     margin-bottom: 5%;
@@ -61,7 +67,7 @@ div img {
     width: 100%;
     border-radius: 25px;
     text-align: center;
-}
+}*/
 
 #headingDiv h3{
     margin-left: 5%;
@@ -132,7 +138,7 @@ li a{
      -moz-border-radius:29px;
      -webkit-border-radius:29px;
      border-radius:29px;
-     border:3px solid #1f2f47;
+    border:2px solid #3c4249;
      display:inline-block;
      cursor:pointer;
      color:#ffffff;
