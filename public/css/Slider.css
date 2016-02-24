@@ -6,11 +6,10 @@
   box-sizing: border-box;
 }
 
-body {
-  background: #242c38;
+/*body {
   font-family: 'Roboto';
   font-size: 62.5%;
-}
+}*/
 
 .clearfix:after {
   content: '';
