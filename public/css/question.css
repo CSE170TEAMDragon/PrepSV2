@@ -82,7 +82,7 @@ body{
 }
 
 .unlockedquestionBox ul{
-     list-style-type: decimal;
+     list-style-type: none;
      color: black;
      font-size: 18px;
      padding-left: 6px;
