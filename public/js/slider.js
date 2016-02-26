@@ -1,46 +1,101 @@
-jQuery(document).ready(function ($) {
 
-  $('#checkbox').change(function(){
-    setInterval(function () {
-        moveRight();
-    }, 3000);
-  });
-  
-	var slideCount = $('#slider ul li').length;
-	var slideWidth = $('#slider ul li').width();
-	var slideHeight = $('#slider ul li').height();
-	var sliderUlWidth = slideCount * slideWidth;
-	
-	$('#slider').css({ width: slideWidth, height: slideHeight });
-	
-	$('#slider ul').css({ width: sliderUlWidth, marginLeft: - slideWidth });
-	
-    $('#slider ul li:last-child').prependTo('#slider ul');
+$(function() {
+    /** -----------------------------------------
+     * Modulo del Slider 
+     -------------------------------------------*/
+     var SliderModule = (function() {
+        var pb = {};
+        pb.el = $('#slider');
+        pb.items = {
+            panels: pb.el.find('.slider-wrapper > li'),
+        }
 
-    function moveLeft() {
-        $('#slider ul').animate({
-            left: + slideWidth
-        }, 200, function () {
-            $('#slider ul li:last-child').prependTo('#slider ul');
-            $('#slider ul').css('left', '');
-        });
-    };
+        // Interval del Slider
+        var SliderInterval,
+            currentSlider = 0,
+            nextSlider = 1,
+            lengthSlider = pb.items.panels.length;
 
-    function moveRight() {
-        $('#slider ul').animate({
-            left: - slideWidth
-        }, 200, function () {
-            $('#slider ul li:first-child').appendTo('#slider ul');
-            $('#slider ul').css('left', '');
-        });
-    };
+        // Constructor del Slider
+        pb.init = function(settings) {
+            this.settings = settings || {duration: 8000};
+            var items = this.items,
+                lengthPanels = items.panels.length,
+                output = '';
 
-    $('a.control_prev').click(function () {
-        moveLeft();
-    });
+            // Insertamos nuestros botones
+            for(var i = 0; i < lengthPanels; i++) {
+                if(i == 0) {
+                    output += '<li class="active"></li>';
+                } else {
+                    output += '<li></li>';
+                }
+            }
 
-    $('a.control_next').click(function () {
-        moveRight();
-    });
+            $('#control-buttons').html(output);
 
-});    
+            // Activamos nuestro Slider
+            activateSlider();
+            // Eventos para los controles
+            $('#control-buttons').on('click', 'li', function(e) {
+                var $this = $(this);
+                if(!(currentSlider === $this.index())) {
+                    changePanel($this.index());
+                }
+            });
+
+        }
+
+        // Funcion para activar el Slider
+        var activateSlider = function() {
+            SliderInterval = setInterval(pb.startSlider, pb.settings.duration);
+        }
+
+        // Funcion para la Animacion
+        pb.startSlider = function() {
+            var items = pb.items,
+                controls = $('#control-buttons li');
+            // Comprobamos si es el ultimo panel para reiniciar el conteo
+            if(nextSlider >= lengthSlider) {
+                nextSlider = 0;
+                currentSlider = lengthSlider-1;
+            }
+
+            controls.removeClass('active').eq(nextSlider).addClass('active');
+            items.panels.eq(currentSlider).fadeOut('slow');
+            items.panels.eq(nextSlider).fadeIn('slow');
+
+            // Actualizamos los datos del slider
+            currentSlider = nextSlider;
+            nextSlider += 1;
+        }
+
+        // Funcion para Cambiar de Panel con Los Controles
+        var changePanel = function(id) {
+            clearInterval(SliderInterval);
+            var items = pb.items,
+                controls = $('#control-buttons li');
+            // Comprobamos si el ID esta disponible entre los paneles
+            if(id >= lengthSlider) {
+                id = 0;
+            } else if(id < 0) {
+                id = lengthSlider-1;
+            }
+
+            controls.removeClass('active').eq(id).addClass('active');
+            items.panels.eq(currentSlider).fadeOut('slow');
+            items.panels.eq(id).fadeIn('slow');
+
+            // Volvemos a actualizar los datos del slider
+            currentSlider = id;
+            nextSlider = id+1;
+            // Reactivamos nuestro slider
+            activateSlider();
+        }
+
+        return pb;
+     }());
+
+     SliderModule.init({duration: 4000});
+
+});

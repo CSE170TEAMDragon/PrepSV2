@@ -11,8 +11,8 @@ $(document).ready(function() {
 function initializePage() {
   $(".col-xs-2").click(checkRadio);
   $('.message a').click(function(){
-   $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
-});
+  $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
+	});
 }
 
 // JavaScript for Hamburger Bar
