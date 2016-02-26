@@ -96,20 +96,39 @@ body{
 
 .availableQuestion{
      margin: 12px; 
+     margin-left: 0%;
      margin-top: 30px;
+/*     background-color: #FFFFFF;
+     background-color: rgba(255, 255, 255, 0.5);*/
+}
+
+.col-xs-10{
+     margin-right: 0px;
+     padding-right:0px;
+}
+
+.col-xs-2{
+     float: center;
+  /*    margin-top: 60px; */
+/*     background-color: #FFFFFF;
+     background-color: rgba(255, 255, 255, 0.5);*/
+     padding: 0px;
+}
+
+.oneRow{
      background-color: #FFFFFF;
-     background-color: rgba(255, 255, 255, 0.5);
+     background-color: rgba(255, 255, 255, 0.7);
 }
 
 .availableQuestion button{
-     border: 1px solid #FFFFFF;
+     border: none;
      cursor:pointer;
-     background-color:#ffffff;
+     background-color:transparent;
      font-size: 22px;
      text-decoration:none;
-     padding:20px;
+     padding-left:20px;
      text-align: left;
-     background-color: rgba(255, 255, 255, 0.5);
+/*     background-color: rgba(255, 255, 255, 0.5);*/
      color: black;
      width: 100%;
 }
@@ -130,8 +149,10 @@ body{
      background-color: #A5A6A6;
 }
 
+
 .myButton {
      float: right;
+
      /*-moz-box-shadow:inset 4px 1px 15px 3px #647487;
      -webkit-box-shadow:inset 4px 1px 15px 3px #647487;
      box-shadow:inset 4px 1px 15px 3px #647487;*/
