@@ -31,8 +31,6 @@ h1{
 }
 
 
-
-
 .container {
     height: 100%;
     width: 100%;
@@ -50,7 +48,7 @@ body{
      position: relative;
      text-align: center;
      background-color: #2c97de;
-     margin:2% 0% 2%;
+     margin:8% 0% 2%;
      padding: 5px 0px 5px 0px;
      /*padding-bottom: 0%;*/
     
@@ -102,6 +100,16 @@ body{
      background-color: rgba(255, 255, 255, 0.5);*/
 }
 
+.lockedQuestion{
+     margin: 12px;
+     margin-top: 16px;
+     margin-left: 0%;
+
+     opacity: .7;
+     background-color: #A5A6A6;
+
+}
+
 .col-xs-10{
      margin-right: 0px;
      padding-right:0px;
@@ -140,14 +148,9 @@ body{
      font-size: 22px;
      text-decoration:none;
      padding:20px;
+     padding-top: 0px;
 }
 
-.lockedQuestion{
-     margin: 12px;
-     margin-top: 30px;
-     opacity: .7;
-     background-color: #A5A6A6;
-}
 
 
 .myButton {

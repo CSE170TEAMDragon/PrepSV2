@@ -7,6 +7,9 @@ header{
     background:#134886; 
     height:50px; 
     line-height:50px;
+    -webkit-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.58);
+    -moz-box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.58);
+    box-shadow: 0px 3px 3px 0px rgba(0,0,0,0.58);
 }
 .hamburger{
   background:none;
