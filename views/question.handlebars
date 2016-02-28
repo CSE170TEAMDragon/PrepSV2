@@ -7,10 +7,11 @@
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
 	<link href="css/bootstrapTest.css" rel="stylesheet">
-	<link href="css/question.css" rel="stylesheet">
+
 	<link rel="stylesheet" href="/css/hamburgerbar.css">
 	<link href="css/levelbtn.css" rel="stylesheet">
 	<link href="css/font-awesome-4.5.0/css/font-awesome.css" rel="stylesheet">
+		<link href="css/question.css" rel="stylesheet">
 
 </head>
 
@@ -20,6 +21,11 @@
   		<button class="cross">&#735;</button>
   		<p class="myButton">{{levelName}}</p>
 	</header>
+
+	{{> popup}}
+	{{#if levelUp}}
+	{{> levelUp}}
+	{{/if}}
 
 
 	<div class="menu">
@@ -31,40 +37,49 @@
   	</ul>
 	</div>
 
-	{{> popup}}
-	
+
 	<div class= "container">
 	<div class="jumbotron" style="color:white">
 			<h2 class="headingText" >Questions</h2>
 			<h4 style="margin-top:0px" > Select a question to begin. </h>
 	</div>
 	
-	{{#if levelUp}}
-	{{> levelUp}}
-	{{/if}}
-
 
 <div class="bodyContainer">
 
 	<div class="unlockedquestionBox">
 		<ul>
-			{{#each questionText}}
-
-				<div class="availableQuestion" id="{{id}}">
 			
-					<a href="/recording?q={{question}}&id={{id}}">
-						<li><button class = "questionButton" id="{{id}}">
-						{{#if answered}}<i class="fa fa-check" style="color:#269900">{{/if}}
-						{{question}}</i> </button></li>
+			{{#each questionText}}
+			<div class="oneRow" style="margin:16px">
+			<div class="row">
+				<a href="/recording?q={{question}}&id={{id}}">
+					<div class="col-xs-10" style="padding-right:0px; padding-top:0px; margin:0px">
+						<div class="availableQuestion" id="{{id}}">
+					
+							
+								<li><button class = "questionButton" id="{{id}}">
+								{{#if answered}}<i class="fa fa-check" style="color:#269900">{{/if}}
+								{{nquestion}}</i> </button></li>
 
+
+							
+
+						</div>
+					</div>
+					<div class="col-xs-2" style="padding-left:0px; padding-top:60px">
+						<i class="fa fa-chevron-right" style="color:black"></i>
+					</div>
 
 					</a>
-				</div>
-
-			
+			</div>	
+			</div>
 			{{/each}}
+			
 		</ul>
 	</div>
+
+
 
 
 	<div class="lockedquestionBox">
@@ -72,8 +87,8 @@
 
 			{{#each lockedQuestionText}}
 
-				<div class="lockedQuestion" id="{{id}}">
-					<li><i class="fa fa-lock fa-2x" style="padding-left:2%" ><button><p class = "lockedMsg">Answer previous questions to unlock</p></button></i></li>
+				<div class="lockedQuestion" id="{{id}}" style="margin:16px">
+					<li><i class="fa fa-lock fa-2x" style="padding-left:4%; padding-top:4%" ><button><p class = "lockedMsg">Answer previous questions to unlock</p></button></i></li>
 				</div>
 			{{/each}}
 		</ul>

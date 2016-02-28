@@ -1,0 +1,13 @@
+.example-class-selector {
+     margin-top: 2em;
+}
+
+.example-class-selector p {
+     /* Colors are in hexadecimal: http://www.colorpicker.com/ */     
+     color: #CC00AA;
+}
+
+.header h3{
+margin-top:0px;
+padding-top: 0px;
+}
