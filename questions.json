@@ -1,102 +1,107 @@
 {
-	"questionText": [
-		{ 	"question": "1. Tell me about yourself and your interests.",
-			"id": "0",
-			"answered": false,
-			"notes": "Through the question, the interviewer seeks to learn about you, your experiences, and your values. The goal here is to give a pitch that is concise, but convinces the interviewer that you are fit for the role."
-		},
-		{ 	"question": "2. What are your greatest professional strengths? ",
-			"id": "1",
-			"answered": false,
-			"notes": "Research the organization and the position to help target strengths that are in need. Be sure to highlight qualities, skills, and/or experiences that set you apart from other candidates. "
-		}
-	],
+	"user" : [],
+	"questionTemp" :  
+				{
+					"questionText": [
+						{ 	"question": "1. Tell me about yourself and your interests.",
+							"id": "0",
+							"answered": false,
+							"notes": "Through the question, the interviewer seeks to learn about you, your experiences, and your values. The goal here is to give a pitch that is concise, but convinces the interviewer that you are fit for the role."
+						},
+						{ 	"question": "2. What are your greatest professional strengths? ",
+							"id": "1",
+							"answered": false,
+							"notes": "Research the organization and the position to help target strengths that are in need. Be sure to highlight qualities, skills, and/or experiences that set you apart from other candidates. "
+						}
+					],
 
+					"lockedQuestionText": [
 
-	"lockedQuestionText": [
+						{ 	"question": "10. What do you think of your previous boss?",
+							"id": "9",
+							"answered": false,
+							"notes": "If you had a boss with good leadership, definitely express that. If not, find ways to be constructive in your response, ending on a positive note."
+						},
+						{ 	"question": "9. Why did you leave your previous job?",
+							"id": "8",
+							"answered": false,
+							"notes": "Don’t bad mouth your previous company. Also, don’t spend too much time on it, bring the conversation back to your results and reliability"
+						},
 
-		{ 	"question": "10. What do you think of your previous boss?",
-			"id": "9",
-			"answered": false,
-			"notes": "If you had a boss with good leadership, definitely express that. If not, find ways to be constructive in your response, ending on a positive note."
-		},
-		{ 	"question": "9. Why did you leave your previous job?",
-			"id": "8",
-			"answered": false,
-			"notes": "Don’t bad mouth your previous company. Also, don’t spend too much time on it, bring the conversation back to your results and reliability"
-		},
+						{ 	"question": "8. What’s your ideal company?",
+							"id": "7",
+							"answered": false,
+							"notes": "It’s easy to focus on how you can benefit from an ideal company, but it’s more important to focus on how the ideal company enables your best work. "
+						},
 
-		{ 	"question": "8. What’s your ideal company?",
-			"id": "7",
-			"answered": false,
-			"notes": "It’s easy to focus on how you can benefit from an ideal company, but it’s more important to focus on how the ideal company enables your best work. "
-		},
+						{ 	"question": "7. Describe your workstyle.",
+							"id": "6",
+							"answered": false,
+							"notes": "The interviewer wants to know how you can fit with the organization. Take this chance to portray yourself in a positive light (such as “I start at 7am, like to work collaboratively, plan my days, and prioritize my tasks”)."
+						},
+						{ 	"question": "6. Describe a difficult work situation and how you overcame it. ",
+							"id": "5",
+							"answered": false,
+							"notes": "The interviewer wants to know that you’re flexible and adaptable to situations. Be sure to show them your problem-solving skills when faced with challenges."
+						},
+						{ 	"question": "5. What are your weaknesses?",
+							"id": "4",
+							"answered": false,
+							"notes": "The interviewer wants to ensure that your weakness isn’t an immediately needed skill and see your response under pressure of tough questions."
+						},
+						{ 	"question": "4. Why are you interested in working for this organization?",
+							"id": "3",
+							"answered": false,
+							"notes": "The interviewer wants to know that you’ve done research on the organization and thought about how you might add value. You can express this better if you understand the organization’s history, mission, and vision."
+						},
+						{ 	"question": "3. Why should we hire you?",
+							"id": "2",
+							"answered": false,
+							"notes": "Print the job description and highlight important elements. Detect key terms that indicate characteristics that are looked for, i.e. ‘team work’, ‘cross-functionality’, ‘problem-solving’"
+						}
+					],
 
-		{ 	"question": "7. Describe your workstyle.",
-			"id": "6",
-			"answered": false,
-			"notes": "The interviewer wants to know how you can fit with the organization. Take this chance to portray yourself in a positive light (such as “I start at 7am, like to work collaboratively, plan my days, and prioritize my tasks”)."
-		},
-		{ 	"question": "6. Describe a difficult work situation and how you overcame it. ",
-			"id": "5",
-			"answered": false,
-			"notes": "The interviewer wants to know that you’re flexible and adaptable to situations. Be sure to show them your problem-solving skills when faced with challenges."
-		},
-		{ 	"question": "5. What are your weaknesses?",
-			"id": "4",
-			"answered": false,
-			"notes": "The interviewer wants to ensure that your weakness isn’t an immediately needed skill and see your response under pressure of tough questions."
-		},
-		{ 	"question": "4. Why are you interested in working for this organization?",
-			"id": "3",
-			"answered": false,
-			"notes": "The interviewer wants to know that you’ve done research on the organization and thought about how you might add value. You can express this better if you understand the organization’s history, mission, and vision."
-		},
-		{ 	"question": "3. Why should we hire you?",
-			"id": "2",
-			"answered": false,
-			"notes": "Print the job description and highlight important elements. Detect key terms that indicate characteristics that are looked for, i.e. ‘team work’, ‘cross-functionality’, ‘problem-solving’"
-		}
-	],
+					"unlockedPoses": [
+						{ 	
+							"imgsrc": "https://images.blogthings.com/whatavengerareyouquiz/iron-man.jpg"
+						}
+					],
 
-	"unlockedPoses": [
-		{ 	
-			"imgsrc": "https://images.blogthings.com/whatavengerareyouquiz/iron-man.jpg"
-		}
-	],
+					"lockedPoses": [
+						{ 	
+							"imgsrc": "https://pbs.twimg.com/profile_images/378800000867900868/diA9fWFw_400x400.jpeg"
+						},
+						{
+							"imgsrc": "http://www.truthrevolt.org/sites/default/files/styles/metatag_image_defalut/public/field/image/articles/black_widow.jpg?itok=99CvIalb"
+						},
+						{
+							"imgsrc" : "https://pbs.twimg.com/profile_images/696460514201772032/lm4gmFOD.jpg"
+						},
+						{ 
+							"imgsrc" : "http://pbs.twimg.com/profile_images/459149686239010817/sMzYWXRu_400x400.jpeg"
+						}
+					],
 
-	"lockedPoses": [
-		{ 	
-			"imgsrc": "https://pbs.twimg.com/profile_images/378800000867900868/diA9fWFw_400x400.jpeg"
-		},
-		{
-			"imgsrc": "http://www.truthrevolt.org/sites/default/files/styles/metatag_image_defalut/public/field/image/articles/black_widow.jpg?itok=99CvIalb"
-		},
-		{
-			"imgsrc" : "https://pbs.twimg.com/profile_images/696460514201772032/lm4gmFOD.jpg"
-		},
-		{ 
-			"imgsrc" : "http://pbs.twimg.com/profile_images/459149686239010817/sMzYWXRu_400x400.jpeg"
-		}
-	],
-
-	"level" : "0",
-	
-	"levelNames" : [
-		{
-			"name" : "Level 1: Novice"
-		},
-		{
-			"name" : "Level 2: Achiever"
-		},
-		{
-			"name" : "Level 3: Expert"
-		},
-		{
-			"name" : "Level 4: Master"
-		},
-		{
-			"name" : "Level 5: Legendary"
-		}
-	]
+					"level" : "0",
+					
+					"login" : false,
+					
+					"levelNames" : [
+						{
+							"name" : "Level 1: Novice"
+						},
+						{
+							"name" : "Level 2: Achiever"
+						},
+						{
+							"name" : "Level 3: Expert"
+						},
+						{
+							"name" : "Level 4: Master"
+						},
+						{
+							"name" : "Level 5: Legendary"
+						}
+					]
+				}
 }

@@ -1,4 +1,5 @@
 {
-	"logintable": []
-	
+	"logintable": [],
+	"curUserIdx" : -1,
+	"newUserIdx" : 0
 }

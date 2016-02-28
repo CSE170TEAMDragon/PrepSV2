@@ -1,10 +1,18 @@
-var data = require ("../questions.json");
+var questionData = require ("../questions.json");
+var info = require ("../logininfo.json");
+
 /*
  * GET home page.
  */
 
 exports.view = function(req, res){
-  data["login"] = false;
+  var curUserIdx = info['curUserIdx'];
+
+  if( info['curUserIdx'] != -1 ){
+    questionData['user'][curUserIdx]["login"] = false;
+    info['curUserIdx'] = -1;
+  }
+
   res.render('index');
 
   /*var random_num = Math.random();
@@ -19,6 +27,11 @@ exports.view = function(req, res){
 };
 
 exports.viewVersionB = function(req, res){
-	data["login"] = false;
+  var curUserIdx = info['curUserIdx'];
+
+  if( info['curUserIdx'] != -1 ){
+    questionData['user'][curUserIdx]["login"] = false;
+    info['curUserIdx'] = -1;
+  }
     res.render('indexB');
 };

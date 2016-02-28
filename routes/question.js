@@ -16,32 +16,35 @@ exports.viewQuestion = function(req, res) {
 
 	var levelUp = false;
 
-	if( name != undefined && name2 != undefined){
+	var curUserIdx = info['curUserIdx'];
+
+	if( name != undefined && name2 != undefined && curUserIdx != -1){
 		var numAns = 0;
 		normalFlag= true;
 		name2 = parseInt(name2);
-		questionData['questionText'][name2]['answered'] = true;;
-		for( i = 0; i < questionData['questionText'].length; i++) {
-			if( questionData['questionText'][i]['answered'] === true){
+		questionData['user'][curUserIdx]['questionText'][name2]['answered'] = true;
+
+		for( i = 0; i < questionData['user'][curUserIdx]['questionText'].length; i++) {
+			if( questionData['user'][curUserIdx]['questionText'][i]['answered'] === true){
 				numAns= numAns + 1;
 			}
 		}
 
-		if( questionData['lockedQuestionText'].length >= 2 && numAns == questionData['questionText'].length){
+		if( questionData['user'][curUserIdx]['lockedQuestionText'].length >= 2 && numAns == questionData['user'][curUserIdx]['questionText'].length){
 
 			levelUp = true;
 
-			var json = questionData['lockedQuestionText'].pop();
-			questionData["questionText"].push(json);
+			var json = questionData['user'][curUserIdx]['lockedQuestionText'].pop();
+			questionData['user'][curUserIdx]["questionText"].push(json);
 
-			json = questionData['lockedQuestionText'].pop();
-			questionData["questionText"].push(json);
+			json = questionData['user'][curUserIdx]['lockedQuestionText'].pop();
+			questionData['user'][curUserIdx]["questionText"].push(json);
 
-			json = questionData['lockedPoses'].pop();
-			questionData["unlockedPoses"].push(json);
+			json = questionData['user'][curUserIdx]['lockedPoses'].pop();
+			questionData['user'][curUserIdx]["unlockedPoses"].push(json);
 
-			var level = parseInt(questionData["level"]) + 1;
-			questionData["level"] = "" + level;
+			var level = parseInt(questionData['user'][curUserIdx]["level"]) + 1;
+			questionData['user'][curUserIdx]["level"] = "" + level;
 
 		}
 	}
@@ -62,6 +65,10 @@ exports.viewQuestion = function(req, res) {
 			if( loginFlag == false ){
 				errorStr = errorStr + "Login cannot be found";
 				loginErr= true;
+			}
+			else{
+				info['curUserIdx'] = info['logintable'][i]['userIdx'];
+				curUserIdx = info['curUserIdx'];
 			}
 		}
 
@@ -94,28 +101,34 @@ exports.viewQuestion = function(req, res) {
 			if( j == info['logintable'].length && pFlag) {
 					var newMem = {
 						"username" : username,
-						"password" : password
+						"password" : password,
+						"userIdx"  : info['newUserIdx']
 					};
 					info['logintable'].push(newMem);
+					info['curUserIdx'] = info['newUserIdx'];
+					curUserIdx = info['curUserIdx'];
+					info['newUserIdx'] = info['newUserIdx'] + 1;
+					var json = questionData['questionTemp'];
+					var newObject = JSON.parse(JSON.stringify( json ));
+					questionData['user'].push(newObject);
 					registerFlag = true;
 			}
 			
 		}
 	}
 
-
 	if( loginErr || registerErr){
 		res.redirect("/login?error=true&errorStr="+errorStr);
 	}
 	else {
-		var lvl = parseInt(questionData['level']);
-		var lvlName = questionData['levelNames'][lvl]['name'];
+		var lvl = parseInt(questionData['user'][curUserIdx]['level']);
+		var lvlName = questionData['user'][curUserIdx]['levelNames'][lvl]['name'];
 
-		questionData["login"] = true;
+		questionData['user'][curUserIdx]["login"] = true;
 
 		res.render('question', {
-	    	"lockedQuestionText" : questionData['lockedQuestionText'],    	
-	    	"questionText" : questionData['questionText'],
+	    	"lockedQuestionText" : questionData['user'][curUserIdx]['lockedQuestionText'],    	
+	    	"questionText" : questionData['user'][curUserIdx]['questionText'],
 	    	"levelName" : lvlName,
 	    	"levelUp" : levelUp
 	    });
