@@ -18,6 +18,9 @@ var evaluation = require('./routes/evaluation');
 var feedback = require('./routes/feedback');
 var recording = require('./routes/recording');
 var careergoal = require('./routes/careergoal');
+var careergoal2 = require('./routes/careergoal2');
+
+
 
 // Example route
 // var user = require('./routes/user');
@@ -58,6 +61,7 @@ app.get('/recording', recording.viewRecording);
 
 app.get('/versionB', index.viewVersionB);
 app.get('/careergoal',careergoal.viewCareer);
+app.get('/careergoal2',careergoal2.viewCareer);
 
 
 // Example route
