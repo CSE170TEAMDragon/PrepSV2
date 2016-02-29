@@ -1,4 +1,4 @@
-var data = require ("../logininfo");
+var info = require('../logininfo.json');
 
 exports.viewProject = function(req, res) { 
 	var error = req.query.error;

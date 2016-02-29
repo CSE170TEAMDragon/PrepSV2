@@ -19,22 +19,6 @@
 			"uItem2":  "Name and Major Introduction",
 			"id": "Two"
 		
-		},
-		{
-			"position": "Third Evaluation",
-			"cItem1":  "Smile",
-			"cItem2":  "Relevant Hobbies",
-			"uItem1":  "Interests and Goals",
-			"uItem2":  "Name and Major Introduction",
-			"id": "Three"
-		},
-		{
-			"position": "Fourth Evaluation",
-			"cItem1":  "Smile",
-			"cItem2":  "Relevant Hobbies",
-			"uItem1":  "Interests and Goals",
-			"uItem2":  "Name and Major Introduction",
-			"id": "Four"		
 		}
 	]
 }

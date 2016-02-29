@@ -28,8 +28,10 @@
     <h5 style="color:red; text-align: center">ERRORS:</br>{{errorStr}}</h5>
   {{/if}}
 
-  <form class="form" method="get" accept-charset="utf-8" action="/question" style="margin-top:20px">
-    <h1 class = "header"> Login </h1>
+  <p style="text-align: center; color: white; font-size: 10pt"><b><u>ATTENTION:</u></b> Currently, our app does <b>NOT</b> securely encrypt your password, so please do <b>NOT</b> enter important passwords in this form. We apologize for the issue :(</p>
+
+  <form class="form lform" method="get" accept-charset="utf-8" action="/question" style="margin-top:20px">
+    <h2 class = "header"> Login </h2>
     <div class = "loginform">
       <label for="username">Username</label>
       <input required type="text" id="username1" name="username1" class="inputBox" >
@@ -43,6 +45,7 @@
   </input>
 
   </form></br>
+
 
   <form class="form" method= "get" accept-charset="utf-8" action="/careergoal" style="margin-top:0px">
     <h1 class = "header"> Register </h1>
