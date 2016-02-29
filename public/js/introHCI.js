@@ -9,12 +9,9 @@ $(document).ready(function() {
  */
 function initializePage() {
   $(".col-xs-2").click(checkRadio);
-  // $(".button")click(record);
-  $("#inputDefault2").click(checkCareer);
   $('.message a').click(function(){
   $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
 	});
-
 }
 
 // JavaScript for Hamburger Bar
@@ -63,15 +60,5 @@ function checkRadio (e){
 	}
 }
 
-function checkCareer(e){
-	console.log(document.getElementById("inputDefault1").value.length);
-	if (document.getElementById("inputDefault1").value.length != 0){
-		document.getElementById("toQuestion").disabled=false;
-	}
-}
 
-function record(e){
-	console.log('button clicked');
-	$(".recordingPic").src="/images/microphone3.png";
-}
 

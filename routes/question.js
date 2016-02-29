@@ -2,28 +2,9 @@ var questionData = require('../questions.json');
 var hisData = require('../evals.json');
 var info = require('../logininfo.json');
 
-exports.viewQuestion = function(req, res) {	
-	if( info['logininfo'] == undefined) {
-		var login = req.query.login;
-		var register = req.query.register;
-		var username1 = req.query.username1;
-		var password1 = req.query.password1;
-		var username2 = req.query.username2;
-		var password2 = req.query.password2;
-		var password3 = req.query.password3;
-		info['logininfo'] = {
-			'login' : login,
-			'register' : register,
-			'username1' : username1,
-			'username2' : username2,
-			'password1' : password1,
-			'password2' : password2,
-			'password3' : password3,
-		}
-		info['alreadyLoggedIn'] = true;
-	}
-
-
+exports.viewQuestion = function(req, res) {
+	console.log(req);
+	
 	var name = req.query.q;
 	var name2 = req.query.id;
 	var errorStr = "";
@@ -71,19 +52,12 @@ exports.viewQuestion = function(req, res) {
 	}
 
 	else{
-		if( info['alreadyLoggedIn'] == true ) {
-			var login = info['logininfo']['login'];
-			var register = info['logininfo']['register'];
-			info['alreadyLoggedIn'] = false;
-		}
-		else{
-			var login = undefined;
-			var register = undefined;
-		}
+		var login = req.query.login;
+		var register = req.query.register;
 
 		if( login != undefined ){
-			var username = info['logininfo']['username1'];
-			var password = info['logininfo']['password1'];
+			var username = req.query.username1;
+			var password = req.query.password1;
 			for( i = 0; i < info['logintable'].length; i++)
 				if( info['logintable'][i]['username'] === username && info['logintable'][i]['password'] === password){
 					loginFlag = true;
@@ -102,9 +76,9 @@ exports.viewQuestion = function(req, res) {
 
 		else if ( register != undefined ){
 			// passwords are not yet encrypted
-			var username = info['logininfo']['username2'];
-			var password = info['logininfo']['password2'];
-			var password2 = info['logininfo']['password3'];
+			var username = req.query.username2;
+			var password = req.query.password2;
+			var password2 = req.query.password3;
 
 			var pFlag = true;
 
