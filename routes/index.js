@@ -15,6 +15,7 @@ exports.view = function(req, res){
     if( info['curUserIdx'] != -1 ){
       questionData['user'][curUserIdx]["login"] = false;
       info['curUserIdx'] = -1;
+      info['logininfo'] = undefined;
     }
     res.render('index');
   }
@@ -31,6 +32,8 @@ exports.viewVersionB = function(req, res){
   if( info['curUserIdx'] != -1 ){
     questionData['user'][curUserIdx]["login"] = false;
     info['curUserIdx'] = -1;
+    info['logininfo'] = undefined;
+
   }
 
   res.render('indexB');

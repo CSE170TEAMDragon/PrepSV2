@@ -60,6 +60,7 @@ app.get('/feedback', feedback.viewFeedback);
 app.get('/recording', recording.viewRecording);
 
 app.get('/versionB', index.viewVersionB);
+
 app.get('/careergoal',careergoal.viewCareer);
 app.get('/careergoal2',careergoal2.viewCareer);
 
