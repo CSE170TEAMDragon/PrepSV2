@@ -1,7 +1,5 @@
 'use strict';
 
-var questionData = require ("../questions.json");
-
 // Call this function when the page loads (the "ready" event)
 $(document).ready(function() {
 	initializePage();
@@ -11,7 +9,7 @@ $(document).ready(function() {
  */
 function initializePage() {
   $(".col-xs-2").click(checkRadio);
-  $("#donebutton").click(evaluation);
+  //$("#donebutton").click(evaluation);
   $('.message a').click(function(){
   $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
 	});
