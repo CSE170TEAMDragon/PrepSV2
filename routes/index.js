@@ -6,24 +6,19 @@ var info = require ("../logininfo.json");
  */
 
 exports.view = function(req, res){
-
-  var random_num = Math.random();
-
-  if (random_num > 0.5) {
     var curUserIdx = info['curUserIdx'];
 
     if( info['curUserIdx'] != -1 ){
       questionData['user'][curUserIdx]["login"] = false;
       info['curUserIdx'] = -1;
     }
-    res.render('index');
-  }
 
-  else {
-    res.redirect('/versionB');
-  }
+    res.render('index', {
+      "versionB" : false
+    });
 
 };
+
 
 exports.viewVersionB = function(req, res){
   var curUserIdx = info['curUserIdx'];
@@ -33,6 +28,8 @@ exports.viewVersionB = function(req, res){
     info['curUserIdx'] = -1;
   }
 
-  res.render('indexB');
+  res.render('index', {
+    "versionB" : true
+  });
   
 };

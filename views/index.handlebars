@@ -14,6 +14,29 @@
 </head>
 
 <body>
+
+	{{#if versionB}}
+	<div class="containerBox">
+		<!-- h1 through h6 are headers. The higher the number, the smaller the header -->
+		<!-- p means paragraph -->
+		<div class="jumbotron" style="color:white; padding-top:2%">
+			<h1><b>Prep-S</b></h1>
+			<hr style="width:70%;align: center">
+			<p style="color:white">Maximize your career chances with Prep-S, an interactive interview preparation!</br></br>
+			<a href="/learnmore" style="margin-top: 30px"><b><u>Find Out How</u></b></a></p>
+			
+
+		 <button type="button" class="btn btn-primary" id="startButton" style="margin-top: 130px">
+		    	<a href="/login">
+		    	Let's Get Started
+			    </a>
+
+		 </button>
+		 <div>
+
+	</div>
+	
+	{{else}}
 	<div class="containerBox">
 
 		<div class="jumbotron" style="color:white; padding-top:1%">
@@ -37,6 +60,7 @@
 		 <div>
 
 	</div>
+	{{/if}}
 
   
 	<script src="https://code.jquery.com/jquery.js"></script>

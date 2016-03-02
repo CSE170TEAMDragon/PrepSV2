@@ -33,7 +33,6 @@ body{
 	max-width: 100%;
      line-height: 1.5;
      background-color: transparent;
-
 }
 
 #logInBox{
@@ -42,8 +41,8 @@ body{
      width: 250px;
 }
 
-.form{
-     width: 300px;
+.form {
+     width: 300px ;
      margin:auto;
      text-align:center;
 }

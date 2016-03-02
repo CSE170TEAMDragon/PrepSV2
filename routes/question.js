@@ -2,9 +2,7 @@ var questionData = require('../questions.json');
 var hisData = require('../evals.json');
 var info = require('../logininfo.json');
 
-exports.viewQuestion = function(req, res) {
-	console.log(req);
-	
+exports.viewQuestion = function(req, res) {	
 	var name = req.query.q;
 	var name2 = req.query.id;
 	var errorStr = "";

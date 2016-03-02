@@ -8,13 +8,15 @@
 				"question": "Tell me about yourself and your interests.",
 				"id": "0",
 				"answered": false,
-				"notes": "Through the question, the interviewer seeks to learn about you, your experiences, and your values. The goal here is to give a pitch that is concise, but convinces the interviewer that you are fit for the role."
+				"notes": "Through the question, the interviewer seeks to learn about you, your experiences, and your values. The goal here is to give a pitch that is concise, but convinces the interviewer that you are fit for the role.",
+				"history" : []
 			},
 			{ 	"nquestion": "2. What are your greatest professional strengths? ",
 				"question": "What are your greatest professional strengths? ",
 				"id": "1",
 				"answered": false,
-				"notes": "Research the organization and the position to help target strengths that are in need. Be sure to highlight qualities, skills, and/or experiences that set you apart from other candidates. "
+				"notes": "Research the organization and the position to help target strengths that are in need. Be sure to highlight qualities, skills, and/or experiences that set you apart from other candidates. ",
+				"history" : []
 			}
 		],
 
@@ -25,51 +27,60 @@
 				"question": "What do you think of your previous boss?",
 				"id": "9",
 				"answered": false,
-				"notes": "If you had a boss with good leadership, definitely express that. If not, find ways to be constructive in your response, ending on a positive note."
+				"notes": "If you had a boss with good leadership, definitely express that. If not, find ways to be constructive in your response, ending on a positive note.",
+				"history" : []
+
 			},
 			{ 	"nquestion": "9. Why did you leave your previous job?",
 				"question": "Why did you leave your previous job?",
 				"id": "8",
 				"answered": false,
-				"notes": "Don’t bad mouth your previous company. Also, don’t spend too much time on it, bring the conversation back to your results and reliability"
+				"notes": "Don’t bad mouth your previous company. Also, don’t spend too much time on it, bring the conversation back to your results and reliability",
+				"history" : []
 			},
 
 			{ 	"nquestion": "8. What’s your ideal company?",
 				"question": "What’s your ideal company?",
 				"id": "7",
 				"answered": false,
-				"notes": "It’s easy to focus on how you can benefit from an ideal company, but it’s more important to focus on how the ideal company enables your best work. "
+				"notes": "It’s easy to focus on how you can benefit from an ideal company, but it’s more important to focus on how the ideal company enables your best work. ",
+				"history" : []
 			},
 
 			{ 	"nquestion": "7. Describe your workstyle.",
 				"question": "Describe your workstyle.",
 				"id": "6",
 				"answered": false,
-				"notes": "The interviewer wants to know how you can fit with the organization. Take this chance to portray yourself in a positive light (such as “I start at 7am, like to work collaboratively, plan my days, and prioritize my tasks”)."
+				"notes": "The interviewer wants to know how you can fit with the organization. Take this chance to portray yourself in a positive light (such as “I start at 7am, like to work collaboratively, plan my days, and prioritize my tasks”).",
+				"history" : []
 			},
 			{ 	"nquestion": "6. Describe a difficult work situation and how you overcame it. ",
 				"question": "Describe a difficult work situation and how you overcame it. ",
 				"id": "5",
 				"answered": false,
-				"notes": "The interviewer wants to know that you’re flexible and adaptable to situations. Be sure to show them your problem-solving skills when faced with challenges."
+				"notes": "The interviewer wants to know that you’re flexible and adaptable to situations. Be sure to show them your problem-solving skills when faced with challenges.",
+				"history" : []
 			},
 			{ 	"nquestion": "5. What are your weaknesses?",
 				"question": "What are your weaknesses?",
 				"id": "4",
 				"answered": false,
-				"notes": "The interviewer wants to ensure that your weakness isn’t an immediately needed skill and see your response under pressure of tough questions."
+				"notes": "The interviewer wants to ensure that your weakness isn’t an immediately needed skill and see your response under pressure of tough questions.",
+				"history" : []
 			},
 			{ 	"nquestion": "4. Why are you interested in working for this organization?",
 				"question": "Why are you interested in working for this organization?",
 				"id": "3",
 				"answered": false,
-				"notes": "The interviewer wants to know that you’ve done research on the organization and thought about how you might add value. You can express this better if you understand the organization’s history, mission, and vision."
+				"notes": "The interviewer wants to know that you’ve done research on the organization and thought about how you might add value. You can express this better if you understand the organization’s history, mission, and vision.",
+				"history" : []
 			},
 			{ 	"nquestion": "3. Why should we hire you?",
 				"question": "Why should we hire you?",
 				"id": "2",
 				"answered": false,
-				"notes": "Print the job description and highlight important elements. Detect key terms that indicate characteristics that are looked for, i.e. ‘team work’, ‘cross-functionality’, ‘problem-solving’"
+				"notes": "Print the job description and highlight important elements. Detect key terms that indicate characteristics that are looked for, i.e. ‘team work’, ‘cross-functionality’, ‘problem-solving’",
+				"history" : []
 			}
 		],
 

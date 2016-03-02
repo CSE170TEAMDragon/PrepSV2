@@ -9,6 +9,7 @@ $(document).ready(function() {
  */
 function initializePage() {
   $(".col-xs-2").click(checkRadio);
+
   $('.message a').click(function(){
   $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
 	});
@@ -57,6 +58,10 @@ function checkRadio (e){
 		 document.getElementById("inlineRadio22").checked == true) ){
 			document.getElementById("donebutton").disabled = false;
 			
+	}
+	if (document.getElementById("inlineRadio00").checked == true){
+		var value = document.getElementById("inlineRadio00").value;
+		console.log(value);
 	}
 }
 
