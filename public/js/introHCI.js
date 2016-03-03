@@ -59,11 +59,6 @@ function checkRadio (e){
 			document.getElementById("donebutton").disabled = false;
 			
 	}
-
-	/*if (document.getElementById("inlineRadio00").checked == true){
-		var value = document.getElementById("inlineRadio00").value;
-		console.log(value);
-	}*/
 }
 
 function evaluation (e){

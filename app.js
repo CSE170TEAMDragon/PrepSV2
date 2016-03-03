@@ -18,6 +18,8 @@ var evaluation = require('./routes/evaluation');
 var feedback = require('./routes/feedback');
 var recording = require('./routes/recording');
 var careergoal = require('./routes/careergoal');
+var careergoal2 = require('./routes/careergoal2');
+
 
 // Example route
 // var user = require('./routes/user');
@@ -49,16 +51,16 @@ app.get('/', index.view);
 app.get('/login', login.viewProject);
 app.get('/learnmore', learnmore.view);
 app.get('/question', question.viewQuestion);
-
 app.get('/achievement', achievement.viewAchievement);
 app.get('/evalsHistory', evalsHistory.viewHistory);
 app.get('/evaluation', evaluation.viewEvaluation);
 app.get('/feedback', feedback.viewFeedback);
 app.get('/recording', recording.viewRecording);
 
-app.get('/versionB', index.viewVersionB);
 app.get('/careergoal',careergoal.viewCareer);
+app.get('/careergoal2',careergoal2.viewCareer);
 
+app.get('/versionB', index.viewVersionB);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
