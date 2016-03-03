@@ -5,14 +5,14 @@ var info = require('../logininfo.json');
 exports.viewQuestion = function(req, res) {	
 	var name = req.query.q;
 	var name2 = req.query.id;
+
 	var errorStr = "";
 
 	var loginFlag= false;
-	var registerFlag= false;
+	
 	var normalFlag = false;
 
 	var loginErr = false;
-	var registerErr = false;
 
 	var levelUp = false;
 
@@ -49,9 +49,8 @@ exports.viewQuestion = function(req, res) {
 		}
 	}
 
-	else{
+	else {
 		var login = req.query.login;
-		var register = req.query.register;
 
 		if( login != undefined ){
 			var username = req.query.username1;
@@ -71,64 +70,21 @@ exports.viewQuestion = function(req, res) {
 				curUserIdx = info['curUserIdx'];
 			}
 		}
-
-		else if ( register != undefined ){
-			// passwords are not yet encrypted
-			var username = req.query.username2;
-			var password = req.query.password2;
-			var password2 = req.query.password3;
-
-			var pFlag = true;
-
-			for( j = 0; j < info['logintable'].length; j++){
-				if( info['logintable'][j]['username'] === username ){
-					errorStr = errorStr + "Username taken";
-					registerErr= true;
-					break;
-				}
-			}
-
-			if( password !== password2 ){
-				if( registerErr )
-					errorStr = errorStr + "; ";
-
-				errorStr = errorStr + "Passwords do not match";
-				pFlag = false;
-				registerErr= true;
-
-			}
-		
-			if( j == info['logintable'].length && pFlag) {
-					var newMem = {
-						"username" : username,
-						"password" : password,
-						"userIdx"  : info['newUserIdx']
-					};
-					info['logintable'].push(newMem);
-					info['curUserIdx'] = info['newUserIdx'];
-					curUserIdx = info['curUserIdx'];
-					info['newUserIdx'] = info['newUserIdx'] + 1;
-					var json = questionData['questionTemp'];
-					var newObject = JSON.parse(JSON.stringify( json ));
-					questionData['user'].push(newObject);
-					registerFlag = true;
-			}
-			
-		}
 	}
 
-	if( loginErr || registerErr){
+	if( loginErr ){
 		res.redirect("/login?error=true&errorStr="+errorStr);
 	}
+	
 	else {
-		var lvl = parseInt(questionData['user'][curUserIdx]['level']);
-		var lvlName = questionData['user'][curUserIdx]['levelNames'][lvl]['name'];
+		var lvl = parseInt(questionData['user'][info['curUserIdx']]['level']);
+		var lvlName = questionData['user'][info['curUserIdx']]['levelNames'][lvl]['name'];
 
-		questionData['user'][curUserIdx]["login"] = true;
+		questionData['user'][info['curUserIdx']]["login"] = true;
 
 		res.render('question', {
-	    	"lockedQuestionText" : questionData['user'][curUserIdx]['lockedQuestionText'],    	
-	    	"questionText" : questionData['user'][curUserIdx]['questionText'],
+	    	"lockedQuestionText" : questionData['user'][info['curUserIdx']]['lockedQuestionText'],    	
+	    	"questionText" : questionData['user'][info['curUserIdx']]['questionText'],
 	    	"levelName" : lvlName,
 	    	"levelUp" : levelUp
 	    });
