@@ -18,6 +18,9 @@ html{
      overflow: hidden;
 }
 
+h3{
+     font-size: 23px;
+}
 li a{
      float:left;
      background-color: #0D0221;
@@ -54,7 +57,7 @@ li a{
 
 
 #backToQuestion{
-	margin: 10% 4%;
+	margin: 4% 4%;
 }
 
 .myButton {

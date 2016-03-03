@@ -39,7 +39,7 @@
 <div class="pageTitle" id= "title">
 	<h2> Self-Evaluation</h2>
 	<h4> Evaluate your response to the question: <b>"{{questionSelected}}"</b></h4>
-	<h5 style="color:green"> Please fill out the below evaluation before continuing</h5>
+<!-- 	<h5 style="color:green"> Please fill out the below evaluation before continuing</h5> -->
 </div>
 
 	{{> popup}}
@@ -50,16 +50,19 @@
 			<div class="row" >
 				<div class="col-xs-6"> </div>
 				<div class="col-xs-2">
-					<p style="margin-top:20px" align="center"> Poor</p>
+					<h4 style="margin-top:10px" align="left"> Poor</h4>
 				</div>
 				<div class="col-xs-2">
-					<p style="margin-top:20px" align="center"> Okay</p>
+					<h4 style="margin-top:10px" align="left"> Okay</h4>
 				</div>
 				<div class="col-xs-2">
-					<p style="margin-top:20px" align="center"> Great</p>
+					<h4 style="margin-top:10px" align="left"> Great</h4>
 				</div>
-<!-- 		<div class="col-xs-1"> </div> -->
 			</div> <!-- end row -->
+
+		
+
+
 		</div> <!-- end column headings -->
 
 		{{#each evalBox}}

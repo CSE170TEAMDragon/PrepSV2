@@ -8,34 +8,57 @@
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
 	<link href="css/bootstrapTest.css" rel="stylesheet">
-<!-- 	<link href="css/careergoal.css" rel="stylesheet"> -->
+	<link rel="stylesheet" href="/css/hamburgerbar.css">
+	<link href="css/levelbtn.css" rel="stylesheet">
+	<link href="css/careergoal.css" rel="stylesheet">
 	<link href="css/font-awesome-4.5.0/css/font-awesome.css" rel="stylesheet">
  
 </head>
 
 <body>
-	<div class="header" style="padding-top:1%; margin:auto; text-align:center">
-		  <img src="/images/PrepS.jpg" style="align:middle; width: 90%; margin-top:40px">
-		  <h4>
-		  	Boost your confidence
-		  </h4>
-		  <h4>
-		  	Rock your interview
-		  </h4>
-		  <h4>
-		  	Get your dream job
-		  </h4>
 
-	
+	<header>
+  		<button id="top" class="hamburger">&#9776;</button>
+  		<button class="cross">&#735;</button>
+  		<p class="myButton">{{levelName}}</p>
+	</header>
+
+	<div class="menu">
+ 	 <ul>
+    	<a href="/question"><li>Questions</li></a>
+    	<a href="/achievement"><li>Achievement</li></a>
+    	<a href="/learnmore"><li>Learn More</li></a>
+    	<a href="/"><li>Log out</li></a>
+  	</ul>
+	</div>
+
+
+	<div class="header" style="padding-top:1%; margin:auto; text-align:center">
+		  <img src="/images/PrepS.jpg" style="align:middle; width: 90%; margin-top:20px">
+		  <hr>
+		  <h4>
+		  	<span style="color:#f1982f">Boost</span> your confidence
+		  </h4>
+		  <hr>
+		  <h4>
+		  	<span style="color:#f1982f">Rock</span> your interview
+		  </h4>
+		  <hr>
+		  <h4>
+		  	<span style="color:#f1982f">Obtain</span> your dream job
+		  </h4>
+		  <hr>
+		  <img src="/images/interview1.jpg" style="align:middle; width: 90%; margin-top:20px">
+
 	</div>
 
 
 
 
-	<div>
-		<button type="button" class="btn btn-primary" style="margin-top:40%">
-         <a href="/question">
-          Let's Get Started
+	<div class="nextbutton">
+		<button type="button" class="btn btn-primary">
+         <a href="/careergoal2" >
+          Next
          </a>
      	</button>
 	</div>

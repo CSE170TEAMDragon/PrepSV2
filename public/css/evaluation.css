@@ -33,6 +33,10 @@ input[type=radio] {
      overflow: hidden;
 }
 
+.columnHeadings{
+     margin-right: 4%;
+}
+
 li a{
      float:left;
      background-color: #0D0221;
@@ -50,7 +54,7 @@ li a{
 }
 
 .evaluationBox{
-     margin:2% 8% 6% 8%;
+     margin:2% 6% 6% 6%;
 }
 
 .questionBox{

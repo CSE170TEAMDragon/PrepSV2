@@ -28,17 +28,17 @@
     <h5 style="color:red; text-align: center">ERRORS:</br>{{errorStr}}</h5>
   {{/if}}
 
-  <p style="text-align: center; color: white; font-size: 10pt"><b><u>ATTENTION:</u></b>Please do <b>NOT</b> enter important passwords in this form as they may not be fully encrypted. We apologize for the issue.</p>
+  <p style="text-align: center; color: white; font-size: 10pt; margin: 3% 7% 0% 7%"><b><u>ATTENTION</u></b>: Please do <b>NOT</b> enter important passwords in this form as they may not be fully encrypted. We apologize for the issue.</p>
 
   <form class="form lform" method="get" accept-charset="utf-8" action="/question" style="margin-top:20px">
     <h2 class = "header"> Login </h2>
     <div class = "loginform">
-      <label for="username">Username</label>
-      <input required type="text" id="username1" name="username1" class="inputBox" >
+   <!--    <label for="username">Username</label> -->
+      <input required type="text" id="username1" name="username1" class="inputBox" placeholder="Username" >
     </div>
-    <div class = "loginform">
-      <label for="password">Password</label>
-      <input required type="password" name="password1" id="password1" class="inputBox">
+    <div class = "loginform"><!-- 
+      <label for="password">Password</label> -->
+      <input required type="password" name="password1" id="password1" class="inputBox"  placeholder="Password">
     </div>
     <input type="hidden" name="login" value="1">
     <input type="submit" id="button" class="btn btn-primary" value="Login">
@@ -48,17 +48,17 @@
 
   <form class="form" method= "get" accept-charset="utf-8" action="/careergoal" style="margin-top:0px">
     <h2 class = "header"> Register </h2>
-    <div class = "regform">
-      <label for="username">Username</label>
-      <input required type="text" id= "username2" name="username2" class="inputBox">
+    <div class = "regform"><!-- 
+      <label for="username">Username</label> -->
+      <input required type="text" id= "username2" name="username2" class="inputBox" placeholder="Username">
+    </div>
+    <div class = "regform"><!-- 
+      <label for="password">Password</label> -->
+      <input required type="password" id= "password2" name="password2" class="inputBox"  placeholder="Password">
     </div>
     <div class = "regform">
-      <label for="password">Password</label>
-      <input required type="password" id= "password2" name="password2" class="inputBox">
-    </div>
-    <div class = "regform">
-      <label for="password">Confirm Pass.</label>
-      <input required type="password" id="password3" name="password3" class="inputBox">
+   <!--    <label for="password">Confirm Pass.</label> -->
+      <input required type="password" id="password3" name="password3" class="inputBox"  placeholder="Confirm password">
     </div>
     <input type="hidden" name="register" value="1">
     <input type="submit" id="button" class="btn btn-primary" value="Register"></input>
