@@ -58,11 +58,7 @@ app.get('/recording', recording.viewRecording);
 
 app.get('/careergoal',careergoal.viewCareer);
 app.get('/careergoal2',careergoal2.viewCareer);
-<<<<<<< HEAD
-=======
-
 app.get('/versionB', index.viewVersionB);
->>>>>>> d65b7a65c2dca5bca5158be0e3cf61f10041a34b
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));

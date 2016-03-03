@@ -10,8 +10,8 @@ $(document).ready(function() {
 function initializePage() {
   $(".col-xs-2").click(checkRadio);
   //$("#donebutton").click(evaluation);
-  // $("#recBtn")click(recordClicked);
-  // $(".recordingPic #stopBtn")click(stopClicked);
+  $("#recBtn").click(recordClicked);
+  $("#stopBtn").click(stopClicked);
   $("#inputDefault2").click(checkCareer);
   $('.message a').click(function(){
   $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
@@ -99,14 +99,19 @@ function checkCareer(e){
 	}
 }
 
-// function recordClicked(e){
-// 	$(.recordingPic img).attr("src", "/images/stopButton.png" )
-// 	$(.recordingPic img).attr("id", "stopBtn")
-// }
+function recordClicked(e){
 
-// function stopClicked(e){
-// 	$(.recordingPic img).attr("src", "/images/microphone.png" )
-// 	$(.recordingPic img).attr("id", "recBtn")
-// }
+	$(".recordingPic img").attr("src", "/images/stopButton.png" )
+	$(".recordingPic a").attr("id", "stopBtn")
+
+	  $("#stopBtn").click(stopClicked);
+}
+
+function stopClicked(e){
+	console.log("stop button clicked");
+	$(".recordingPic img").attr("src", "/images/microphone3.png" )
+	$(".recordingPic a").attr("id", "recBtn")
+	  $("#recBtn").click(recordClicked);
+}
 
 
