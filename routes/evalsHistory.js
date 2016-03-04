@@ -6,7 +6,6 @@ exports.viewHistory = function(req, res) { 
 	var id = req.query.id;
 	var pos;
 	var curUserIdx = info['curUserIdx'];
-	//console.log( "evalshistory= "+ curUserIdx);
 
 	for( i = 0; i < data['answeredQuestion'].length; i++){
 		var name = data['answeredQuestion'][i]['id'];
@@ -19,7 +18,7 @@ exports.viewHistory = function(req, res) { 
 	var lvlName = questionData['user'][curUserIdx]['levelNames'][lvl]['name'];
 
     res.render('evalshistory', {
-    	"data" : questionData['user'][curUserIdx]['questionText'][0]['history'],
+    	"data" : questionData['user'][curUserIdx]['questionText'][id]['history'],
     	"levelName" : lvlName,
     	"question" : q
     });
