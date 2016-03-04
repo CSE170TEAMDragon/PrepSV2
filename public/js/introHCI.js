@@ -9,7 +9,7 @@ $(document).ready(function() {
  */
 function initializePage() {
   $(".col-xs-2").click(checkRadio);
-  //$("#donebutton").click(evaluation);
+  $("#donebutton").click(evaluation);
   $("#recBtn").click(recordClicked);
   $("#stopBtn").click(stopClicked);
   $("#inputDefault2").click(checkCareer);
@@ -82,7 +82,10 @@ function evaluation (e){
 	var categ1 = $("#c1").text();
 	var categ2 = $("#c2").text();
 
+	var num = document.getElementById("name2").innerHTML;
+	
 	var json = {
+		"qNum" : num,
 		"c1" : categ0,
 		"c2" : categ1,
 		"c3" : categ2,
@@ -90,6 +93,9 @@ function evaluation (e){
 		"r2" : row2,
 		"r3" : row3
 	}
+
+	$.post('/historyAdd', json , function (res) { } );
+
 }
 
 function checkCareer(e){
@@ -104,14 +110,14 @@ function recordClicked(e){
 	$(".recordingPic img").attr("src", "/images/stopButton.png" )
 	$(".recordingPic a").attr("id", "stopBtn")
 
-	  $("#stopBtn").click(stopClicked);
+	 $("#stopBtn").click(stopClicked);
 }
 
 function stopClicked(e){
 	console.log("stop button clicked");
 	$(".recordingPic img").attr("src", "/images/microphone3.png" )
 	$(".recordingPic a").attr("id", "recBtn")
-	  $("#recBtn").click(recordClicked);
+	$("#recBtn").click(recordClicked);
 }
 
 

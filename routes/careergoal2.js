@@ -52,7 +52,7 @@ exports.viewCareer = function(req, res) { 
 			
 		}	
 
-	if(registerErr){
+	if(registerErr && info['curUserIdx'] == -1){
 		res.redirect("/login?error=true&errorStr="+errorStr);
 	}
 	else

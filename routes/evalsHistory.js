@@ -19,8 +19,22 @@ exports.viewHistory = function(req, res) { 
 	var lvlName = questionData['user'][curUserIdx]['levelNames'][lvl]['name'];
 
     res.render('evalshistory', {
-    	"data" : data['history'],
+    	"data" : questionData['user'][curUserIdx]['questionText'][0]['history'],
     	"levelName" : lvlName,
     	"question" : q
     });
+};
+
+
+exports.addHistory = function(req, res) { 
+	var json = req.body;
+	var id = parseInt(json['qNum']);
+	var curUserIdx = info['curUserIdx'];
+
+	if( questionData['user'][curUserIdx]['questionText'][id]['history'].length == 0)
+		json['evalNum'] = 'First Evaluation';
+	else
+		json['evalNum'] = 'Second Evaluation';
+
+	questionData['user'][curUserIdx]['questionText'][id]['history'].push(json);
 };
