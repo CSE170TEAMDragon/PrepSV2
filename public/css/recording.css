@@ -20,11 +20,20 @@ h1{
     background-color: rgba(255, 255, 255, 0.5);
 }*/
 
+
 html {
-    background: url('../images/interviewer5.jpg');
+         background: url('../images/table2.jpg');
+     background-size: cover;
+     background-repeat: none;
+/*     background-size: 300%;
+     background-position-x: 80%;
+     background-position-y: 80%; */
+     background-attachment: fixed;  
+/*    background: url('../images/interviewer5.jpg');*/
+/*     background: url('../images/table3.jpg');
     background-size: cover ;
-    background-repeat: no-repeat;
-    height: 500px;
+    background-repeat: no-repeat;*/
+ /*   height: 500px;*/
     background-color: rgba(255, 255, 255, 0.5);
 }
 
@@ -42,10 +51,11 @@ html {
      text-align: center;
      position:fixed;
      bottom:3%;
+     width:95%;
 }
 
 .recordingPic img{
-     width: 35%;
+     width: 30%;
      text-align: center;
 
 }
@@ -99,19 +109,22 @@ html {
 }*/
 
 .availableQuestion p {
-     float:left;
+     float:center;
      /*padding-right: 35%;*/
-     padding-left: 3%;
+     padding: 5%;
      margin-bottom: 0px;
+     background-color: #FFFFFF;
+     background-color: rgba(255, 255, 255, 0.6);
 }
 
 .unlockedquestionBox{
      list-style-type: decimal;
      margin: 2%;
-     width: 60%;
+     width: 90%;
      height: 50%;
      padding: 0px;
      margin-bottom: 0px;
+     margin:auto;
 }
 
 .lockedquestionBox ul{
@@ -125,7 +138,7 @@ html {
      margin: 12px;
      font-size: 22px;
      background-color: #FFFFFF;
-     background-color: rgba(255, 255, 255, 0.7);
+     background-color: rgba(255, 255, 255, 0.6);
 }
 
 .availableQuestion li{

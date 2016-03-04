@@ -10,9 +10,14 @@
 }
 
 body{
-     background: url('../images/table3.jpg');
-     background-size: contain;
+     background: url('../images/table2.jpg');
+     background-size: cover;
      background-repeat: none;
+/*     background-size: 300%;
+     background-position-x: 50%;
+     background-position-y: 80%; */
+     background-attachment: fixed;  
+
 }
 
 
@@ -101,12 +106,9 @@ body{
 }
 
 .lockedQuestion{
-     margin: 12px;
-     margin-top: 16px;
-     margin-left: 0%;
-
-     opacity: .7;
-     background-color: #A5A6A6;
+     margin: 16px 10px 0px 10px;
+     opacity: .9;
+     background-color: #999A9A;
 
 }
 
@@ -125,7 +127,8 @@ body{
 
 .oneRow{
      background-color: #FFFFFF;
-     background-color: rgba(255, 255, 255, 0.7);
+     background-color: rgba(255, 255, 255, 0.8);
+     margin: 16px 10px 0px 10px;
 }
 
 .availableQuestion button{
@@ -142,9 +145,9 @@ body{
 }
 
 .lockedQuestion button{
-     border:1px solid #A5A6A6;
+     border:1px solid transparent;
+     background-color: transparent;
      cursor:pointer;
-     background-color:#A5A6A6;
      font-size: 22px;
      text-decoration:none;
      padding:20px;

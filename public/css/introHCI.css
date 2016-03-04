@@ -12,9 +12,13 @@ h1 {
      padding-top: 4%;
 }
 
+html{
+
+}
+
 
 .jumbotron {
-     height: 50%;
+     height: 700px;
      position: relative;
      background: url('../images/Office9_resize.jpg');
      background-size: cover;
