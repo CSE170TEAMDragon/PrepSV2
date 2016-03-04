@@ -11,7 +11,8 @@
 	<link rel="stylesheet" href="/css/hamburgerbar.css">
 	<link href="css/levelbtn.css" rel="stylesheet">
 	<link href="css/font-awesome-4.5.0/css/font-awesome.css" rel="stylesheet">
-		<link href="css/question.css" rel="stylesheet">
+	<link href="css/question.css" rel="stylesheet">
+
 
 </head>
 
@@ -53,7 +54,7 @@
 			{{#each questionText}}
 			<div class="oneRow">
 			<div class="row">
-				<a href="/recording?q={{question}}&id={{id}}">
+				<a href="/recording?q={{question}}&id={{id}}" data-transition="slide">
 					<div class="col-xs-10" style="padding-right:0px; padding-top:0px; margin:0px">
 						<div class="availableQuestion" id="{{id}}">
 					
