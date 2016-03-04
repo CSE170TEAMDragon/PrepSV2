@@ -51,7 +51,7 @@
 		<ul>
 			
 			{{#each questionText}}
-			<div class="oneRow" style="margin:16px">
+			<div class="oneRow">
 			<div class="row">
 				<a href="/recording?q={{question}}&id={{id}}">
 					<div class="col-xs-10" style="padding-right:0px; padding-top:0px; margin:0px">
@@ -87,7 +87,7 @@
 
 			{{#each lockedQuestionText}}
 
-				<div class="lockedQuestion" id="{{id}}" style="margin:16px">
+				<div class="lockedQuestion" id="{{id}}">
 					<li><i class="fa fa-lock fa-2x" style="padding-left:4%; padding-top:4%" ><button><p class = "lockedMsg">Answer previous questions to unlock</p></button></i></li>
 				</div>
 			{{/each}}
