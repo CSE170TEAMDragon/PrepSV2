@@ -9,8 +9,6 @@ exports.viewQuestion = function(req, res) {
 	var errorStr = "";
 
 	var loginFlag= false;
-	
-	var normalFlag = false;
 
 	var loginErr = false;
 
@@ -19,10 +17,11 @@ exports.viewQuestion = function(req, res) {
 	var curUserIdx = info['curUserIdx'];
 
 	if( name != undefined && name2 != undefined && curUserIdx != -1){
-		var numAns = 0;
-		normalFlag= true;
 		name2 = parseInt(name2);
 		questionData['user'][curUserIdx]['questionText'][name2]['answered'] = true;
+	}
+
+		var numAns = 0;
 
 		for( i = 0; i < questionData['user'][curUserIdx]['questionText'].length; i++) {
 			if( questionData['user'][curUserIdx]['questionText'][i]['answered'] === true){
@@ -47,9 +46,7 @@ exports.viewQuestion = function(req, res) {
 			questionData['user'][curUserIdx]["level"] = "" + level;
 
 		}
-	}
 
-	else {
 		var login = req.query.login;
 
 		if( login != undefined ){
@@ -70,7 +67,7 @@ exports.viewQuestion = function(req, res) {
 				curUserIdx = info['curUserIdx'];
 			}
 		}
-	}
+	
 
 	if( loginErr ){
 		res.redirect("/login?error=true&errorStr="+errorStr);
@@ -92,8 +89,7 @@ exports.viewQuestion = function(req, res) {
 	
 };
 
-
-
+// will be called when the user logs in
 exports.viewQuestionPost = function(req, res) {	
 	var name = req.body.q;
 	var name2 = req.body.id;
@@ -109,39 +105,7 @@ exports.viewQuestionPost = function(req, res) {
 	var levelUp = false;
 
 	var curUserIdx = info['curUserIdx'];
-
-	if( name != undefined && name2 != undefined && curUserIdx != -1){
-		var numAns = 0;
-		normalFlag= true;
-		name2 = parseInt(name2);
-		questionData['user'][curUserIdx]['questionText'][name2]['answered'] = true;
-
-		for( i = 0; i < questionData['user'][curUserIdx]['questionText'].length; i++) {
-			if( questionData['user'][curUserIdx]['questionText'][i]['answered'] === true){
-				numAns= numAns + 1;
-			}
-		}
-
-		if( questionData['user'][curUserIdx]['lockedQuestionText'].length >= 2 && numAns == questionData['user'][curUserIdx]['questionText'].length){
-
-			levelUp = true;
-
-			var json = questionData['user'][curUserIdx]['lockedQuestionText'].pop();
-			questionData['user'][curUserIdx]["questionText"].push(json);
-
-			json = questionData['user'][curUserIdx]['lockedQuestionText'].pop();
-			questionData['user'][curUserIdx]["questionText"].push(json);
-
-			json = questionData['user'][curUserIdx]['lockedPoses'].pop();
-			questionData['user'][curUserIdx]["unlockedPoses"].push(json);
-
-			var level = parseInt(questionData['user'][curUserIdx]["level"]) + 1;
-			questionData['user'][curUserIdx]["level"] = "" + level;
-
-		}
-	}
-
-	else {
+	
 		var login = req.body.login;
 
 		if( login != undefined ){
@@ -162,7 +126,7 @@ exports.viewQuestionPost = function(req, res) {
 				curUserIdx = info['curUserIdx'];
 			}
 		}
-	}
+	
 
 	if( loginErr ){
 		res.redirect("/login?error=true&errorStr="+errorStr);

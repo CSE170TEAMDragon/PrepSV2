@@ -1,7 +1,4 @@
-
-
 .container {
- /*   background: url('../images/table3.jpg');*/
     background-size: cover;
 
 }
@@ -17,16 +14,6 @@ html{
      margin:4% 0% 2%;
      padding: 0.5px 0px 6px;
     
-}
-
-
-.oneBadge{
-    width: 45%;
-}
-
-#imgDiv h3{
-    margin:4%;
-    margin-top: 0;
 }
 
 .body{
@@ -50,39 +37,6 @@ h1{
 
 div {
     text-align: justify;
-}
-
-div img {
-    display: inline-block;
-    width: 70%;
-    height: 70%;
-    margin: 4%;
-}
-
-#imgDiv{
-    margin:4%;
-    margin-bottom:12%;
-    text-align: center;
-}
-
-.badgeBtn a{
-    width:90%;
-    margin-bottom: 8%;
-}
-
-.badgeBtn{
-    text-align: center;
-
-}
-
-.oneBadge{
-    margin:3%;
-}
-
-#imgDiv:after {
-    content: '';
-    display: inline-block;
-    width: 100%;
 }
 
 #headingDiv h3{
@@ -141,17 +95,6 @@ li a{
 
 .myButton {
      float: right;
-     /*-moz-box-shadow:inset 4px 1px 15px 3px #23395e;
-     -webkit-box-shadow:inset 4px 1px 15px 3px #23395e;
-     box-shadow:inset 4px 1px 15px 3px #23395e;
-     background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #2e466e), color-stop(1, #415989));
-     background:-moz-linear-gradient(top, #2e466e 5%, #415989 100%);
-     background:-webkit-linear-gradient(top, #2e466e 5%, #415989 100%);
-     background:-o-linear-gradient(top, #2e466e 5%, #415989 100%);
-     background:-ms-linear-gradient(top, #2e466e 5%, #415989 100%);
-     background:linear-gradient(to bottom, #2e466e 5%, #415989 100%);
-     filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#2e466e', endColorstr='#415989',GradientType=0);
-     background-color:#2e466e;*/
      background-color: #647487;
      -moz-border-radius:29px;
      -webkit-border-radius:29px;
