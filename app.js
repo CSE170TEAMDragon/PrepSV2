@@ -49,7 +49,11 @@ if ('development' == app.get('env')) {
 app.get('/', index.view);
 app.get('/login', login.viewProject);
 app.get('/learnmore', learnmore.view);
+
 app.get('/question', question.viewQuestion);
+// post '/question' instead of get due to login form
+app.post('/question', question.viewQuestionPost);
+
 app.get('/achievement', achievement.viewAchievement);
 app.get('/evalsHistory', evalsHistory.viewHistory);
 app.get('/evaluation', evaluation.viewEvaluation);
@@ -57,7 +61,7 @@ app.get('/feedback', feedback.viewFeedback);
 app.get('/recording', recording.viewRecording);
 
 app.get('/careergoal',careergoal.viewCareer);
-app.get('/careergoal2',careergoal2.viewCareer);
+app.post('/careergoal2',careergoal2.viewCareer);
 app.get('/versionB', index.viewVersionB);
 
 app.post('/historyAdd', evalsHistory.addHistory);

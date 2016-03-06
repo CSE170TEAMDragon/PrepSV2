@@ -27,13 +27,9 @@ exports.viewHistory = function(req, res) { 
 
 exports.addHistory = function(req, res) { 
 	var json = req.body;
+	// console.log(json);
 	var id = parseInt(json['qNum']);
 	var curUserIdx = info['curUserIdx'];
-
-	if( questionData['user'][curUserIdx]['questionText'][id]['history'].length == 0)
-		json['evalNum'] = 'First Evaluation';
-	else
-		json['evalNum'] = 'Second Evaluation';
 
 	questionData['user'][curUserIdx]['questionText'][id]['history'].push(json);
 };

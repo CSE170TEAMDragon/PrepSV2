@@ -91,3 +91,95 @@ exports.viewQuestion = function(req, res) {
 	}
 	
 };
+
+
+
+exports.viewQuestionPost = function(req, res) {	
+	var name = req.body.q;
+	var name2 = req.body.id;
+
+	var errorStr = "";
+
+	var loginFlag= false;
+	
+	var normalFlag = false;
+
+	var loginErr = false;
+
+	var levelUp = false;
+
+	var curUserIdx = info['curUserIdx'];
+
+	if( name != undefined && name2 != undefined && curUserIdx != -1){
+		var numAns = 0;
+		normalFlag= true;
+		name2 = parseInt(name2);
+		questionData['user'][curUserIdx]['questionText'][name2]['answered'] = true;
+
+		for( i = 0; i < questionData['user'][curUserIdx]['questionText'].length; i++) {
+			if( questionData['user'][curUserIdx]['questionText'][i]['answered'] === true){
+				numAns= numAns + 1;
+			}
+		}
+
+		if( questionData['user'][curUserIdx]['lockedQuestionText'].length >= 2 && numAns == questionData['user'][curUserIdx]['questionText'].length){
+
+			levelUp = true;
+
+			var json = questionData['user'][curUserIdx]['lockedQuestionText'].pop();
+			questionData['user'][curUserIdx]["questionText"].push(json);
+
+			json = questionData['user'][curUserIdx]['lockedQuestionText'].pop();
+			questionData['user'][curUserIdx]["questionText"].push(json);
+
+			json = questionData['user'][curUserIdx]['lockedPoses'].pop();
+			questionData['user'][curUserIdx]["unlockedPoses"].push(json);
+
+			var level = parseInt(questionData['user'][curUserIdx]["level"]) + 1;
+			questionData['user'][curUserIdx]["level"] = "" + level;
+
+		}
+	}
+
+	else {
+		var login = req.body.login;
+
+		if( login != undefined ){
+			var username = req.body.username1;
+			var password = req.body.password1;
+			for( i = 0; i < info['logintable'].length; i++)
+				if( info['logintable'][i]['username'] === username && info['logintable'][i]['password'] === password){
+					loginFlag = true;
+					break;
+				}
+			// what if login cannot be found?
+			if( loginFlag == false ){
+				errorStr = errorStr + "Login cannot be found";
+				loginErr= true;
+			}
+			else{
+				info['curUserIdx'] = info['logintable'][i]['userIdx'];
+				curUserIdx = info['curUserIdx'];
+			}
+		}
+	}
+
+	if( loginErr ){
+		res.redirect("/login?error=true&errorStr="+errorStr);
+	}
+	
+	else {
+		var lvl = parseInt(questionData['user'][info['curUserIdx']]['level']);
+		var lvlName = questionData['user'][info['curUserIdx']]['levelNames'][lvl]['name'];
+
+		questionData['user'][info['curUserIdx']]["login"] = true;
+
+		res.render('question', {
+	    	"lockedQuestionText" : questionData['user'][info['curUserIdx']]['lockedQuestionText'],    	
+	    	"questionText" : questionData['user'][info['curUserIdx']]['questionText'],
+	    	"levelName" : lvlName,
+	    	"levelUp" : levelUp
+	    });
+	}
+	
+};
