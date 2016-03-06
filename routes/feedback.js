@@ -12,8 +12,8 @@ exports.viewFeedback = function(req, res) {
 	var id = parseInt (name2);
 	var feedback = questionData['user'][curUserIdx]['questionText'][id]['notes'];
 
-	// if( question != undefined && name2 != undefined && curUserIdx != -1)
-	// 	questionData['user'][curUserIdx]['questionText'][name2]['answered'] = true;
+	if( question != undefined && name2 != undefined && curUserIdx != -1)
+		questionData['user'][curUserIdx]['questionText'][name2]['answered'] = true;
 
 	res.render('feedback', {
 		'originalQuestion': question,

@@ -10,7 +10,7 @@
 	<link href="css/bootstrapTest.css" rel="stylesheet">
 	<link href="css/evaluation.css" rel="stylesheet">
 	<link href="css/levelbtn.css" rel="stylesheet">
-
+	<link href="css/font-awesome-4.5.0/css/font-awesome.css" rel="stylesheet">
 	<link rel="stylesheet" href="/css/hamburgerbar.css">
 
 </head>
@@ -28,6 +28,7 @@
 	 	<ul>
 	    	<a href="/question"><li>Questions</li></a>
 	    	<a href="/achievement"><li>Achievement</li></a>
+	    	<a href="/responseHistory"><li>Response History</li></a>
 	    	<a href="/learnmore"><li>Learn More</li></a>
 	    	<a href="/"><li>Log out</li></a>
 	  	</ul>
@@ -71,17 +72,17 @@
 
 			<div class="col-xs-2" align="center">
 				<label class="radio-inline">
-			  		<input type="radio" name="inlineRadioOptions{{evalID}}" id="inlineRadio{{evalID}}0" value="Poor"> </label>
+			  		<input type="radio" name="inlineRadioOptions{{evalID}}" id="inlineRadio{{evalID}}0" value="Poor" onclick="checkRadio()"> </label>
 			 </div>
 
 			<div class="col-xs-2" align="center">
 				<label class="radio-inline">
-				  <input type="radio" name="inlineRadioOptions{{evalID}}" id="inlineRadio{{evalID}}1" value="Okay"> </label>
+				  <input type="radio" name="inlineRadioOptions{{evalID}}" id="inlineRadio{{evalID}}1" value="Okay" onclick="checkRadio()"> </label>
 		  	</div>
 
 			<div class="col-xs-2" align="center">
 				<label class="radio-inline">
-				  <input type="radio" name="inlineRadioOptions{{evalID}}" id="inlineRadio{{evalID}}2" value="Great"> </label>
+				  <input type="radio" name="inlineRadioOptions{{evalID}}" id="inlineRadio{{evalID}}2" value="Great" onclick="checkRadio()"> </label>
 			</div>
 
 		</div>	<!-- end row -->

@@ -24,6 +24,8 @@ var ImagineSuccess = require('./routes/2ImagineSuccess');
 var AimToConnect = require('./routes/3AimToConnect');
 var CalmTheNerves = require('./routes/4CalmTheNerves');
 var Research = require('./routes/5Research');
+var response = require('./routes/responseHistory');
+
 
 // Example route
 // var user = require('./routes/user');
@@ -67,6 +69,7 @@ app.get('/recording', recording.viewRecording);
 
 app.get('/careergoal',careergoal.viewCareer);
 app.post('/careergoal2',careergoal2.viewCareer);
+
 app.get('/versionB', index.viewVersionB);
 app.get('/1PowerPose', PowerPose.viewBadge1);
 app.get('/2ImagineSuccess', ImagineSuccess.viewBadge2);
@@ -75,6 +78,8 @@ app.get('/4CalmTheNerves', CalmTheNerves.viewBadge4);
 app.get('/5Research', Research.viewBadge5);
 
 app.post('/historyAdd', evalsHistory.addHistory);
+app.get('/responseHistory', response.viewHistory);
+
 
 
 http.createServer(app).listen(app.get('port'), function(){

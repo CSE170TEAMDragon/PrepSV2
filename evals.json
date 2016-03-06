@@ -1,24 +1,3 @@
 {
-	"answeredQuestion": [
-	],
-
-	"history": [
-		{
-			"position": "First Evaluation",
-			"cItem1":  "Name and Major Introduction",
-			"cItem2":  "Interests and Goals",
-			"uItem1":  "Relevant Hobbies",
-			"uItem2":  "Smile!",
-			"id": "One"
-		},
-		{
-			"position": "Second Evaluation",
-			"cItem1":  "Smile",
-			"cItem2":  "Relevant Hobbies",
-			"uItem1":  "Interests and Goals",
-			"uItem2":  "Name and Major Introduction",
-			"id": "Two"
-		
-		}
-	]
+	"answeredQuestion": []
 }
