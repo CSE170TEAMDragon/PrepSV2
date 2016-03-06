@@ -6,8 +6,12 @@
 
 html{
      background: url('../images/clipboard6.jpg');
-     background-size: 100%;
+   background-size: 100%;      
+     background-repeat: none;
+/*     background-size: cover; */
+     /*height: 70%;*/
 }
+
 input[type=radio] {
     border: 0px;
     width: 100%;

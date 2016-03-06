@@ -27,7 +27,7 @@ function questionClicked(e){
 }
 
 function loginClicked(e){
-  window.location.replace("http://preps2.herokuapp.com/question");
+  window.location.replace("http://preps.herokuapp.com/question");
 }
 
 function feedbackAddClicked(e){

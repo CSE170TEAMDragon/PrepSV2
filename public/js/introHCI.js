@@ -14,7 +14,6 @@ function initializePage() {
   $("#stopBtn").click(stopClicked);
   $("#inputDefault2").click(checkCareer);
   //$("#toQuestion").click(checkCareer);
-
   $('.message a').click(function(){
   $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
 	});
@@ -90,10 +89,6 @@ function evaluation (e){
 			row3 = document.getElementById("inlineRadio2"+i).value;
 	}
 
-	// console.log(row1);
-	// console.log(row2);
-	// console.log(row3);
-
 	var categ0 = $("#c0").text();
 	var categ1 = $("#c1").text();
 	var categ2 = $("#c2").text();
@@ -110,7 +105,7 @@ function evaluation (e){
 		"r3" : row3
 	}
 
-	$.post('/historyAdd', json , function (res) { } );
+	$.post('/historyAdd', json , function (res) {/* do nothing */} );
 
 }
 
@@ -133,6 +128,7 @@ function stopClicked(e){
 	$(".recordingPic img").attr("src", "/images/microphone3.png" )
 	$(".recordingPic a").attr("id", "recBtn")
 	$("#recBtn").click(recordClicked);
+	document.getElementById('recDone').disabled = false;
 }
 
 

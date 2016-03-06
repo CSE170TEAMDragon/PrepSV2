@@ -20,6 +20,10 @@ body{
 
 }
 
+#congrats{
+     margin-top: 1px;
+     margin-bottom: 1px;
+}
 
 h1{
     text-align: center;
