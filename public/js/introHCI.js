@@ -76,7 +76,9 @@ function evaluation (e){
 			row3 = document.getElementById("inlineRadio2"+i).value;
 	}
 
-	var categ0, categ1, categ2;
+	// console.log(row1);
+	// console.log(row2);
+	// console.log(row3);
 
 	var categ0 = $("#c0").text();
 	var categ1 = $("#c1").text();

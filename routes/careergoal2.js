@@ -3,7 +3,7 @@ var hisData = require('../evals.json');
 var info = require('../logininfo.json');
 
 exports.viewCareer = function(req, res) { 
-    var register = req.query.register;
+    var register = req.body.register;
 	var errorStr = "";
 
 	var registerFlag= false;
@@ -11,9 +11,9 @@ exports.viewCareer = function(req, res) { 
 
 	if ( register != undefined ){
 			// passwords are not yet encrypted
-			var username = req.query.username2;
-			var password = req.query.password2;
-			var password2 = req.query.password3;
+			var username = req.body.username2;
+			var password = req.body.password2;
+			var password2 = req.body.password3;
 
 			var pFlag = true;
 
