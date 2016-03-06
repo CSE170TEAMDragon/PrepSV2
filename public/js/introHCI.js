@@ -8,7 +8,7 @@ $(document).ready(function() {
  * Function that is called when the document is ready.
  */
 function initializePage() {
-  $(".col-xs-2").click(checkRadio);
+  $(".radio-inLine").click(checkRadio);
   $("#donebutton").click(evaluation);
   $("#recBtn").click(recordClicked);
   $("#stopBtn").click(stopClicked);
