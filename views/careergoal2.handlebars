@@ -39,19 +39,22 @@
 	   <h3>
 	  	 To closely simulate a <span style="color:#f1982f">real interview experience</span>, specify your desired career position and organization/company.
 	   </h3>
-	   <hr style="margin-bottom:10px; margin-top:10px">
-	   <img src="/images/interview1.jpg" style="align:middle; width: 80%; margin-top:0px">
+	   <div id="line">
+	   	<hr style="margin-bottom:10px; margin-top:10px">
+	   </div>
+	   <!-- <img src="/images/interview1.jpg" style="align:middle; width: 80%; margin-top:0px"> -->
 		
 
 	<div class="careerinput">
 		<div class="form-group">
 		  <label class="control-label" for="inputDefault" id ="careerB1" style="font-size:18px; float:left">Career position <font color="red">*</font></label>
-		  <input class="form-control" type="text" id="inputDefault1" >
+		  <input class="form-control" type="text" id="inputDefault1" onclick="checkCareer()" >
 		</div>
 
 		<div class="form-group">
 		  <label class="control-label" for="inputDefault" id ="careerB2" style="font-size:18px; float:left">Organization/Company</label>
-		  <input class="form-control" type="text" id="inputDefault2" >
+		  <input class="form-control" type="text" id="inputDefault2"></br>
+		  <label style="font-size:11px; float:left; color:red">* required</label></br>
 		</div>
 	</div>
 
