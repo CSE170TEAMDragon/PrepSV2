@@ -13,7 +13,7 @@ function initializePage() {
   $("#recBtn").click(recordClicked);
   $("#stopBtn").click(stopClicked);
   $("#inputDefault2").click(checkCareer);
-  //$("#toQuestion").click(checkCareer);
+  // $("#toQuestion").click(checkCareer);
   $('.message a').click(function(){
   $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
 	});
@@ -49,17 +49,6 @@ $('#overlay, .cancel').click(function () {
 	$('#popupContent').fadeOut('slow');    
 });
 
-// $('#B1').click(function(){
-// 	$('#outerBox').fadeIn('slow');
-// 	$('#badgeBox').fadeIn('slow');
-// 	$('#badgeContent').fadeIn('slow'); 	
-// });
-
-// $('#outerBox, .cancel').click(function () {
-// 	$('#outerBox').fadeOut('slow');
-// 	$('#badgeBox').fadeOut('slow');
-// 	$('#badgeContent').fadeOut('slow');    
-// });
 
 
 function checkRadio (e){
