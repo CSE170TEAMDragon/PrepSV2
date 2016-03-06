@@ -98,6 +98,7 @@ function evaluation (e){
 
 }
 
+
 function checkCareer(e){
 	console.log(document.getElementById("inputDefault1").value.length);
 	if (document.getElementById("inputDefault1").value.length != 0){
@@ -106,15 +107,12 @@ function checkCareer(e){
 }
 
 function recordClicked(e){
-
 	$(".recordingPic img").attr("src", "/images/stopButton.png" )
 	$(".recordingPic a").attr("id", "stopBtn")
-
 	 $("#stopBtn").click(stopClicked);
 }
 
 function stopClicked(e){
-	console.log("stop button clicked");
 	$(".recordingPic img").attr("src", "/images/microphone3.png" )
 	$(".recordingPic a").attr("id", "recBtn")
 	$("#recBtn").click(recordClicked);

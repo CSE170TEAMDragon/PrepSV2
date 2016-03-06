@@ -1,0 +1,15 @@
+
+	<div class="badgeBox">
+	<div class="exitBtn">
+		<a href="#" class="cancel" style="margin-top:2%"> <i class="fa fa-times fa-lg"></i> </a>
+	</div>
+		<div id="popupContent" style="margin-top:20px"><i><b style="font-size:20px; padding-bottom:10px">Level Names:</b></i><br/>
+	        <span style="text-align:left; color:black;font-size:10px;">
+	        <h3> Imagine Success </h3>
+	        <h4> Boost your confidence and calm your anxiety by picturing yourself being successful in the interview. 'Before you go in start visualising a successful interview: imagine how you walk to the room, shake the interviewer’s hands and answer the questions with confidence,' says Margaret Buj, interview coach and author of Land That Job! </h4>
+
+	        </span><br/>
+	    </div>
+  </div>
+
+

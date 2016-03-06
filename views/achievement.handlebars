@@ -48,14 +48,20 @@
 
 	<div id="imgDiv">
 		{{#each unlockedPoses}}
-			<img src="{{imgsrc}}" alt=""> 
+			<a href="#"> <img src="{{imgsrc}}" alt="" id="{{badgename}}"> </a>
+			<div class="confidenceBooster">
+				<h3> {{badgename}}</h3>
+				<h4> {{badgedesc}}</h4>
+			</div>
 		{{/each}}
 	</div>
+
+
 
 	<div id="headingDiv">
 		<div class="jumbotron" style="color:white">
 			<h2 style="margin-bottom:4px">Response History</h2>
-			<h4 style="padding:25px; padding-top:0px; padding-bottom:5px; margin-top:0px"> hear previous responses and view self-evaluations</h4>
+			<h4 style="padding:25px; padding-top:0px; padding-bottom:5px; margin-top:0px"> listen to previous responses and view self-evaluations</h4>
 		</div>
 	</div>
 		<div class="questionBox">
