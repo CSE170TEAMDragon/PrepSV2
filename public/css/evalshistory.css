@@ -1,6 +1,6 @@
 .container {
-    font-size: 10pt;
-    background: url('../images/table1copy.jpg');
+    font-size: 10pt;/*
+    background: url('../images/table1copy.jpg');*/
     background-size: cover;
 }
 

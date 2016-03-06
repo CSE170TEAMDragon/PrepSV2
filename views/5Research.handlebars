@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Badge5</title>	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+	<link href="css/bootstrapTest.css" rel="stylesheet">
+	<link href="css/badgePage.css" rel="stylesheet">
+	<link href="css/levelbtn.css" rel="stylesheet">
+	<link rel="stylesheet" href="/css/hamburgerbar.css">
+	<link href="css/font-awesome-4.5.0/css/font-awesome.css" rel="stylesheet">
+
+
+</head>
+
+
+<body>
+	<header>
+  			<button class="hamburger">&#9776;</button>
+  			<button class="cross">&#735;</button>
+  			<p class="myButton">{{levelName}}</p>
+	</header>
+
+	<div class="menu">
+ 	 <ul>
+    	<a href="/question"><li>Questions</li></a>
+    	<a href="/achievement"><li>Achievement</li></a>
+    	<a href="/learnmore"><li>Learn More</li></a>
+    	<a href="/"><li>Log out</li></a>
+  	</ul>
+	</div>
+	
+		{{> popup}}
+
+	<div class="container">
+		<div class="badgeImg">
+			<img src="https://pbs.twimg.com/profile_images/378800000867900868/diA9fWFw_400x400.jpeg" style="width:50%">
+		</div>	
+		<h3 class="title"> Research </h3>
+	    <h4 class="desc" > If you research and learn about the company’s products, culture, profile, and vision; you will get there at least with the confidence of knowing your subject by heart. You won’t have to see yourself disintegrating into 1000 pieces when the interviewer will ask you what you already know about the company. Know what to say as if you are going to be on stage.
+  
+    	</h4>
+
+    	<a href="/achievement" class="btn btn-primary btn-sm" id="backBtn">Back</a>
+
+	</div>
+
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="/js/introHCI.js"></script>
+  
+</body>
+
+</html>

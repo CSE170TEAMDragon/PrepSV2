@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Badge4</title>	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+	<link href="css/bootstrapTest.css" rel="stylesheet">
+	<link href="css/badgePage.css" rel="stylesheet">
+	<link href="css/levelbtn.css" rel="stylesheet">
+	<link rel="stylesheet" href="/css/hamburgerbar.css">
+	<link href="css/font-awesome-4.5.0/css/font-awesome.css" rel="stylesheet">
+
+
+</head>
+
+
+<body>
+	<header>
+  			<button class="hamburger">&#9776;</button>
+  			<button class="cross">&#735;</button>
+  			<p class="myButton">{{levelName}}</p>
+	</header>
+
+	<div class="menu">
+ 	 <ul>
+    	<a href="/question"><li>Questions</li></a>
+    	<a href="/achievement"><li>Achievement</li></a>
+    	<a href="/learnmore"><li>Learn More</li></a>
+    	<a href="/"><li>Log out</li></a>
+  	</ul>
+	</div>
+	
+		{{> popup}}
+
+	<div class="container">
+		<div class="badgeImg">
+			<img src="http://www.truthrevolt.org/sites/default/files/styles/metatag_image_defalut/public/field/image/articles/black_widow.jpg?itok=99CvIalb" style="width:50%">
+		</div>	
+		<h3 class="title"> Calm The Nerves </h3>
+	    <h4 class="desc" > Business psychologist Dr Sarah Connell, says: “When we are anxious our blood flows away from our brains as we are in fight or flight mode, and our cognitive functions can suffer.” So slow, deep breathing will bring the oxygen back to your brains and help you to think clearly.
+  
+    	</h4>
+
+    	<a href="/achievement" class="btn btn-primary btn-sm" id="backBtn">Back</a>
+
+	</div>
+
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="/js/introHCI.js"></script>
+  
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Badge3</title>	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+	<link href="css/bootstrapTest.css" rel="stylesheet">
+	<link href="css/badgePage.css" rel="stylesheet">
+	<link href="css/levelbtn.css" rel="stylesheet">
+	<link rel="stylesheet" href="/css/hamburgerbar.css">
+	<link href="css/font-awesome-4.5.0/css/font-awesome.css" rel="stylesheet">
+
+
+</head>
+
+
+<body>
+	<header>
+  			<button class="hamburger">&#9776;</button>
+  			<button class="cross">&#735;</button>
+  			<p class="myButton">{{levelName}}</p>
+	</header>
+
+	<div class="menu">
+ 	 <ul>
+    	<a href="/question"><li>Questions</li></a>
+    	<a href="/achievement"><li>Achievement</li></a>
+    	<a href="/learnmore"><li>Learn More</li></a>
+    	<a href="/"><li>Log out</li></a>
+  	</ul>
+	</div>
+	
+		{{> popup}}
+
+	<div class="container">
+		<div class="badgeImg">
+			<img src="https://pbs.twimg.com/profile_images/696460514201772032/lm4gmFOD.jpg" style="width:50%">
+		</div>	
+		<h3 class="title"> Aim To Connect </h3>
+	    <h4 class="desc" > In an interview it’s important to come across as likeable. So, to maximise confidence, your energy should be focused on building a rapport with your interviewer rather than impressing him or her. “We often get the idea that confidence is about holding court whereas it’s more to do with putting people at ease. It helps to focus on connecting with people rather than focusing on the performance,” says Dr Gary Wood, chartered psychologist and author.
+  
+    	</h4>
+
+    	<a href="/achievement" class="btn btn-primary btn-sm" id="backBtn">Back</a>
+
+	</div>
+
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="/js/introHCI.js"></script>
+  
+</body>
+
+</html>

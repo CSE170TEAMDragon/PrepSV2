@@ -51,7 +51,9 @@ html {
      text-align: center;
      position:fixed;
      bottom:3%;
-     width:95%;
+     width:100%;
+     left:auto;
+     right:0.5%;
 }
 
 .recordingPic img{
@@ -174,6 +176,10 @@ h2{
      margin-left: 40px;
      margin-top: 50px;
 }*/
+
+#recBtn2{
+     width:30%;
+}
 
 .myButton {
      float: right;
