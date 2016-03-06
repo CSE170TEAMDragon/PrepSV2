@@ -88,7 +88,10 @@
 			{ 	
 				"imgsrc": "https://images.blogthings.com/whatavengerareyouquiz/iron-man.jpg",
 				"badgename": "Power Pose",
-				"badgedesc": "In Amy Cuddy’s video, Your Body Language Shapes Who You Are, she asserts that not only does body language affect how others see you, but how we see ourselves. Her studies show that “power posing” – standing in a posture of confidence, even when you don’t feel confident – affects your brain’s testosterone and cortisol levels, and makes you feel more confident."
+				"badgeID": "1PowerPose",
+				"badgeNumber": "B1",
+				"badgeLv": "Level 1",
+				"badgedesc": "Not only does body language affect how others see you, but how we see ourselves. 'Power posing” – standing in a posture of confidence, even when you don’t feel confident – affects your brain’s testosterone and cortisol levels, and makes you feel more confident."
 			}
 		],
 
@@ -96,21 +99,33 @@
 			{ 	
 				"imgsrc": "https://pbs.twimg.com/profile_images/378800000867900868/diA9fWFw_400x400.jpeg",
 				"badgename": "Research",
+				"badgeID": "5Research",
+				"badgeNumber": "B5",
+				"badgeLv": "Level 5",
 				"badgedesc": "If you research and learn about the company’s products, culture, profile, and vision; you will get there at least with the confidence of knowing your subject by heart. You won’t have to see yourself disintegrating into 1000 pieces when the interviewer will ask you what you already know about the company. Know what to say as if you are going to be on stage."		
 			},
 			{
 				"imgsrc": "http://www.truthrevolt.org/sites/default/files/styles/metatag_image_defalut/public/field/image/articles/black_widow.jpg?itok=99CvIalb",
 				"badgename": "Calm the nerves",
+				"badgeID": "4CalmTheNerves",
+				"badgeNumber": "B4",
+				"badgeLv": "Level 4",
 				"badgedesc": "Business psychologist Dr Sarah Connell, says: “When we are anxious our blood flows away from our brains as we are in fight or flight mode, and our cognitive functions can suffer.” So slow, deep breathing will bring the oxygen back to your brains and help you to think clearly."
 			},
 			{
 				"imgsrc" : "https://pbs.twimg.com/profile_images/696460514201772032/lm4gmFOD.jpg",
 				"badgename": "Aim to Connect",
+				"badgeID": "3AimToConnect",
+				"badgeNumber": "B3",
+				"badgeLv": "Level 3",
 				"badgedesc": "In an interview it’s important to come across as likeable. So, to maximise confidence, your energy should be focused on building a rapport with your interviewer rather than impressing him or her. “We often get the idea that confidence is about holding court whereas it’s more to do with putting people at ease. It helps to focus on connecting with people rather than focusing on the performance,” says Dr Gary Wood, chartered psychologist and author."
 			},
 			{ 
 				"imgsrc" : "http://pbs.twimg.com/profile_images/459149686239010817/sMzYWXRu_400x400.jpeg",
 				"badgename": "Imagine Success",
+				"badgeID": "2ImagineSuccess",
+				"badgeNumber": "B2",
+				"badgeLv": "Level 2",
 				"badgedesc": "Boost your confidence and calm your anxiety by picturing yourself being successful in the interview. 'Before you go in start visualising a successful interview: imagine how you walk to the room, shake the interviewer’s hands and answer the questions with confidence,' says Margaret Buj, interview coach and author of Land That Job! "
 			}
 		],

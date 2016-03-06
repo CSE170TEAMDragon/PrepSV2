@@ -19,6 +19,16 @@ html{
     
 }
 
+
+.oneBadge{
+    width: 45%;
+}
+
+#imgDiv h3{
+    margin:4%;
+    margin-top: 0;
+}
+
 .body{
 	margin-right: 20px;
 	margin-left: 20px;
@@ -44,14 +54,29 @@ div {
 
 div img {
     display: inline-block;
-    width: 40%;
-    height: 40%;
+    width: 70%;
+    height: 70%;
     margin: 4%;
 }
 
 #imgDiv{
-    margin:3%;
+    margin:4%;
     margin-bottom:12%;
+    text-align: center;
+}
+
+.badgeBtn a{
+    width:90%;
+    margin-bottom: 8%;
+}
+
+.badgeBtn{
+    text-align: center;
+
+}
+
+.oneBadge{
+    margin:3%;
 }
 
 #imgDiv:after {

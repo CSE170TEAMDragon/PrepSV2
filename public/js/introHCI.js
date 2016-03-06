@@ -48,6 +48,18 @@ $('#overlay, .cancel').click(function () {
 	$('#popupContent').fadeOut('slow');    
 });
 
+// $('#B1').click(function(){
+// 	$('#outerBox').fadeIn('slow');
+// 	$('#badgeBox').fadeIn('slow');
+// 	$('#badgeContent').fadeIn('slow'); 	
+// });
+
+// $('#outerBox, .cancel').click(function () {
+// 	$('#outerBox').fadeOut('slow');
+// 	$('#badgeBox').fadeOut('slow');
+// 	$('#badgeContent').fadeOut('slow');    
+// });
+
 
 function checkRadio (e){
 	if( (document.getElementById("inlineRadio00").checked == true ||

@@ -8,9 +8,11 @@
 
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+	<link href="css/bootstrapTest.css" rel="stylesheet">
 	<link href="css/achievement.css" rel="stylesheet">
 	<link href="css/levelbtn.css" rel="stylesheet">
 	<link rel="stylesheet" href="/css/hamburgerbar.css">
+	<link href="css/font-awesome-4.5.0/css/font-awesome.css" rel="stylesheet">
 
 
 </head>
@@ -32,13 +34,12 @@
   	</ul>
 	</div>
 	
-
+		{{> popup}}
 	<div class="container">
 		<div class="jumbotron" style="color:white">
 			<h2>Badges Earned</h2>
 		</div>
-
-		{{> popup}}
+	<hr>
 
 	<div id="headingDiv">
 		<!-- <h3 >Badges Earned: 
@@ -48,11 +49,21 @@
 
 	<div id="imgDiv">
 		{{#each unlockedPoses}}
-			<a href="#"> <img src="{{imgsrc}}" alt="" id="{{badgename}}"> </a>
-			<div class="confidenceBooster">
-				<h3> {{badgename}}</h3>
-				<h4> {{badgedesc}}</h4>
+		<div class="row">
+			<div class="col-xs-4" >
+				<h4 style="text-align:center"> {{badgeLv}} </h4> 
 			</div>
+
+			<div class="col-xs-8" style="text-align:center">
+				<a href="/{{badgeID}}" id="{{badgeNumber}}"> <img src="{{imgsrc}}" alt="" > </a>
+				<div class="badgeBtn">
+					<a href="/{{badgeID}}" class="btn btn-primary btn-sm" style="font-size:17px">{{badgename}}</a>
+				</div>
+			</div>
+
+
+		</div>
+		<hr>
 		{{/each}}
 	</div>
 
