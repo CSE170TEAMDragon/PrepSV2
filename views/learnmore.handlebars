@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="/css/hamburgerbar.css">
-  <link href="css/bootstrapTest.css" rel="stylesheet">
-   <link rel="stylesheet" href="/css/learnmore.css">
+    <link href="css/bootstrapTest.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/learnmore.css">
     <link href="css/introHCI.css" rel="stylesheet">
-  <link href="css/slider.css" rel="stylesheet">
+    <link href="css/slider.css" rel="stylesheet">
+    <link href="css/font-awesome-4.5.0/css/font-awesome.css" rel="stylesheet">
 
   </head>
   
@@ -22,14 +23,14 @@
     <div class="menu">
       <ul>
         {{#if login}}
-          <a href="/question"><li>Questions</li></a>
-          <a href="/achievement"><li>Achievement</li></a>
-          <a href="/responseHistory"><li>Response History</li></a>
-          <a href="/learnmore"><li>Learn More</li></a>
-          <a href="/"><li>Log out</li></a>
+          <a href="/question"><li><i class="fa fa-list-ol fa-2x" style="margin-right: 3%"></i>Questions</li></a>
+          <a href="/achievement"><li><i class="fa fa-trophy fa-2x" style="margin-right: 3%"></i>Achievement</li></a>
+          <a href="/responseHistory"><li><i class="fa fa-check-square fa-2x" style="margin-right: 3%"></i>Response History</li></a>
+          <a href="/learnmore"><li><i class="fa fa-question fa-2x" style="margin-right: 3%"></i>Learn More</li></a>
+          <a href="/"><li><i class="fa fa-sign-out fa-2x" style="margin-right: 3%"></i>Log out</li></a>
           {{else}}
-          <a href="/"><li>Home</li></a>
-          <a href="/login"><li>Login</li></a>
+          <a href="/"><li><i class="fa fa-home fa-2x" style="margin-right: 3%"></i>Home</li></a>
+          <a href="/login"><li><i class="fa fa-sign-in fa-2x" style="margin-right: 3%"></i>Login</li></a>
           {{/if}}
           
         </ul>

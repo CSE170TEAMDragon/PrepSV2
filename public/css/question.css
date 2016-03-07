@@ -111,7 +111,7 @@ body{
 
 .lockedQuestion{
      margin: 16px 10px 0px 10px;
-     opacity: .9;
+     opacity: .7;
      background-color: #999A9A;
 
 }
@@ -131,7 +131,7 @@ body{
 
 .oneRow{
      background-color: #FFFFFF;
-     background-color: rgba(255, 255, 255, 0.8);
+     background-color: rgba(255, 255, 255, 0.7);
      margin: 16px 10px 0px 10px;
 }
 

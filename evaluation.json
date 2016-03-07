@@ -26,7 +26,7 @@
 				 	"evalID":"0"
 				 },
 				 {
-				 	"text": "Strengths that align with the organization's needs",
+				 	"text": "Strengths align with the organization's needs",
 				 	"evalID":"1"
 				 },
 				 {
@@ -40,11 +40,11 @@
 			"id": "2",
 			"eval": [
 				 {
-				 	"text": "Highlight the background/experience that makes you fit for the position",
+				 	"text": "Highlight the background/ experience that makes you fit for the position",
 				 	"evalID":"0"
 				 },
 				 {
-				 	"text": "Be convincing that your skills and contribution will make their job easier and/or help solve problems",
+				 	"text": "Be convincing that your contribution will make their job easier and/or help solve problems",
 				 	"evalID":"1"
 				 },
 				 {
@@ -76,7 +76,7 @@
 			"id": "4",
 			"eval": [
 				 {
-				 	"text": "Be truthful. Describe weaknesses, not a strengths presented as weakness ('I work too hard') ",
+				 	"text": "Be truthful. Describe weaknesses, not strengths presented as weaknesses ('I work too hard') ",
 				 	"evalID":"0"
 				 },
 				 {
@@ -116,11 +116,11 @@
 				 	"evalID":"0"
 				 },
 				 {
-				 	"text": "Express your preference between being given the goal and determining the steps to reach it, and being given all specific directions",
+				 	"text": "Express if you prefer to receive specific directions or to determine the steps to reach the goal yourself",
 				 	"evalID":"1"
 				 },
 				 {
-				 	"text": "Describe how your best mode of communicate, whether through email, phone, and/or meetings",
+				 	"text": "Describe your best mode of communicate, whether through email, phone, and/or meetings",
 				 	"evalID":"2"
 				 }
 			]	
@@ -130,7 +130,7 @@
 			"id": "7",
 			"eval": [
 				{
-				 	"text": "Recognize what the ideal workplace would look like for you (solo vs. collaborative; innovative vs. hierarchical, etc), focusing on realistic features, not extensive paid vacations and high salaries",
+				 	"text": "Identify characteristics such as solo vs. collaborative, innovative vs. hierarchical, etc. Focus on realistic features.",
 				 	"evalID":"0"
 				 },
 				 {
@@ -152,7 +152,7 @@
 				 	"evalID":"0"
 				 },
 				 {
-				 	"text": "Be polite, you can hint that the company you are applying for has qualities that make you perform at a higher level",
+				 	"text": "Mention characteristics of your desired job/workplace that can enable you to perform at a higher level",
 				 	"evalID":"1"
 				 },
 				 {
@@ -170,7 +170,7 @@
 				 	"evalID":"0"
 				 },
 				 {
-				 	"text": "Focus on your strengths and how the previous boss helped you develop it",
+				 	"text": "Focus on your strengths and how the previous boss helped you develop them",
 				 	"evalID":"1"
 				 },
 				 {

@@ -25,11 +25,11 @@
 
 	<div class="menu">
  	 <ul>
-    	<a href="/question"><li>Questions</li></a>
-    	<a href="/achievement"><li>Achievement</li></a>
-    	<a href="/responseHistory"><li>Response History</li></a>
-    	<a href="/learnmore"><li>Learn More</li></a>
-    	<a href="/"><li>Log out</li></a>
+    	<a href="/question"><li><i class="fa fa-list-ol fa-2x" style="margin-right: 3%"></i>Questions</li></a>
+    	<a href="/achievement"><li><i class="fa fa-trophy fa-2x" style="margin-right: 3%"></i>Achievement</li></a>
+    	<a href="/responseHistory"><li><i class="fa fa-check-square fa-2x" style="margin-right: 3%"></i>Response History</li></a>
+    	<a href="/learnmore"><li><i class="fa fa-question fa-2x" style="margin-right: 3%"></i>Learn More</li></a>
+    	<a href="/"><li><i class="fa fa-sign-out fa-2x" style="margin-right: 3%"></i>Log out</li></a>
   	</ul>
 	</div>
 
@@ -45,11 +45,11 @@
 	   </div>
 	   <!-- <img src="/images/interview1.jpg" style="align:middle; width: 80%; margin-top:0px"> -->
 		
-
+<form action="/question">
 	<div class="careerinput">
 		<div class="form-group">
 		  <label class="control-label" for="inputDefault" id ="careerB1" style="font-size:18px; float:left">Career position <font color="red">*</font></label>
-		  <input class="form-control" type="text" id="inputDefault1" onclick="checkCareer()" >
+		  <input class="form-control" type="text" id="inputDefault1" required>
 		</div>
 
 		<div class="form-group">
@@ -59,16 +59,22 @@
 		</div>
 	</div>
 
+		
+		<button type="button" class="btn btn-primary" id="toQuestion" >
+	        <a href="/question" >
+				<input type="submit" value="Let's Begin" style="background-color:transparent; border:none; text-align:center" >
+			</a>
+     	</button>
+</form>
 
-
-	<div class="nextbutton">
-		<button type="button" class="btn btn-primary" id="toQuestion" disabled>
+<!-- 	<div class="nextbutton">
+		<button type="button" class="btn btn-primary" id="toQuestion" >
          <a href="/question" >
           Let's Begin
          </a>
      	</button>
 	</div>
-
+ -->
   
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<script src="js/bootstrap.min.js"></script>
