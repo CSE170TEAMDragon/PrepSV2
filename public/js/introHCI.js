@@ -109,13 +109,13 @@ function evaluation (e){
 function recordClicked(e){
 	$(".recordingPic img").attr("src", "/images/stopButton.png" )
 	$(".recordingPic a").attr("id", "stopBtn")
-	 $("#stopBtn").click(stopClicked);
+	$("#stopBtn").click(stopClicked);
 }
 
 function stopClicked(e){
 	$(".recordingPic img").attr("src", "/images/microphone3.png" )
 	$(".recordingPic a").attr("id", "recBtn")
-	$("#recBtn").click(recordClicked);
+	//$("#recBtn").click(recordClicked);
 	document.getElementById('recDone').disabled = false;
 }
 
