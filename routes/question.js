@@ -5,16 +5,24 @@ var info = require('../logininfo.json');
 exports.viewQuestion = function(req, res) {	
 	var name = req.query.q;
 	var name2 = req.query.id;
-
 	var errorStr = "";
-
 	var loginFlag= false;
-
 	var loginErr = false;
-
 	var levelUp = false;
-
 	var curUserIdx = info['curUserIdx'];
+
+	// storing career information into the user's specific json
+	var input1 = req.query.inputDefault1;
+	var input2 = req.query.inputDefault2;
+
+	if( input1 != input2){
+		questionData['user'][curUserIdx]['careerPosition'] = input1;
+		if( input2.length == 0)
+			questionData['user'][curUserIdx]['careerCompany'] = "N/A";
+		else
+			questionData['user'][curUserIdx]['careerCompany'] = input2;
+	}
+
 
 	if( name != undefined && name2 != undefined && curUserIdx != -1){
 		name2 = parseInt(name2);

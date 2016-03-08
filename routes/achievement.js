@@ -23,5 +23,8 @@ exports.viewAchievement = function(req, res){
     res.render('achievement', {
     	"unlockedPoses" : questionData['user'][curUserIdx]['unlockedPoses'],
     	"answeredQuestion" : hisData['answeredQuestion'],
-    	"levelName" : lvlName});
+    	"levelName" : lvlName,
+    	"position" : questionData['user'][curUserIdx]["careerPosition"],
+    	"company" : questionData['user'][curUserIdx]["careerCompany"]
+    });
 };
