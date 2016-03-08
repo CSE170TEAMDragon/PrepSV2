@@ -11,8 +11,6 @@ function initializePage() {
   $("#donebutton").click(evaluation);
   $("#recBtn").click(recordClicked);
   $("#stopBtn").click(stopClicked);
-  // $("#inputDefault2").click(checkCareer);
-  // $("#toQuestion").click(checkCareer);
   $('.message a').click(function(){
   $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
 	});
@@ -103,8 +101,8 @@ function evaluation (e){
 // 	if (document.getElementById("inputDefault1").value.length != 0) {
 // 		document.getElementById("toQuestion").disabled=false;
 // 	}
-
 // }
+
 
 function recordClicked(e){
 	$(".recordingPic img").attr("src", "/images/stopButton.png" )
@@ -114,8 +112,9 @@ function recordClicked(e){
 
 function stopClicked(e){
 	$(".recordingPic img").attr("src", "/images/microphone3.png" )
-	$(".recordingPic a").attr("id", "recBtn")
-	//$("#recBtn").click(recordClicked);
+	$(".recordingPic a").attr("id", "recBtn2")
+	$("#recBtn").click(recordClicked);
+	
 	document.getElementById('recDone').disabled = false;
 }
 
