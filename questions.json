@@ -136,13 +136,16 @@
 		
 		"levelNames" : [
 			{
-				"name" : "Level 1: Novice"
+				"name" : "Level 0: Novice"
 			},
 			{
-				"name" : "Level 2: Achiever"
+				"name" : "Level 1: Achiever"
 			},
 			{
-				"name" : "Level 3: Expert"
+				"name" : "Level 2: Expert"
+			},
+			{
+				"name" : "Level 3: Champion"
 			},
 			{
 				"name" : "Level 4: Master"

@@ -11,6 +11,7 @@ function initializePage() {
   $("#donebutton").click(evaluation);
   $("#recBtn").click(recordClicked);
   $("#stopBtn").click(stopClicked);
+  $("#recDone").hide();
   $('.message a').click(function(){
   $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
 	});
@@ -123,7 +124,7 @@ function stopClicked(e){
 	$(".recordingPic a").attr("id", "recBtn2")
 	$("#recBtn").click(recordClicked);
 	
-	document.getElementById('recDone').disabled = false;
+	$("#recDone").show();
 }
 
 

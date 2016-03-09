@@ -10,6 +10,7 @@ exports.viewQuestion = function(req, res) {
 	var loginErr = false;
 	var levelUp = false;
 	var curUserIdx = info['curUserIdx'];
+	var notAnsweredAll = true;
 
 	// storing career information into the user's specific json
 	var input1 = req.query.inputDefault1;
@@ -52,6 +53,16 @@ exports.viewQuestion = function(req, res) {
 
 		}
 
+		if( numAns == 10) {
+			var level = parseInt(questionData['user'][curUserIdx]["level"]);
+			if( level == 4) {
+				level = level + 1;
+				questionData['user'][curUserIdx]["level"] = "" + level;
+				levelUp= true;
+				notAnsweredAll= false;
+			}
+		}
+
 		var login = req.query.login;
 
 		if( login != undefined ){
@@ -88,7 +99,8 @@ exports.viewQuestion = function(req, res) {
 	    	"lockedQuestionText" : questionData['user'][info['curUserIdx']]['lockedQuestionText'],    	
 	    	"questionText" : questionData['user'][info['curUserIdx']]['questionText'],
 	    	"levelName" : lvlName,
-	    	"levelUp" : levelUp
+	    	"levelUp" : levelUp,
+	    	"notAnsweredAll" : notAnsweredAll
 	    });
 	}
 	
@@ -98,6 +110,8 @@ exports.viewQuestion = function(req, res) {
 exports.viewQuestionPost = function(req, res) {	
 	var name = req.body.q;
 	var name2 = req.body.id;
+
+	var notAnsweredAll = true;
 
 	var errorStr = "";
 
@@ -147,7 +161,8 @@ exports.viewQuestionPost = function(req, res) {
 	    	"lockedQuestionText" : questionData['user'][info['curUserIdx']]['lockedQuestionText'],    	
 	    	"questionText" : questionData['user'][info['curUserIdx']]['questionText'],
 	    	"levelName" : lvlName,
-	    	"levelUp" : levelUp
+	    	"levelUp" : levelUp,
+	    	"notAnsweredAll" : notAnsweredAll
 	    });
 	}
 	

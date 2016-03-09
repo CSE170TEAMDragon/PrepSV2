@@ -107,3 +107,27 @@ li a{
      position:relative;
      top:1px;
 }
+
+#backBtn{
+     margin: 4%;
+     margin-bottom: 8%;
+     font-size:17px;
+     width:30%;
+}
+
+hr.line {
+    padding: 0;
+    border: none;
+    border-top: medium double #808080;
+    color: #808080;
+    text-align: center;
+}
+
+hr.line:after {
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1.0em;
+    padding: 0 0.15em;
+    background: white;
+}

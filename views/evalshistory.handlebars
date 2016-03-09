@@ -7,6 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+	<link href="css/bootstrapTest.css" rel="stylesheet">
 	<link href="css/evalshistory.css" rel="stylesheet">
 	<link href="css/levelbtn.css" rel="stylesheet">
 	<link href="css/font-awesome-4.5.0/css/font-awesome.css" rel="stylesheet">
@@ -52,7 +53,6 @@
 		  	<div class="EvalFields" style="margin:20px">
 		        <p >{{c1}}</p>
 		        <i class="fa fa-check-square-o fa-2x"></i> <b >{{r1}}</b>
-
  				<p >{{c2}}</p> 
  				<i class="fa fa-check-square-o fa-2x"></i><b>{{r2}}</b>
  				<p>{{c3}}</p>
@@ -60,12 +60,14 @@
 
  			<!-- 
  			<p>Your Recording: </p>  -->
-   		 	<img src="/images/playback1.jpg" id="recBar" style="align:middle; width: 100%; margin-top:20px; margin-bottom:0px">
+   		 	<!-- <img src="/images/playback1.jpg" id="recBar" style="align:middle; width: 100%; margin-top:20px; margin-bottom:0px"> -->
+   		 	<hr class="line">
    		 </div>
 	<!-- 	  </div>
 		</div> -->
 		{{/each}}
 
+	<a href="/responseHistory" class="btn btn-primary btn-sm" id="backBtn">Back</a>
 
 	</div>
 
