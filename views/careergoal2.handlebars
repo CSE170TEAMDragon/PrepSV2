@@ -72,14 +72,14 @@
 	</div>
 
 		
-		<button type="button" class="btn btn-primary" {{#if backToAchievement}}id="toAchievement"{{else}}id="toQuestion"{{/if}} >
+		<button type="button" class="btn btn-primary" {{#if backToAchievement}}id="saveBtn"{{else}}id="toQuestion"{{/if}} >
 	        <a>
 				<input type="submit" {{#if backToAchievement}}value= "Save" {{else}}value="Let's Begin"{{/if}} style="background-color:transparent; border:none; {{#if backToAchievement}}{{else}}text-align:center{{/if}}" >
 			</a>
      	</button>
 
      	{{#if backToAchievement}}
-     	<button type="button" class="btn btn-primary" id="toAchievement" >
+     	<button type="button" class="btn btn-primary" id="cancelBtn" >
      		<a>
 			<input type="submit" value= "Cancel" style="background-color:transparent; border:none" name="cancelClicked">
 			</a>

@@ -19,9 +19,15 @@ padding-top: 0px;
  }
  
 
-#toAchievement{
-	margin-left: 8%;
-	margin-right: 8%;
+#saveBtn{
+	float: right;
+	margin-right: 19%;
+	width: 26%;
+}
+
+#cancelBtn{
+	float: left;
+	margin-left: 19%;
 }
 
  hr{
