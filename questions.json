@@ -85,14 +85,6 @@
 		],
 
 		"unlockedPoses": [
-			{ 	
-				"imgsrc": "https://images.blogthings.com/whatavengerareyouquiz/iron-man.jpg",
-				"badgename": "Power Pose",
-				"badgeID": "1PowerPose",
-				"badgeNumber": "B1",
-				"badgeLv": "Level 1",
-				"badgedesc": "Not only does body language affect how others see you, but how we see ourselves. 'Power posing” – standing in a posture of confidence, even when you don’t feel confident – affects your brain’s testosterone and cortisol levels, and makes you feel more confident."
-			}
 		],
 
 		"lockedPoses": [
@@ -127,6 +119,14 @@
 				"badgeNumber": "B2",
 				"badgeLv": "Level 2",
 				"badgedesc": "Boost your confidence and calm your anxiety by picturing yourself being successful in the interview. 'Before you go in start visualising a successful interview: imagine how you walk to the room, shake the interviewer’s hands and answer the questions with confidence,' says Margaret Buj, interview coach and author of Land That Job! "
+			},
+			{ 	
+				"imgsrc": "https://images.blogthings.com/whatavengerareyouquiz/iron-man.jpg",
+				"badgename": "Power Pose",
+				"badgeID": "1PowerPose",
+				"badgeNumber": "B1",
+				"badgeLv": "Level 1",
+				"badgedesc": "Not only does body language affect how others see you, but how we see ourselves. 'Power posing” – standing in a posture of confidence, even when you don’t feel confident – affects your brain’s testosterone and cortisol levels, and makes you feel more confident."
 			}
 		],
 
