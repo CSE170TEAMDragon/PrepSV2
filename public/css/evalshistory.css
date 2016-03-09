@@ -22,9 +22,22 @@ h1{
     width: 100%;
 }
 
-div {
-    text-align: justify;
+.EvalFields p{
+    font-size:18px; 
+    padding-top:15px;
 }
+
+.EvalFields i{
+    margin-left:10px;
+    margin-right:4px;
+}
+
+.EvalFields b{
+    font-size:18px;
+}
+/*div {
+    text-align: justify;
+}*/
 
 /*div:after {
     content: '';
@@ -67,7 +80,7 @@ li a{
      -moz-border-radius:29px;
      -webkit-border-radius:29px;
      border-radius:29px;
-     border:3px solid #1f2f47;
+     border:2px solid #3c4249;
      display:inline-block;
      cursor:pointer;
      color:#ffffff;

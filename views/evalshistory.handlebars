@@ -42,22 +42,28 @@
 			<h4 style="color:white; padding-left: 10px; padding-right:10px">For the question: {{question}}</h4>
 		</div>
 
+
 		{{#each data}}
-		<div class="panel panel-info" style="margin:4% 8% 0% 8%">
+		<!-- <div class="panel panel-info" style="margin:4% 8% 0% 8%">
 		  <div class="panel-heading" >
 		    <h2 class="panel-title" style="text-align:center; font-size: 26px" > Evaluation </h2>
 		  </div>
-		  <div class="panel-body" id="historyList">
+		  <div class="panel-body" id="historyList"> -->
+		  	<div class="EvalFields" style="margin:20px">
+		        <p >{{c1}}</p>
+		        <i class="fa fa-check-square-o fa-2x"></i> <b >{{r1}}</b>
 
-		        <p>{{c1}}</p>
-		        <p><b>{{r1}}</b></p></br>
- 				<p>{{c2}}</p> 
- 				<p><b>{{r2}}</b></p></br>
+ 				<p >{{c2}}</p> 
+ 				<i class="fa fa-check-square-o fa-2x"></i><b>{{r2}}</b>
  				<p>{{c3}}</p>
- 				<p><b>{{r3}}</b></p>
+ 				<i class="fa fa-check-square-o fa-2x"></i><b>{{r3}}</b>
 
-		  </div>
-		</div>
+ 			<!-- 
+ 			<p>Your Recording: </p>  -->
+   		 	<img src="/images/playback1.jpg" id="recBar" style="align:middle; width: 100%; margin-top:20px; margin-bottom:0px">
+   		 </div>
+	<!-- 	  </div>
+		</div> -->
 		{{/each}}
 
 

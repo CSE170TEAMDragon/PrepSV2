@@ -111,8 +111,8 @@ body{
 
 .lockedQuestion{
      margin: 16px 10px 0px 10px;
-     opacity: .7;
-     background-color: #999A9A;
+     background-color: rgba(153, 153, 153, 0.8);
+     border-radius: 4px;
 
 }
 
@@ -133,6 +133,7 @@ body{
      background-color: #FFFFFF;
      background-color: rgba(255, 255, 255, 0.7);
      margin: 16px 10px 0px 10px;
+     border-radius: 10px;
 }
 
 .availableQuestion button{
