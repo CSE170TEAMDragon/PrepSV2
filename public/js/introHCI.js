@@ -14,6 +14,14 @@ function initializePage() {
   $('.message a').click(function(){
   $('form').animate({height: "toggle", opacity: "toggle"}, "slow");
 	});
+  // $('#edit').click(function(){
+  // 	var txt = $(this).text();
+  // 	if( txt == "edit")
+  // 		$(this).text("change");
+  // 	else
+  // 		$(this).text("edit");
+
+  // });
 }
 
 // JavaScript for Hamburger Bar

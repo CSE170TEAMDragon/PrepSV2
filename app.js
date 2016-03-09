@@ -69,6 +69,7 @@ app.get('/recording', recording.viewRecording);
 
 app.get('/careergoal',careergoal.viewCareer);
 app.post('/careergoal2',careergoal2.viewCareer);
+app.get('/careergoal2',careergoal2.viewCareer2);
 
 app.get('/versionB', index.viewVersionB);
 app.get('/1PowerPose', PowerPose.viewBadge1);

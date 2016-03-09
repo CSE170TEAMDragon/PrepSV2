@@ -17,10 +17,7 @@ exports.viewQuestion = function(req, res) {
 
 	if( input1 != input2){
 		questionData['user'][curUserIdx]['careerPosition'] = input1;
-		if( input2.length == 0)
-			questionData['user'][curUserIdx]['careerCompany'] = "N/A";
-		else
-			questionData['user'][curUserIdx]['careerCompany'] = input2;
+		questionData['user'][curUserIdx]['careerCompany'] = input2;
 	}
 
 

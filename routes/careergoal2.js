@@ -55,6 +55,17 @@ exports.viewCareer = function(req, res) { 
 	if(registerErr && info['curUserIdx'] == -1){
 		res.redirect("/login?error=true&errorStr="+errorStr);
 	}
-	else
-    	res.render('careergoal2', questionData);
+	else {
+    	res.render('careergoal2', {
+    		"backToAchievement": false 
+    	});
+	}
+};
+
+
+exports.viewCareer2 = function(req, res) { 
+	res.render("careergoal2",{
+		"backToAchievement" : true
+	});
+
 };

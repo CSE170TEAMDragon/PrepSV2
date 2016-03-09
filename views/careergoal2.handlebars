@@ -20,7 +20,6 @@
 	<header>
   		<button id="top" class="hamburger">&#9776;</button>
   		<button class="cross">&#735;</button>
-  		<p class="myButton">{{levelName}}</p>
 	</header>
 
 	<div class="menu">
@@ -45,26 +44,48 @@
 	   </div>
 	   <!-- <img src="/images/interview1.jpg" style="align:middle; width: 80%; margin-top:0px"> -->
 		
-<form action="/question">
+<form {{#if backToAchievement}}action="/achievement" {{else}}action="/question" {{/if}}>
 	<div class="careerinput">
 		<div class="form-group">
-		  <label class="control-label" for="inputDefault" id ="careerB1" style="font-size:18px; float:left">Career position <font color="red">*</font></label>
-		  <input required class="form-control" type="text" id="inputDefault1" name="inputDefault1">
+		  <label class="control-label" for="inputDefault" id ="careerB1" style="font-size:18px; float:left">Career Position 
+		  {{#if backToAchievement}}{{else}}
+		  <font color="red">*</font> {{/if}}
+
+		  </label>
+		  <input class="form-control" type="text" id="inputDefault1" name="inputDefault1" placeholder="e.g. Software Engineer" {{#if backToAchievement}}{{else}}required{{/if}}>
 		</div>
 
 		<div class="form-group">
-		  <label class="control-label" for="inputDefault" id ="careerB2" style="font-size:18px; float:left">Organization/Company</label>
-		  <input class="form-control" type="text" id="inputDefault2" name="inputDefault2"></br>
+		  <label class="control-label" for="inputDefault" id ="careerB2" style="font-size:18px; float:left">Organizations/Companies
+
+		  {{#if backToAchievement}}{{else}}
+		  <font color="red">*</font> {{/if}}
+
+		  </label>
+		  <input class="form-control" type="text" id="inputDefault2" name="inputDefault2" placeholder= "e.g. Facebook, Bank of America" {{#if backToAchievement}}{{else}}required{{/if}}></br>
+
+		  {{#if backToAchievement}}
+		  {{else}}
 		  <label style="font-size:11px; float:left; color:red">* required</label></br>
+		  {{/if}}
 		</div>
 	</div>
 
 		
-		<button type="button" class="btn btn-primary" id="toQuestion" >
+		<button type="button" class="btn btn-primary" {{#if backToAchievement}}id="toAchievement"{{else}}id="toQuestion"{{/if}} >
 	        <a>
-				<input type="submit" value="Let's Begin" style="background-color:transparent; border:none; text-align:center" >
+				<input type="submit" {{#if backToAchievement}}value= "Save" {{else}}value="Let's Begin"{{/if}} style="background-color:transparent; border:none; {{#if backToAchievement}}{{else}}text-align:center{{/if}}" >
 			</a>
      	</button>
+
+     	{{#if backToAchievement}}
+     	<button type="button" class="btn btn-primary" id="toAchievement" >
+     		<a>
+			<input type="submit" value= "Cancel" style="background-color:transparent; border:none" name="cancelClicked">
+			</a>
+		</button>
+		{{/if}}
+
 </form>
 
 <!-- 	<div class="nextbutton">

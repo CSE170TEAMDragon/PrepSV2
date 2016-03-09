@@ -8,18 +8,16 @@ exports.viewAchievement = function(req, res){
 
 	var lvl = parseInt(questionData['user'][curUserIdx]['level']);
 	var lvlName = questionData['user'][curUserIdx]['levelNames'][lvl]['name'];
-
-	while( hisData['answeredQuestion'].length != 0 )
-		hisData['answeredQuestion'].pop();
-
-
-	for( i = 0; i < questionData['user'][curUserIdx]['questionText'].length; i++) {
-		if( questionData['user'][curUserIdx]['questionText'][i]['answered'] === true){
-			var json = questionData['user'][curUserIdx]['questionText'][i];
-			hisData['answeredQuestion'].push( json );
-		}
-	}
 	
+	if (req.query.cancelClicked == undefined ){
+		var input1 = req.query.inputDefault1;
+		var input2 = req.query.inputDefault2;
+		if( input1 != undefined && input1.length != 0 )
+			questionData['user'][curUserIdx]['careerPosition'] = input1;
+		if ( input2 != undefined && input2.length != 0 )	
+			questionData['user'][curUserIdx]['careerCompany'] = input2;
+	}
+
     res.render('achievement', {
     	"unlockedPoses" : questionData['user'][curUserIdx]['unlockedPoses'],
     	"answeredQuestion" : hisData['answeredQuestion'],
