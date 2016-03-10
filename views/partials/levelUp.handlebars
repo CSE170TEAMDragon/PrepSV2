@@ -5,10 +5,15 @@
 		<a href="#" class="cancel2" style="margin-top:2%"><i class="fa fa-times fa-lg"></i> </a>
 	</div>
 		<div id="popupContent2" style="text-align:center; font-size:24px;">
-			<i><i class="fa fa-star"></i>
 			<b style="font-size:24px; text-align:center">Congratulations!</b>
+			<br/>
+
+			<div style="text-align:center">
+			{{#each unlockedPoses}}
 			<i class="fa fa-star"></i>
-			<br/></i>
+			{{/each}}
+			</div>
+
 	        <span style="text-align:left ;color:black;">
 			<p style="margin-left:10px; font-size: 18px"><b style="font-size:18px">You Have:</b></p>
 			<p style="margin-left:15px; font-size: 17px">- leveled up to <i>{{levelName}} </i></p>

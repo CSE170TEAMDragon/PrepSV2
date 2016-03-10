@@ -100,7 +100,8 @@ exports.viewQuestion = function(req, res) {
 	    	"questionText" : questionData['user'][info['curUserIdx']]['questionText'],
 	    	"levelName" : lvlName,
 	    	"levelUp" : levelUp,
-	    	"notAnsweredAll" : notAnsweredAll
+	    	"notAnsweredAll" : notAnsweredAll,
+	    	"unlockedPoses" : questionData['user'][info['curUserIdx']]['unlockedPoses']
 	    });
 	}
 	
@@ -162,7 +163,8 @@ exports.viewQuestionPost = function(req, res) {
 	    	"questionText" : questionData['user'][info['curUserIdx']]['questionText'],
 	    	"levelName" : lvlName,
 	    	"levelUp" : levelUp,
-	    	"notAnsweredAll" : notAnsweredAll
+	    	"notAnsweredAll" : notAnsweredAll,
+	    	"unlockedPoses" : questionData['user'][info['curUserIdx']]['unlockedPoses']
 	    });
 	}
 	
