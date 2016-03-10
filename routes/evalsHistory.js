@@ -27,7 +27,6 @@ exports.viewHistory = function(req, res) { 
 
 exports.addHistory = function(req, res) { 
 	var json = req.body;
-	// console.log(json);
 	var id = parseInt(json['qNum']);
 	var curUserIdx = info['curUserIdx'];
 
