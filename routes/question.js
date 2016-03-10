@@ -56,6 +56,8 @@ exports.viewQuestion = function(req, res) {
 		if( numAns == 10) {
 			var level = parseInt(questionData['user'][curUserIdx]["level"]);
 			if( level == 4) {
+				var json = questionData['user'][curUserIdx]['lockedPoses'].pop();
+				questionData['user'][curUserIdx]["unlockedPoses"].push(json);
 				level = level + 1;
 				questionData['user'][curUserIdx]["level"] = "" + level;
 				levelUp= true;

@@ -24,10 +24,6 @@ form {
      padding-bottom: 15px;
 }
 
-/*.lform{
-     margin-bottom: 50%;
-}*/
-
 body{
 	max-height: 100%;
 	max-width: 100%;
@@ -53,4 +49,5 @@ body{
 
 #button{
      margin-top: 10px;
+     color: #18BC9C;
 }
